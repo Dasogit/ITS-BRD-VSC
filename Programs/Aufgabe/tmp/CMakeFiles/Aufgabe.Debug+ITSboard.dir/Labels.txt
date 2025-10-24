@@ -1,0 +1,16 @@
+# Target labels
+ Aufgabe.Debug+ITSboard
+# Source files and their labels
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-complete.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-build.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-executes.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-install.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-mkdir.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-test.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-update.rule

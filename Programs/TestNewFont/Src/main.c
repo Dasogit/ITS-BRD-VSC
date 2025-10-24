@@ -141,28 +141,11 @@ int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
 	
 	GUI_init(DEFAULT_BRIGHTNESS);   // Initialisierung des LCD Boards mit Touch
-	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
-	if (!checkVersionFlashFonts()) {
-	    // Ueberpruefe Version der Fonts im Flash passt nicht zur Software Version
-		  Error_Handler();
-	}
-	initBlueButton();
-	
-	if (!checkVersionFlashFonts()) {
-	    // Ueberpruefe Version der Fonts im Flash passt nicht zur Software Version
-		  Error_Handler();
-	}
   // Begruessungstext	
-	lcdPrintlnS("Druecke USER Taster des NUCLEO Boards zum Start.");
-	waitUntilButtonPressedAndReleased();
+	lcdPrintS("HELLO WORLD ASSSSSSSS!");
 	
 	// Test in Endlosschleife
 	while(1) {
-		for (int i = 0; i < sizeof(fontList) / sizeof(fontList[0]); i++) {
-			runTest(fontList+i);
-		}
-		
-		lcdPrintlnS("Test abgeschlossen. Neustart in 10s.");
 		HAL_Delay(10000);
 	}
 }
