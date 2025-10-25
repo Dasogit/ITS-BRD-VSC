@@ -48,26 +48,6 @@
 #define ARTOVERMSG      "ARITHMETIC OVERFLOW"
 
 
-/* ---------- Error mode (app-defined) ---------- */
-
-
-/*
- ****************************************************************************************
- *  @brief     error system built in 
- *  @param     error number aka mode 
- *  @return    void
- ****************************************************************************************/
-void setErrMode(int mode);
-
-
-
-/*
- ****************************************************************************************
- *  @brief     decodes the error and returns the matching error number with the msg  
- *  @param     void
- *  @return    int the error code
- ****************************************************************************************/
-int  getErrMode(void);
 
 
 /* ---------- Core API ---------- */

@@ -8,8 +8,14 @@
 #include "errorHandler.h"
 #include "outputHandler.h"
 #include <stdio.h>
-#include "errno.h"
+
 #include <limits.h>
+
+
+//TODO: Error handling using errno.h and my own errorHandler mapping and how do i implement the mapping of both and merge them and
+// use them together without having split functions 
+
+
 
 
 
@@ -21,10 +27,12 @@
  ****************************************************************************************/
 void handleError(int errorNumber){
   switch(errorNumber){
-    case userStackOverFlow:
-            errno = EOVERFLOW;
-            displayError(STACKOVERMSG);
-            break;
+    case userStackOverFlow:   
+      errno = ESIGNUM;
+      printf((char*) STACKOVERMSG);   
+      break;
+    
+
   }
 
 
