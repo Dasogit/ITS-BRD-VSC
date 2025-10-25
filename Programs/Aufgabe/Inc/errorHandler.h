@@ -8,41 +8,69 @@
 #ifndef errorHandler_h
 #define errorHandler_h
 
-#include "errno.h"
-
+#include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 //#include "display.h"
 
+
+
+/* ---------- App error codes (negative on purpose) ---------- */
 //initialise error
-#define INIT -2   
+#define INIT                                     -2   
 //stackoverflow error from the user    
-#define userStackOverFlow -3
+#define userStackOverFlow                        -3
 //stackunderflow error from the user
-#define userStackUnderFlow -4
+#define userStackUnderFlow                       -4
 //invalid input (is not possible due to GUI but it is still a case)
-#define userInvalidInput -5
+#define userInvalidInput                         -5
 //denominator error divided by zero (can also return sqr(-1) aka. i aka. imaginary number. depends on the choice of the dev)
-#define userDivideByZero -6
+#define userDivideByZero                         -6
 //an error that isnt covered by the expected cases (probabbly useless)
-#define userUnknownError -7
+#define userUnknownError                         -7
 //data type overflow ??
-#define userOverRange -8
+#define userOverRange                            -8
 //data type underflow ??
-#define userUnderRange -9  
+#define userUnderRange                           -9  
 //not sure tbh if its usefull
-#define userArithmeticOverflow -10
+#define userArithmeticOverflow                   -10
 //not sure tbh if its usefull
-#define userArithemticUnderflow -11
+#define userArithemticUnderflow                  -11
 //im not still sure how many of these we need but assumption is 6. more will be evaluated
 
 
-#define STACKUNDERMSG "STACKUNDERFLOW"
-#define STACKOVERMSG "STACKOVERFLOW"
-#define DOMMSG "ARITHMETIC ERROR"
-#define ARTUNDERMSG "ARITHMETIC UNDERFLOW"
-#define ARTOVERMSG "ARITHMETIC OVERFLOW"
+/* ---------- Human-readable tags ---------- */
+#define STACKUNDERMSG   "STACKUNDERFLOW"
+#define STACKOVERMSG    "STACKOVERFLOW"
+#define DOMMSG          "ARITHMETIC ERROR"
+#define ARTUNDERMSG     "ARITHMETIC UNDERFLOW"
+#define ARTOVERMSG      "ARITHMETIC OVERFLOW"
+
+
+/* ---------- Error mode (app-defined) ---------- */
+
+
+/*
+ ****************************************************************************************
+ *  @brief     error system built in 
+ *  @param     error number aka mode 
+ *  @return    void
+ ****************************************************************************************/
+void setErrMode(int mode);
+
+
+
+/*
+ ****************************************************************************************
+ *  @brief     decodes the error and returns the matching error number with the msg  
+ *  @param     void
+ *  @return    int the error code
+ ****************************************************************************************/
+int  getErrMode(void);
+
+
+/* ---------- Core API ---------- */
 
 /*
  ****************************************************************************************
@@ -61,6 +89,10 @@ void handleError(int);
  ****************************************************************************************/
 int arithmeticError(int left, int right, char operation);
 
-#endif
+#endif /* ERROR_HANDLER_H */
 
 // EOF   
+
+
+
+

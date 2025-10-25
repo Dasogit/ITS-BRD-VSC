@@ -179,6 +179,21 @@ project:
       files:
         - file: Src/main.c
 
+    - group: Program/User/Inc
+      files:
+        - file: Inc/lcd.h
+        - file: Inc/calc.h
+        - file: Inc/stack.h
+        - file: Inc/errorHandler.h
+        - file: Inc/outputHandler.h
 
+    - group: Program/User/Src
+      files:
+        - file: Src/main.c
+        - file: Src/calc.c
+        - file: Src/stack.c
+        - file: Src/errorHandler.c
+        - file: Src/outputHandler.c
   components:
     - component: ARM::CMSIS:CORE
+    

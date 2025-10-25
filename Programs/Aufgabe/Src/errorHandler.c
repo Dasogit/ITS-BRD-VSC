@@ -9,6 +9,7 @@
 #include "outputHandler.h"
 #include <stdio.h>
 #include "errno.h"
+#include <limits.h>
 
 
 
@@ -20,9 +21,10 @@
  ****************************************************************************************/
 void handleError(int errorNumber){
   switch(errorNumber){
-    case userStackOverFlow :
-    setErrMode();
-    printf((char*) STACKOVERMSG);
+    case userStackOverFlow:
+            errno = EOVERFLOW;
+            displayError(STACKOVERMSG);
+            break;
   }
 
 
