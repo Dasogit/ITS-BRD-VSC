@@ -1,5 +1,5 @@
 /**
-  * @file errorHandler.h
+  * @file stack.h
   * @author M. Sohrab Danandeh, HAW Hamburg 
   * @date Oct 2025
   * @brief functions to R/W/O to/from the stack memory

@@ -8,6 +8,11 @@
 #ifndef errorHandler_h
 #define errorHandler_h
 
+#include "errno.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+
 //#include "display.h"
 
 //initialise error
@@ -39,8 +44,22 @@
 #define ARTUNDERMSG "ARITHMETIC UNDERFLOW"
 #define ARTOVERMSG "ARITHMETIC OVERFLOW"
 
-
+/*
+ ****************************************************************************************
+ *  @brief     decodes the error and returns the matching error number with the msg  
+ *  @param     error number
+ *  @return    void
+ ****************************************************************************************/
 void handleError(int);
+
+
+/*
+ ****************************************************************************************
+ *  @brief     assesses if theres an arithmetic error
+ *  @param     left number/operand , right number/operand, operation
+ *  @return    int code of error 
+ ****************************************************************************************/
+int arithmeticError(int left, int right, char operation);
 
 #endif
 

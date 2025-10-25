@@ -1,5 +1,5 @@
 /**
-  * @file errorHandler.h
+  * @file calc.h
   * @author M. Sohrab Danandeh, HAW Hamburg 
   * @date Oct 2025
   * @brief math operations 

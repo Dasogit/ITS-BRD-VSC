@@ -1,5 +1,5 @@
 /**
-  * @file errorHandler.h
+  * @file outputHandler.h
   * @author M. Sohrab Danandeh, HAW Hamburg 
   * @date Oct 2025
   * @brief Handles the output of the program 
@@ -7,7 +7,15 @@
 
 #ifndef outputHandler_h
 #define outputHandler_h
-
+#include <stdio.h>
+#include <error.h>
+#include "stdbool.h"
+//#include "scanner.h"
+#include "errorHandler.h"
+//#include "display.h"
+#include <limits.h>
+#include <errno.h>
+#include "stack.h"
 
 /*
  ****************************************************************************************
