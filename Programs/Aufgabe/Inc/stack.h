@@ -7,6 +7,11 @@
 
 #ifndef stack_h
 #define stack_h
+#define STACKSIZE 10
+#include <errorHandler.h>
+#include "errno.h"
+#include <limits.h>
+
 
 /*
  ****************************************************************************************
@@ -41,7 +46,7 @@ int pop(int*);
  *  @param      pointer to the integer of 4 byte value 
  *  @return     int
  ****************************************************************************************/
-int getTop(int*);
+int getLast(int*);
 
 
 /*
@@ -50,7 +55,7 @@ int getTop(int*);
  *  @param      number to be set to
  *  @return     void
  ****************************************************************************************/
-void setTop(int);
+void setLast(int);
 
 
 /*
@@ -66,7 +71,7 @@ int getNumber(int, int*);
  ****************************************************************************************
  *  @brief      gets the stack size
  *  @param      none
- *  @return     _Bool
+ *  @return     int 
  ****************************************************************************************/
 int getStackSize();
 
@@ -74,9 +79,9 @@ int getStackSize();
 /*
  ****************************************************************************************
  *  @brief      clears the stack
- *  @return     void
+ *  @return     int 
  ****************************************************************************************/
-void clearStack();
+int clearStack();
 
 
 #endif 

@@ -7,15 +7,8 @@
 
 #ifndef outputHandler_h
 #define outputHandler_h
-#include <stdio.h>
 #include <error.h>
-#include "stdbool.h"
-//#include "scanner.h"
-#include "errorHandler.h"
-//#include "display.h"
-#include <limits.h>
-#include <errno.h>
-#include "stack.h"
+
 
 /*
  ****************************************************************************************

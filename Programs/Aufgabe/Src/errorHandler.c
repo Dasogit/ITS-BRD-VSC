@@ -10,10 +10,6 @@
 #include <stdio.h>
 #include <limits.h>
 
-// TODO: Error handling using errno.h and my own errorHandler mapping and how do
-// i implement the mapping of both and merge them and
-//  use them together without having split functions
-
 /*
  ****************************************************************************************
  *  @brief     decodes the error and returns the matching error number with the
