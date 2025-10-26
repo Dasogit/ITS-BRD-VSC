@@ -1,10 +1,9 @@
 /**
-  * @file calc.h
-  * @author M. Sohrab Danandeh, HAW Hamburg 
-  * @date Oct 2025
-  * @brief math operations 
-*/
-
+ * @file calc.h
+ * @author M. Sohrab Danandeh, HAW Hamburg
+ * @date Oct 2025
+ * @brief math operations
+ */
 
 #ifndef calc_h
 #define calc_h
@@ -12,7 +11,7 @@
 /*
  ****************************************************************************************
  *  @brief      adds the left and right number
- *  @param      
+ *  @param
  *  @return    int
  ****************************************************************************************/
 int add();
@@ -20,7 +19,7 @@ int add();
 /*
  ****************************************************************************************
  *  @brief      subtracts the right number from the left
- *  @param      
+ *  @param
  *  @return    int
  ****************************************************************************************/
 int sub();
@@ -28,7 +27,7 @@ int sub();
 /*
  ****************************************************************************************
  *  @brief      multiplication of the left and right number
- *  @param      
+ *  @param
  *  @return     int
  ****************************************************************************************/
 int mul();
@@ -36,7 +35,7 @@ int mul();
 /*
  ****************************************************************************************
  *  @brief      left number divided by the right number
- *  @param      
+ *  @param
  *  @return     int
  ****************************************************************************************/
 int div();
@@ -47,10 +46,7 @@ int div();
  *  @param      the token of the calculator
  *  @return     int
  ****************************************************************************************/
-//int eva(T_token);
-
-
-
+// int eva(T_token);
 
 #endif
 // EOF
