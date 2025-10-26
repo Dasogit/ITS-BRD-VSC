@@ -63,10 +63,10 @@ int pop(int* pToken){
 /*
  ****************************************************************************************
  *  @brief      reads the last value/entry that was pushed to the stack (LiFo)
- *  @param      pointer to the integer of 4 byte value 
+ *  @param      
  *  @return     int
  ****************************************************************************************/
-int getLast(int* pToken){
+int getLast(){
     return last; //aka top of the stack
 }
 
@@ -85,7 +85,7 @@ void setLast(int token){
 /*
  ****************************************************************************************
  *  @brief      gets the number where the pointer to integer of 4 byte value is pointing to
- *  @param      number to get , pointer to the integer of 4 byte value (referencing the number)
+ *  @param      number to get , pointer to the integer of 4 byte value (de/referencing the number)
  *  @return     int
  ****************************************************************************************/
 int getNumber(int number, int* pNumber){

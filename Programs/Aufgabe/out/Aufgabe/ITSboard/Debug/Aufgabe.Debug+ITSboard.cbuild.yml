@@ -321,6 +321,10 @@ build:
           category: sourceC
         - file: ../../../../../../ITS_BRD_LIB/Src/stdinout_USART.c
           category: sourceC
+        - file: ../../../../../../ITS_BRD_LIB/Src/display.c
+          category: sourceC
+        - file: ../../../../../../ITS_BRD_LIB/Src/scanner.c
+          category: sourceC
     - group: Program/User/Inc
       files:
         - file: ../../../../Inc/calc.h
@@ -330,6 +334,8 @@ build:
         - file: ../../../../Inc/errorHandler.h
           category: header
         - file: ../../../../Inc/outputHandler.h
+          category: header
+        - file: ../../../../Inc/main.h
           category: header
     - group: Program/User/Src
       files:
@@ -343,6 +349,42 @@ build:
           category: sourceC
         - file: ../../../../Src/outputHandler.c
           category: sourceC
+    - group: ITS_BRD_LIB/Inc
+      files:
+        - file: ../../../../../../ITS_BRD_LIB/Inc/delay.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/display.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/Driver_Common.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/Driver_USART.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/error.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/init.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/ITS_BRD_conf.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/keypad.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/lcd.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/RTE_Device.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/scanner.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/stm32f4xx_hal_conf.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/stm32f4xx_it.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/terminal.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/timer.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/token.h
+          category: header
+        - file: ../../../../../../ITS_BRD_LIB/Inc/USART_STM32F4xx.h
+          category: header
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
       category: header

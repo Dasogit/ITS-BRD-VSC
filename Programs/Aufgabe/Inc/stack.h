@@ -9,7 +9,6 @@
 #define stack_h
 #define STACKSIZE 10
 #include <errorHandler.h>
-#include "errno.h"
 #include <limits.h>
 
 
@@ -43,10 +42,10 @@ int pop(int*);
 /*
  ****************************************************************************************
  *  @brief      reads the last value/entry that was pushed to the stack (LiFo)
- *  @param      pointer to the integer of 4 byte value 
+ *  @param      
  *  @return     int
  ****************************************************************************************/
-int getLast(int*);
+int getLast();
 
 
 /*

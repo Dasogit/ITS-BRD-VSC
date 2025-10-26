@@ -43,13 +43,13 @@ target_include_directories(${CONTEXT} PUBLIC
     "${SOLUTION_ROOT}/../../stm32cubef4/Drivers/BSP/STM32F4xx_Nucleo_144"
     "${SOLUTION_ROOT}/../../stm32cubef4/Utilities/Fonts"
     "${SOLUTION_ROOT}/../../DisplayWaveshare/Inc"
-    "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Inc"
     "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Utilities/AddFonts"
   >
   "${SOLUTION_ROOT}/RTE/_Debug_ITSboard"
   "${CMSIS_PACK_ROOT}/ARM/CMSIS/6.1.0/CMSIS/Core/Include"
   "${CMSIS_PACK_ROOT}/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
   "${SOLUTION_ROOT}/Inc"
+  "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Inc"
 )
 
 # Defines
@@ -126,6 +126,7 @@ target_link_libraries(${CONTEXT} PUBLIC
   Group_ITS_BRD_LIB
   Group_Program_User_Inc
   Group_Program_User_Src
+  Group_ITS_BRD_LIB_Inc
   ARM_CMSIS_CORE_6_1_0
 )
 

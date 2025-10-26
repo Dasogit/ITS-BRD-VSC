@@ -170,6 +170,8 @@ add_library(Group_ITS_BRD_LIB OBJECT
   "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/timer.c"
   "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/USART_STM32F4xx.c"
   "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/stdinout_USART.c"
+  "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/display.c"
+  "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/scanner.c"
 )
 target_include_directories(Group_ITS_BRD_LIB PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>
@@ -225,4 +227,18 @@ target_compile_options(Group_Program_User_Src PUBLIC
 )
 target_link_libraries(Group_Program_User_Src PUBLIC
   Group_Program_User_Src_ABSTRACTIONS
+)
+
+# group ITS_BRD_LIB/Inc
+add_library(Group_ITS_BRD_LIB_Inc INTERFACE)
+target_include_directories(Group_ITS_BRD_LIB_Inc INTERFACE
+  $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>
+  "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Inc"
+)
+target_compile_definitions(Group_ITS_BRD_LIB_Inc INTERFACE
+  $<TARGET_PROPERTY:${CONTEXT},INTERFACE_COMPILE_DEFINITIONS>
+)
+add_library(Group_ITS_BRD_LIB_Inc_ABSTRACTIONS INTERFACE)
+target_link_libraries(Group_ITS_BRD_LIB_Inc_ABSTRACTIONS INTERFACE
+  ${CONTEXT}_ABSTRACTIONS
 )

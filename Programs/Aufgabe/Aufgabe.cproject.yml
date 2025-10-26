@@ -10,9 +10,10 @@ project:
   setups:
     - setup: Options for ITSboard
       processor:
-        fpu: sp  # Setzt den FPU-Typ auf "Single Precision"
-      add-path:  # Pfade zu Header-Dateien und weiteren Ressourcen
-        - Inc
+        fpu: sp # Setzt den FPU-Typ auf "Single Precision"
+      add-path:
+        # Pfade zu Header-Dateien und weiteren Ressourcen
+        - Inc                                    # <-- relative to Programs/Aufgabe/
         - ../../stm32cubef4/Drivers/CMSIS/Device/ST/STM32F4xx/Include
         - ../../stm32cubef4/Drivers/CMSIS/Include
         - ../../stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Inc
@@ -73,13 +74,14 @@ project:
             - --info summarysizes
 
   linker:
-    - script: Aufgabe_ITSboard.sct
+    - script: Aufgabe_ITSboard.sct                # <-- relative path fixed
 
   groups:
     # Dokumentationsgruppe
     - group: Doc
       files:
         - file: README.md
+        # (PDF removed to avoid build error; add it back with a correct relative path if you want it visible)
 
     # BSP-Treiber
     - group: Drivers/BSP/STM32F4xx_Nucleo_144
@@ -130,6 +132,8 @@ project:
         - file: ../../ITS_BRD_LIB/Utilities/AddFonts/CourierNew48.c
         - file: ../../ITS_BRD_LIB/Utilities/AddFonts/CourierNewBold40.c
         - file: ../../ITS_BRD_LIB/Utilities/AddFonts/CourierNewBold60.c
+        # removed: CourierNewBold80.c (not found)
+        # removed: CourierNewBold90.c (not found)
         - file: ../../ITS_BRD_LIB/Utilities/AddFonts/FiraMono40.c
         - file: ../../ITS_BRD_LIB/Utilities/AddFonts/FiraMono60.c
         - file: ../../ITS_BRD_LIB/Utilities/AddFonts/FiraMono80.c
@@ -166,6 +170,8 @@ project:
         - file: ../../ITS_BRD_LIB/Src/timer.c
         - file: ../../ITS_BRD_LIB/Src/USART_STM32F4xx.c
         - file: ../../ITS_BRD_LIB/Src/stdinout_USART.c
+        - file: ../../ITS_BRD_LIB/Src/display.c
+        - file: ../../ITS_BRD_LIB/Src/scanner.c
 
     # User headers
     - group: Program/User/Inc
@@ -174,6 +180,7 @@ project:
         - file: Inc/stack.h
         - file: Inc/errorHandler.h
         - file: Inc/outputHandler.h
+        - file: Inc/main.h
 
     # User sources
     - group: Program/User/Src
@@ -183,6 +190,26 @@ project:
         - file: Src/stack.c
         - file: Src/errorHandler.c
         - file: Src/outputHandler.c
+        
+    - group: ITS_BRD_LIB/Inc
+      files:
+        - file: ../../ITS_BRD_LIB/Inc/delay.h
+        - file: ../../ITS_BRD_LIB/Inc/display.h
+        - file: ../../ITS_BRD_LIB/Inc/Driver_Common.h
+        - file: ../../ITS_BRD_LIB/Inc/Driver_USART.h
+        - file: ../../ITS_BRD_LIB/Inc/error.h
+        - file: ../../ITS_BRD_LIB/Inc/init.h
+        - file: ../../ITS_BRD_LIB/Inc/ITS_BRD_conf.h
+        - file: ../../ITS_BRD_LIB/Inc/keypad.h
+        - file: ../../ITS_BRD_LIB/Inc/lcd.h
+        - file: ../../ITS_BRD_LIB/Inc/RTE_Device.h
+        - file: ../../ITS_BRD_LIB/Inc/scanner.h
+        - file: ../../ITS_BRD_LIB/Inc/stm32f4xx_hal_conf.h
+        - file: ../../ITS_BRD_LIB/Inc/stm32f4xx_it.h
+        - file: ../../ITS_BRD_LIB/Inc/terminal.h
+        - file: ../../ITS_BRD_LIB/Inc/timer.h
+        - file: ../../ITS_BRD_LIB/Inc/token.h
+        - file: ../../ITS_BRD_LIB/Inc/USART_STM32F4xx.h
 
   components:
     - component: ARM::CMSIS:CORE
