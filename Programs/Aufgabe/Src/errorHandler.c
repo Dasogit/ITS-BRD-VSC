@@ -1,7 +1,7 @@
 /**
  * @file errorHandler.c
- * @author M. Sohrab Danandeh, HAW Hamburg
- * @date Oct 2025
+ * @author M. Sohrab Danandeh, Amirhossein Naghashi HAW Hamburg
+ * @date   Oct 2025
  * @brief This File is for all Errors for a RPN Calculator
  */
 
@@ -13,8 +13,7 @@
 
 /*
  ****************************************************************************************
- *  @brief     decodes the error and returns the matching error number with the
- * msg
+ *  @brief     decodes the error and returns the matching error number with the msg
  *  @param     error number
  *  @return    void
  ****************************************************************************************/
@@ -89,12 +88,10 @@ int arithmeticError(int left, int right, char operation) {
         }
       }
       // right < 0
-      if (left > 0 &&
-          right < INT_MIN / left) { // a = intMax & b = intMin overflow
+      if (left > 0 && right < INT_MIN / left) { // a = intMax & b = intMin overflow
         return errno = userArithemticUnderflow;
       }
-      if (left < 0 && right < 0 &&
-          right < INT_MAX / left) { // a = intMin (smallest negative) & b =
+      if (left < 0 && right < 0 && right < INT_MAX / left) { // a = intMin (smallest negative) & b =
                                     // intMin(smallest negative) & b is even
                                     // smaller than memoryrange underflow
         return errno = userArithmeticOverflow;
@@ -103,7 +100,7 @@ int arithmeticError(int left, int right, char operation) {
       if (left == 0) { // denominator is 0
         return errno = userDivideByZero;
       }
-      if (right == INT_MIN && right == -1) { // a = minInt / -1 overflow
+      if (left == INT_MIN && right == -1) { // a = minInt / -1 overflow
         return errno = userArithmeticOverflow;
       }
     default:

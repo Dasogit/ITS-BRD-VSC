@@ -1,7 +1,7 @@
 /**
   * @file errorHandler.h
-  * @author M. Sohrab Danandeh, HAW Hamburg 
-  * @date Oct 2025
+  * @author M. Sohrab Danandeh, Amirhossein Naghashi HAW Hamburg 
+  * @date   Oct 2025
   * @brief This File is for all Errors for a RPN Calculator
 */
 
@@ -51,7 +51,7 @@ int push(int token){
  *  @return     int
  ****************************************************************************************/
 int pop(int* pToken){
-    if(last < 0){
+    if(last < 0){ //nothing was saved on stack Aka stack is empty
         errno = userStackUnderFlow;
         return -1;
     }

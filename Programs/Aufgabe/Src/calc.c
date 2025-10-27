@@ -1,6 +1,6 @@
 /**
  * @file errorHandler.h
- * @author M. Sohrab Danandeh, HAW Hamburg
+ * @author M. Sohrab Danandeh, Amirhossein Naghashi HAW Hamburg
  * @date Oct 2025
  * @brief This File is for all Errors for a RPN Calculator
  */

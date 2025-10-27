@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
   * @file    main.c
-  * @author  Franz Korf
+  * @author  M. Sohrab Danandeh, Amirhossein Naghashi HAW Hamburg
   * @brief   Kleines Testprogramm fuer neu erstelle Fonts.
   ******************************************************************************
   */
