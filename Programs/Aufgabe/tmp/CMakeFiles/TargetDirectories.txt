@@ -1,8 +1,8 @@
-C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/database.dir
-C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard.dir
-C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-build.dir
-C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-configure.dir
-C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-executes.dir
-C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-database.dir
-C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/edit_cache.dir
-C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/rebuild_cache.dir
+S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/database.dir
+S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard.dir
+S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-build.dir
+S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-configure.dir
+S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-executes.dir
+S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-database.dir
+S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/edit_cache.dir
+S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/rebuild_cache.dir

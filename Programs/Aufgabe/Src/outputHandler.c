@@ -1,8 +1,8 @@
 /**
-  * @file errorHandler.h
+  * @file outputhandler.c
   * @author M. Sohrab Danandeh, HAW Hamburg 
   * @date Oct 2025
-  * @brief This File is for all Errors for a RPN Calculator
+  * @brief this Modul handles the display on the screen 
 */
 
 #include "outputHandler.h"

@@ -1,8 +1,8 @@
 /**
- * @file errorHandler.h
+ * @file calc.h
  * @author M. Sohrab Danandeh, Amirhossein Naghashi HAW Hamburg
  * @date Oct 2025
- * @brief This File is for all Errors for a RPN Calculator
+ * @brief This File is the calculater unit for a RPN Calculator
  */
 
 #include "calc.h"

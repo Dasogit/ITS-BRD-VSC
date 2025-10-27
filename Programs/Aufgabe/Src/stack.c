@@ -1,8 +1,8 @@
 /**
-  * @file errorHandler.h
+  * @file stack.c
   * @author M. Sohrab Danandeh, Amirhossein Naghashi HAW Hamburg 
   * @date   Oct 2025
-  * @brief This File is for all Errors for a RPN Calculator
+  * @brief this file is the implementation of a stack for the Calculator
 */
 
 

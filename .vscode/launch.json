@@ -5,8 +5,8 @@
             "name": "STLink@pyOCD (launch)",
             "type": "gdbtarget",
             "request": "launch",
-            "cwd": "${workspaceFolder}/Programs\\TestNewFont",
-            "program": "out\\TestNewFont\\ITSboard\\Debug\\TestNewFont.axf",
+            "cwd": "${workspaceFolder}/Programs\\Aufgabe",
+            "program": "out\\Aufgabe\\ITSboard\\Debug\\Aufgabe.axf",
             "gdb": "arm-none-eabi-gdb",
             "preLaunchTask": "CMSIS Load",
             "initCommands": [
@@ -43,8 +43,8 @@
             "name": "STLink@pyOCD (attach)",
             "type": "gdbtarget",
             "request": "attach",
-            "cwd": "${workspaceFolder}/Programs\\TestNewFont",
-            "program": "out\\TestNewFont\\ITSboard\\Debug\\TestNewFont.axf",
+            "cwd": "${workspaceFolder}/Programs\\Aufgabe",
+            "program": "out\\Aufgabe\\ITSboard\\Debug\\Aufgabe.axf",
             "gdb": "arm-none-eabi-gdb",
             "initCommands": [
                 ""
