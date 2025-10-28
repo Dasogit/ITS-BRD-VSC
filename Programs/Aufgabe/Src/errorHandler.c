@@ -15,35 +15,45 @@
  ****************************************************************************************
  *  @brief     decodes the error and returns the matching error number with the msg
  *  @param     error number
- *  @return    void
+ *  @return    returns error number
  ****************************************************************************************/
-void handleError(int errorNumber) {
+int handleError(int errorNumber) {
   switch (errorNumber) {
   case userStackOverFlow:
     errno = userStackOverFlow;
     setErrMode();
     printf((char *)STACKOVERMSG);
+    return errno;
     break;
   case userStackUnderFlow:
     errno = userStackUnderFlow;
     setErrMode();
     printf((char *)STACKUNDERMSG);
+    return errno;
     break;
   case userArithmeticOverflow:
     errno = userArithmeticOverflow;
     setErrMode();
     printf((char *)ARTOVERMSG);
+    return errno;
     break;
   case userArithemticUnderflow:
     errno = userArithemticUnderflow;
     setErrMode();
     printf((char *)ARTUNDERMSG);
+    return errno;
     break;
   case userDivideByZero:
     errno = userDivideByZero;
     setErrMode();
     printf((char *)DOMMSG);
+    return errno;
     break;
+  default:
+    errno = SUCCESS;
+    setErrMode();
+    printf((char*) userInvalidInput);
+    return errno;
   }
 }
 
@@ -62,7 +72,6 @@ int arithmeticError(int left, int right, char operation) {
       if (right < 0 && left < INT_MIN - right) { // b = intMin & a = intMin
         return errno = userArithemticUnderflow;
       }
-      return 0;
     case '-':
       if (right < 0 && left > INT_MAX + right) {
         return errno = userArithmeticOverflow; // a - (–|b|)  ?  +Overflow
@@ -70,10 +79,9 @@ int arithmeticError(int left, int right, char operation) {
       if (right > 0 && left < INT_MIN + right) {
         return errno = userArithemticUnderflow; // a - (+|b|)  ?  -Underflow
       }
-      return 0;
     case '*':
       if (left == 0 || right == 0) { // a or b is 0
-        return 0;
+        return errno = SUCCESS;
       }
       if (right > 0) {                // b > 0
         if (left > INT_MAX / right) { // a = intMax b = intMax Overflow (+)
@@ -104,6 +112,6 @@ int arithmeticError(int left, int right, char operation) {
         return errno = userArithmeticOverflow;
       }
     default:
-      return -1;
+      return errno = SUCCESS;
     }
 }

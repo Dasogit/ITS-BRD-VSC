@@ -17,6 +17,10 @@
 
 
 /* ---------- App error codes (negative on purpose) ---------- */
+//exit success 
+#define SUCCESS                                   0
+//Not successful
+#define NOTSUCCESS                               -1
 //initialise error
 #define INIT                                     -2   
 //stackoverflow error from the user    
@@ -56,9 +60,9 @@
  ****************************************************************************************
  *  @brief     decodes the error and returns the matching error number with the msg  
  *  @param     error number
- *  @return    void
+ *  @return    error number and meanining 
  ****************************************************************************************/
-void handleError(int);
+int handleError(int);
 
 
 /*

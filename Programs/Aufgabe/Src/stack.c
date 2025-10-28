@@ -7,6 +7,10 @@
 
 
 #include "stack.h"
+#include "errorHandler.h"
+#include <errno.h>
+#include "evaluateToken.h"
+
 
 int stack[STACKSIZE];
 int last = -1;
@@ -30,17 +34,16 @@ _Bool inRange(int token){
  *  @param      number being pushed to the memory
  *  @return     int
  ****************************************************************************************/
-int push(int token){
-    if(!inRange(token)){
-        errno = userStackOverFlow;
-        return -1;
+int push(int theNumber){
+    theNumber = getTokenNumber();
+    if(!inRange(theNumber)){
+        return errno = userStackOverFlow;
     }
     if(last + 1 >= STACKSIZE){
-        errno = userStackUnderFlow;
-        return -1;
+        return errno = userStackUnderFlow;
     }
-    stack[++last] = token;
-    return 0; //als success machen
+    stack[++last] = theNumber;
+    return errno = SUCCESS;
 }
 
 
@@ -52,11 +55,10 @@ int push(int token){
  ****************************************************************************************/
 int pop(int* pToken){
     if(last < 0){ //nothing was saved on stack Aka stack is empty
-        errno = userStackUnderFlow;
-        return -1;
+         return errno = userStackUnderFlow;
     }
     *pToken = stack[last--]; // at the address of pToken, save the last entry of stack 
-    return 0; 
+    return errno = SUCCESS; 
 }
 
 
@@ -90,7 +92,7 @@ void setLast(int token){
  ****************************************************************************************/
 int getNumber(int number, int* pNumber){
     * pNumber = stack[number];
-    return 0;
+    return errno = SUCCESS;
 }
 
 
@@ -112,5 +114,5 @@ int getStackSize(){
  ****************************************************************************************/
 int clearStack(){
     last = -1;
-    return 0;
+    return errno = SUCCESS;
 }

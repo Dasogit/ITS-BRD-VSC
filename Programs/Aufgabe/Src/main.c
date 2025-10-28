@@ -7,6 +7,9 @@
   */
 /* Includes ------------------------------------------------------------------*/
 
+#include "calc.h"
+#include "display.h"
+#include "errorHandler.h"
 #include "stm32f4xx_hal.h"
 #include "init.h"
 #include "LCD_GUI.h"
@@ -15,21 +18,33 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
+#include "token.h"
+#include "stack.h"
+#include "token.h"
+#include "scanner.h"
+#include "evaluateToken.h"
 
-int main(void) {
-	initITSboard();    // Initialisierung des ITS Boards
-	
+/**
+  * @brief  Main program
+  * @param  None
+  * @retval 0
+  */
+int main(void){
+	initITSboard();                 // Initialisierung des ITS Boards
 	GUI_init(DEFAULT_BRIGHTNESS);   // Initialisierung des LCD Boards mit Touch
-    // Begruessungstext	
-	lcdPrintS("Calculator is in progress!");
-	
-
-
-	
-	// Test in Endlosschleife
-	while(1) {
-		HAL_Delay(10000);
+	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
+	if (!checkVersionFlashFonts()) {
+	    // Ueberpruefe Version der Fonts im Flash passt nicht zur Software Version
+		Error_Handler();
 	}
+	
+	//makeKeyPad();										// KypadGui aufrufen
+	initDisplay();									// Initialisierung des Displays
+	int result = 0;
+	while (1){
+		T_token token = nextToken();
+		result = tokenHandler(token);
+		if (result != SUCCESS) handleError(errno);
+	}
+	return SUCCESS;
 }
-
-// EOF

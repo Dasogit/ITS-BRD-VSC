@@ -7,9 +7,10 @@
 
 #include "outputHandler.h"
 #include "display.h"
+#include "errorHandler.h"
 #include "stack.h"
 #include <errno.h>
-
+// KEINE AHNUNG OB ICH ÜBERALL DIE ERRORS ÜBERPRÜFEN MUSS 
 
 /*
  ****************************************************************************************
@@ -36,7 +37,7 @@ int intToString(int number, char* pStrArray){
     pStrArray[j] = pStrArray[k];
     pStrArray[k] = tmp;
   }
-  return 0;
+  return errno = SUCCESS;
 }
 
 
@@ -53,7 +54,7 @@ int printLast (){
   getNumber(getLast(), &i); //take the last number and save its value at the address of i
   intToString(i, numbers); //take the number and turn the array of them to a string basically read from the array
   printStdout((char *) &numbers);
-  return 0;
+  return errno;
 }
 
 
@@ -74,7 +75,7 @@ int printAll(){
     //printStdout((char*) &numbers);
     printStdout(numbers);
   }
-  return 0;
+  return errno;
 }
 
 
@@ -86,10 +87,9 @@ int printAll(){
  ****************************************************************************************/
 int clearAll(){
   setLast(-1);
-  errno = 0;
   clearStdout();
   setNormalMode();
-  return 0;
+  return errno = SUCCESS;
 }
 
 /*
@@ -102,7 +102,7 @@ int doubleLast(){
   int i = 0;
   getNumber(getLast(), &i);
   push(i);
-  return 0;
+  return errno;
 }
 
 /*
@@ -111,13 +111,13 @@ int doubleLast(){
  *  @param      
  *  @return    int
  ****************************************************************************************/
-int swapLast(){
+int swapLast(){ // TODO: DOESNT WORK THE WAY INTENDED PLEASE FIX
  int slot1 = 0; //error ???? pushing nothing and error code 
  int slot2 = 0;
  pop(&slot2);
  pop(&slot1);
  push(slot2);
- push(slot1); 
- return 0;
+ push(slot1);
+ return errno;
 }
 

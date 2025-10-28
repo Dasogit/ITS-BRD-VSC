@@ -1,19 +1,19 @@
 # ninja log v6
 26	101	7833424215424245	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-mkdir	d8a2205511b482a1
-202	250	7833424216908892	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-patch	e5f48d80ef7019cd
 26	101	7833424215424245	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-mkdir	d8a2205511b482a1
-202	250	7833424216908892	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-patch	e5f48d80ef7019cd
+202	250	7833424216908892	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-patch	e5f48d80ef7019cd
 101	151	7833424215930876	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-download	ac8482c0dcddd5d2
 152	202	7833424216432276	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-update	96af8acb7fe09463
+202	250	7833424216908892	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-patch	e5f48d80ef7019cd
 101	151	7833424215930876	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-download	ac8482c0dcddd5d2
 152	202	7833424216432276	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-update	96af8acb7fe09463
-60	418	7833459934222082	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database	6a351b632d6ac182
 250	6206	7833424276421243	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-configure	b8aff52c2d16c36e
+29	166	7833460176748115	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database	6a351b632d6ac182
 250	6206	7833424276421243	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-configure	b8aff52c2d16c36e
-60	418	7833459934222082	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database	6a351b632d6ac182
+29	166	7833460176748115	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database	6a351b632d6ac182
 30	350	7833457702518554	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-build	bdcf3e31cc4bbbc4
-30	350	7833457702518554	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/out/Aufgabe/ITSboard/Debug/Aufgabe.axf	bdcf3e31cc4bbbc4
 546	602	7833457708186422	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-test	2c3f96663c060e3b
+30	350	7833457702518554	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/out/Aufgabe/ITSboard/Debug/Aufgabe.axf	bdcf3e31cc4bbbc4
 30	350	7833457702518554	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-build	bdcf3e31cc4bbbc4
 2201	2247	7833433736820230	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-executes	ff06adac893189f9
 2201	2247	7833433736820230	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-executes	ff06adac893189f9
@@ -24,5 +24,5 @@
 603	684	7833457708993512	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-done	cfdc2f67e3bf780
 603	684	7833457708993512	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-complete	cfdc2f67e3bf780
 603	684	7833457708993512	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-done	cfdc2f67e3bf780
-29	166	7833460176748115	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database	6a351b632d6ac182
-29	166	7833460176748115	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database	6a351b632d6ac182
+36	264	7833542560142470	Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database	6a351b632d6ac182
+36	264	7833542560142470	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database	6a351b632d6ac182

@@ -6,9 +6,10 @@
  */
 
 #include "calc.h"
+#include "errorHandler.h"
 #include "token.h"
 #include <stack.h>
-
+#include "evaluateToken.h"
 
 /*
  ****************************************************************************************
@@ -19,16 +20,16 @@
 int add() {
   int right = 0;
   if (pop(&right) != 0)
-    return -1;
+    return errno;
   int left = 0;
   if (pop(&left) != 0)
-    return -1;
+    return errno;
 
   if (arithmeticError(left, right, PLUS) != 0)
-    return -1;
+    return errno;
 
   push(left + right);
-  return 0;
+  return errno;
 }
 
 /*
@@ -40,16 +41,15 @@ int add() {
 int sub() {
   int right = 0;
   if (pop(&right) != 0)
-    return -1;
+    return errno;
   int left = 0;
   if (pop(&left) != 0)
-    return -1;
+    return errno;
 
   if (arithmeticError(left, right, MINUS) != 0)
-    return -1;
-
+    return errno;
   push(left - right);
-  return 0;
+  return errno;
 }
 
 /*
@@ -61,16 +61,16 @@ int sub() {
 int mul() {
   int right = 0;
   if (pop(&right) != 0)
-    return -1;
+    return errno;
   int left = 0;
   if (pop(&left) != 0)
-    return -1;
+    return errno;
 
   if (arithmeticError(left, right, MULT) != 0)
-    return -1;
+    return errno;
 
   push(left * right);
-  return 0;
+  return errno;
 }
 
 /*
@@ -82,14 +82,14 @@ int mul() {
 int divi() {
   int right = 0;
   if (pop(&right) != 0)
-    return -1;
+    return errno;
   int left = 0;
   if (pop(&left) != 0)
-    return -1;
+    return errno;
 
   if (arithmeticError(left, right, DIV) != 0)
-    return -1;
+    return errno;
 
   push(left / right);
-  return 0;
+  return errno;
 }
