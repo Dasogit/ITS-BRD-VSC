@@ -14,54 +14,54 @@
  ****************************************************************************************
  *  @brief     integer to string
  *  @param     the number, pointer to character of 8 bit (kinda like a string)
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void intToString(int, char*);
+int intToString(int, char*);
 
 
 /*
  ****************************************************************************************
  *  @brief     prints the last value/entry on the stack
  *  @param     
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void printLast ();
+int printLast ();
 
 
 /*
  ****************************************************************************************
  *  @brief     print all the value/entries that is on the stack
  *  @param      
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void printAll();
+int printAll();
 
 
 /*
  ****************************************************************************************
  *  @brief     clears the stack 
  *  @param      
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void clearAll();
+int clearAll();
 
 
 /*
  ****************************************************************************************
  *  @brief     duplicate the last value/entry
  *  @param      
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void doubleLast();
+int doubleLast();
 
 
 /*
  ****************************************************************************************
  *  @brief     swaps the last two value/entries
  *  @param      
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void swapLast();
+int swapLast();
 
 
 

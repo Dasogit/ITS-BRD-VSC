@@ -20,7 +20,7 @@ int last = -1;
  *  @return     _Bool  true = in range | false = not in range
  ****************************************************************************************/
 _Bool inRange(int token){
-    return token <= INT_MAX && token >= INT_MIN;
+    return token <= INT_MAX && token >= INT_MIN; //?
 }
 
 
@@ -40,7 +40,7 @@ int push(int token){
         return -1;
     }
     stack[++last] = token;
-    return 0;
+    return 0; //als success machen
 }
 
 

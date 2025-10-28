@@ -1,8 +1,8 @@
 /**
-  * @file outputhandler.c
-  * @author M. Sohrab Danandeh, HAW Hamburg 
-  * @date Oct 2025
-  * @brief this Modul handles the display on the screen 
+  * @file   errorHandler.h
+  * @author M. Sohrab Danandeh, Amirhossein Naghashi HAW Hamburg
+  * @date  Oct 2025
+  * @brief This File is for all Errors for a RPN Calculator
 */
 
 #include "outputHandler.h"
@@ -15,9 +15,9 @@
  ****************************************************************************************
  *  @brief     integer to string
  *  @param     the number, pointer to character of 8 bit (kinda like a string)
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void intToString(int number, char* pStrArray){
+int intToString(int number, char* pStrArray){
   int i = 0;
   int sign = number;
   if(number < 0){
@@ -36,6 +36,7 @@ void intToString(int number, char* pStrArray){
     pStrArray[j] = pStrArray[k];
     pStrArray[k] = tmp;
   }
+  return 0;
 }
 
 
@@ -43,15 +44,16 @@ void intToString(int number, char* pStrArray){
  ****************************************************************************************
  *  @brief     prints the last value/entry on the stack
  *  @param     
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void printLast (){
+int printLast (){
   clearStdout();
   char numbers[15]; //length of the terminal of the display
   int i = 0;
   getNumber(getLast(), &i); //take the last number and save its value at the address of i
   intToString(i, numbers); //take the number and turn the array of them to a string basically read from the array
   printStdout((char *) &numbers);
+  return 0;
 }
 
 
@@ -59,19 +61,20 @@ void printLast (){
  ****************************************************************************************
  *  @brief     print all the value/entries that is on the stack
  *  @param      
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void printAll(){
+int printAll(){
   clearStdout();
   int printAllandLast = getLast();                    //cach for the stackpointer     
     char numbers[15];
     int i = 0;
-  for(; printAllandLast >= 0; printAllandLast--){     //for-loop for printing every value/entry of the stack
+  for( ;printAllandLast >= 0; printAllandLast--){     //for-loop for printing every value/entry of the stack
     getNumber(printAllandLast, &i);
     intToString(i, numbers);
     //printStdout((char*) &numbers);
     printStdout(numbers);
   }
+  return 0;
 }
 
 
@@ -79,39 +82,42 @@ void printAll(){
  ****************************************************************************************
  *  @brief     clears the stack 
  *  @param      
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void clearAll(){
+int clearAll(){
   setLast(-1);
   errno = 0;
   clearStdout();
   setNormalMode();
+  return 0;
 }
 
 /*
  ****************************************************************************************
  *  @brief     duplicate the last value/entry
  *  @param      
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void doubleLast(){
+int doubleLast(){
   int i = 0;
   getNumber(getLast(), &i);
   push(i);
+  return 0;
 }
 
 /*
  ****************************************************************************************
  *  @brief     swaps the last two value/entries
  *  @param      
- *  @return    void
+ *  @return    int
  ****************************************************************************************/
-void swapLast(){
- int slot1 = 0;
+int swapLast(){
+ int slot1 = 0; //error ???? pushing nothing and error code 
  int slot2 = 0;
  pop(&slot2);
  pop(&slot1);
  push(slot2);
  push(slot1); 
+ return 0;
 }
 
