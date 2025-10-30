@@ -7,19 +7,14 @@
   */
 /* Includes ------------------------------------------------------------------*/
 
-#include "calc.h"
 #include "display.h"
 #include "errorHandler.h"
-#include "stm32f4xx_hal.h"
 #include "init.h"
 #include "LCD_GUI.h"
 #include "LCD_Touch.h"
-#include "lcd.h"
 #include "fontsFLASH.h"
-#include "additionalFonts.h"
 #include "error.h"
 #include "token.h"
-#include "stack.h"
 #include "token.h"
 #include "scanner.h"
 #include "evaluateToken.h"
@@ -44,7 +39,7 @@ int main(void){
 	while (1){
 		T_token token = nextToken();
 		result = tokenHandler(token);
-		if (result != SUCCESS) handleError(errno);
+		if (result != SUCCESS) handleError(result);
 	}
 	return SUCCESS;
 }
