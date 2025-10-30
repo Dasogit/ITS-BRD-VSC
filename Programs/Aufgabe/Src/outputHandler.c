@@ -9,8 +9,10 @@
 #include "display.h"
 #include "errorHandler.h"
 #include "stack.h"
-#include <errno.h>
-// KEINE AHNUNG OB ICH ÜBERALL DIE ERRORS ÜBERPRÜFEN MUSS 
+
+
+
+// TODO:  KEINE AHNUNG OB ICH ÜBERALL DIE ERRORS ÜBERPRÜFEN MUSS 
 
 /*
  ****************************************************************************************
@@ -18,7 +20,7 @@
  *  @param     the number, pointer to character of 8 bit (kinda like a string)
  *  @return    int
  ****************************************************************************************/
-int intToString(int number, char* pStrArray){
+int intToString(int number, char* pStrArray){ //destination array 
   int i = 0;
   int sign = number;
   if(number < 0){
@@ -26,6 +28,7 @@ int intToString(int number, char* pStrArray){
   }
   while(number > 0){
     pStrArray[i++] = number % 10 + '0';
+    number /= 10;
   }
   if(sign < 0){
     pStrArray[i++] = '-';
@@ -37,7 +40,7 @@ int intToString(int number, char* pStrArray){
     pStrArray[j] = pStrArray[k];
     pStrArray[k] = tmp;
   }
-  return errno = SUCCESS;
+  return SUCCESS;
 }
 
 
@@ -49,12 +52,12 @@ int intToString(int number, char* pStrArray){
  ****************************************************************************************/
 int printLast (){
   clearStdout();
-  char numbers[15]; //length of the terminal of the display
+  char numbers[16]; //length of the terminal of the display
   int i = 0;
   getNumber(getLast(), &i); //take the last number and save its value at the address of i
   intToString(i, numbers); //take the number and turn the array of them to a string basically read from the array
-  printStdout((char *) &numbers);
-  return errno;
+  printStdout(numbers);
+  return SUCCESS;
 }
 
 
@@ -75,7 +78,7 @@ int printAll(){
     //printStdout((char*) &numbers);
     printStdout(numbers);
   }
-  return errno;
+  return SUCCESS;
 }
 
 
@@ -89,7 +92,7 @@ int clearAll(){
   setLast(-1);
   clearStdout();
   setNormalMode();
-  return errno = SUCCESS;
+  return SUCCESS;
 }
 
 /*
@@ -102,7 +105,7 @@ int doubleLast(){
   int i = 0;
   getNumber(getLast(), &i);
   push(i);
-  return errno;
+  return SUCCESS;
 }
 
 /*
@@ -114,10 +117,10 @@ int doubleLast(){
 int swapLast(){ // TODO: DOESNT WORK THE WAY INTENDED PLEASE FIX
  int slot1 = 0; //error ???? pushing nothing and error code 
  int slot2 = 0;
- pop(&slot2);
- pop(&slot1);
- push(slot2);
- push(slot1);
- return errno;
+ E(pop(&slot2));
+ E(pop(&slot1));
+ E(push(slot2));
+ E(push(slot1));
+ return SUCCESS;
 }
 

@@ -9,7 +9,7 @@
 #include "errorHandler.h"
 #include "token.h"
 #include <stack.h>
-#include "evaluateToken.h"
+
 
 /*
  ****************************************************************************************
@@ -19,17 +19,13 @@
  ****************************************************************************************/
 int add() {
   int right = 0;
-  if (pop(&right) != 0)
-    return errno;
+  E(pop(&right));
   int left = 0;
-  if (pop(&left) != 0)
-    return errno;
-
-  if (arithmeticError(left, right, PLUS) != 0)
-    return errno;
+  E(pop(&left));
+  E(arithmeticError(left, right, PLUS));
 
   push(left + right);
-  return errno;
+  return SUCCESS;
 }
 
 /*
@@ -40,16 +36,13 @@ int add() {
  ****************************************************************************************/
 int sub() {
   int right = 0;
-  if (pop(&right) != 0)
-    return errno;
+  E(pop(&right));
   int left = 0;
-  if (pop(&left) != 0)
-    return errno;
+  E( pop(&left));
 
-  if (arithmeticError(left, right, MINUS) != 0)
-    return errno;
+  E((arithmeticError(left, right, MINUS)));
   push(left - right);
-  return errno;
+  return SUCCESS;
 }
 
 /*
@@ -60,17 +53,13 @@ int sub() {
  ****************************************************************************************/
 int mul() {
   int right = 0;
-  if (pop(&right) != 0)
-    return errno;
+  E((pop(&right)));
   int left = 0;
-  if (pop(&left) != 0)
-    return errno;
+  E((pop(&left)));
 
-  if (arithmeticError(left, right, MULT) != 0)
-    return errno;
-
+  E((arithmeticError(left, right, MULT) ));
   push(left * right);
-  return errno;
+  return SUCCESS;
 }
 
 /*
@@ -81,15 +70,10 @@ int mul() {
  ****************************************************************************************/
 int divi() {
   int right = 0;
-  if (pop(&right) != 0)
-    return errno;
+  E((pop(&right)));
   int left = 0;
-  if (pop(&left) != 0)
-    return errno;
-
-  if (arithmeticError(left, right, DIV) != 0)
-    return errno;
-
+  E((pop(&left)));
+  E((arithmeticError(left, right, DIV)));
   push(left / right);
-  return errno;
+  return SUCCESS;
 }

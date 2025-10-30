@@ -7,19 +7,8 @@
 
 #ifndef stack_h
 #define stack_h
+
 #define STACKSIZE 10
-#include <errorHandler.h>
-#include <limits.h>
-
-
-/*
- ****************************************************************************************
- *  @brief      checks if the number being pushed to the memory is in range of the memory
- *  @param      number being pushed on the memory
- *  @return     _Bool  true = in range | false = not in range
- ****************************************************************************************/
-_Bool inRange(int);
-
 
 /*
  ****************************************************************************************

@@ -170,8 +170,6 @@ add_library(Group_ITS_BRD_LIB OBJECT
   "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/timer.c"
   "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/USART_STM32F4xx.c"
   "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/stdinout_USART.c"
-  "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/display.c"
-  "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Src/scanner.c"
 )
 target_include_directories(Group_ITS_BRD_LIB PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>
@@ -206,11 +204,14 @@ target_link_libraries(Group_Program_User_Inc_ABSTRACTIONS INTERFACE
 
 # group Program/User/Src
 add_library(Group_Program_User_Src OBJECT
+  "${SOLUTION_ROOT}/Src/display.c"
+  "${SOLUTION_ROOT}/Src/scanner.c"
   "${SOLUTION_ROOT}/Src/main.c"
   "${SOLUTION_ROOT}/Src/calc.c"
   "${SOLUTION_ROOT}/Src/stack.c"
   "${SOLUTION_ROOT}/Src/errorHandler.c"
   "${SOLUTION_ROOT}/Src/outputHandler.c"
+  "${SOLUTION_ROOT}/Src/evaluateToken.c"
 )
 target_include_directories(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>

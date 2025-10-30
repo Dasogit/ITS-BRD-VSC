@@ -8,13 +8,7 @@
 #ifndef errorHandler_h
 #define errorHandler_h
 
-#include <errno.h>
-#include <stdio.h>
-#include <stdlib.h>
-
 //#include "display.h"
-
-
 
 /* ---------- App error codes (negative on purpose) ---------- */
 //exit success 
@@ -62,7 +56,7 @@
  *  @param     error number
  *  @return    error number and meanining 
  ****************************************************************************************/
-int handleError(int);
+void handleError(int);
 
 
 /*
@@ -72,6 +66,16 @@ int handleError(int);
  *  @return    int code of error 
  ****************************************************************************************/
 int arithmeticError(int left, int right, char operation);
+
+#define E(X) \
+  do \
+  { \
+    int status = X; \
+    if(status != SUCCESS) { return status; } \
+  } \
+  while(0)
+
+
 
 #endif /* ERROR_HANDLER_H */
 

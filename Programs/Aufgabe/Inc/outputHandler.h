@@ -7,8 +7,6 @@
 
 #ifndef outputHandler_h
 #define outputHandler_h
-#include <error.h>
-#include "display.h"
 
 /*
  ****************************************************************************************

@@ -8,24 +8,9 @@
 
 #include "stack.h"
 #include "errorHandler.h"
-#include <errno.h>
-#include "evaluateToken.h"
-
 
 int stack[STACKSIZE];
 int last = -1;
-
-
-
-/*
- ****************************************************************************************
- *  @brief      checks if the number being pushed to the memory is in range of the memory
- *  @param      number being pushed on the memory
- *  @return     _Bool  true = in range | false = not in range
- ****************************************************************************************/
-_Bool inRange(int token){
-    return token <= INT_MAX && token >= INT_MIN; //?
-}
 
 
 /*
@@ -34,16 +19,12 @@ _Bool inRange(int token){
  *  @param      number being pushed to the memory
  *  @return     int
  ****************************************************************************************/
-int push(int theNumber){
-    theNumber = getTokenNumber();
-    if(!inRange(theNumber)){
-        return errno = userStackOverFlow;
-    }
+int push(int theNumber) {
     if(last + 1 >= STACKSIZE){
-        return errno = userStackUnderFlow;
+        return userStackUnderFlow;
     }
     stack[++last] = theNumber;
-    return errno = SUCCESS;
+    return SUCCESS;
 }
 
 
@@ -55,10 +36,10 @@ int push(int theNumber){
  ****************************************************************************************/
 int pop(int* pToken){
     if(last < 0){ //nothing was saved on stack Aka stack is empty
-         return errno = userStackUnderFlow;
+         return userStackUnderFlow;
     }
     *pToken = stack[last--]; // at the address of pToken, save the last entry of stack 
-    return errno = SUCCESS; 
+    return SUCCESS; 
 }
 
 
@@ -92,7 +73,7 @@ void setLast(int token){
  ****************************************************************************************/
 int getNumber(int number, int* pNumber){
     * pNumber = stack[number];
-    return errno = SUCCESS;
+    return SUCCESS;
 }
 
 
@@ -114,5 +95,5 @@ int getStackSize(){
  ****************************************************************************************/
 int clearStack(){
     last = -1;
-    return errno = SUCCESS;
+    return SUCCESS;
 }

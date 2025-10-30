@@ -18,6 +18,7 @@
 #include "token.h"
 #include "scanner.h"
 #include "evaluateToken.h"
+#include "outputHandler.h"
 
 /**
   * @brief  Main program
@@ -36,10 +37,14 @@ int main(void){
 	//makeKeyPad();										// KypadGui aufrufen
 	initDisplay();									// Initialisierung des Displays
 	int result = 0;
-	while (1){
+
+	while(1) {
 		T_token token = nextToken();
 		result = tokenHandler(token);
-		if (result != SUCCESS) handleError(result);
+		if(result != SUCCESS)
+		{
+			handleError(result);
+		}
 	}
 	return SUCCESS;
 }
