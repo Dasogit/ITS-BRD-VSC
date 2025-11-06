@@ -67,6 +67,14 @@ void handleError(int);
  ****************************************************************************************/
 int arithmeticError(int left, int right, char operation);
 
+/*
+****************************************************************************************
+*
+* This is only for beautification so i dont use too many ifs 
+*
+****************************************************************************************
+*/
+
 #define E(X) \
   do \
   { \
@@ -74,9 +82,6 @@ int arithmeticError(int left, int right, char operation);
     if(status != SUCCESS) { return status; } \
   } \
   while(0)
-
-
-
 #endif /* ERROR_HANDLER_H */
 
 // EOF   

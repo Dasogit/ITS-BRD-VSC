@@ -5,7 +5,7 @@
   * @brief this file is the implementation of a stack for the Calculator
 */
 
-
+#include "display.h" 
 #include "stack.h"
 #include "errorHandler.h"
 
@@ -35,8 +35,8 @@ int push(int theNumber) {
  *  @return     int
  ****************************************************************************************/
 int pop(int* pToken){
-    if(last < 0){ //nothing was saved on stack Aka stack is empty
-         return userStackUnderFlow;
+    if(last < 0){ 
+         return userInvalidInput;
     }
     *pToken = stack[last--]; // at the address of pToken, save the last entry of stack 
     return SUCCESS; 
@@ -95,5 +95,6 @@ int getStackSize(){
  ****************************************************************************************/
 int clearStack(){
     last = -1;
+    clearStdout();
     return SUCCESS;
 }

@@ -31,7 +31,9 @@ int tokenHandler(T_token givenToken) {
         case PRT_ALL: return printAll();
         case CLEAR:   return clearStack();
         case DOUBLE:  return doubleLast();
-        case NUMBER:  return push(givenToken.val);
+        case NUMBER:  return push(givenToken.val); // display doesnt allow to input bigger than INT_Max ?? why? 
+        case OVERFLOW: return userOverRange;
+        case UNEXPECTED: return userUnknownError;
         default:      return SUCCESS;
     }
 }
