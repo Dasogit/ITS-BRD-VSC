@@ -20,22 +20,22 @@ void handleError(int errorNumber) {
   setErrMode();
   switch (errorNumber) {
   case userStackOverFlow:
-    printf(STACKOVERMSG);
+    printStdout(STACKOVERMSG);
     break;
   case userStackUnderFlow:
-    printf(STACKUNDERMSG);
+    printStdout(STACKUNDERMSG);
     break;
   case userArithmeticOverflow:
-    printf(ARTOVERMSG);
+    printStdout(ARTOVERMSG);
     break;
   case userArithemticUnderflow:
-    printf(ARTUNDERMSG);
+    printStdout(ARTUNDERMSG);
     break;
   case userDivideByZero:
-    printf(DOMMSG);
+    printStdout(DOMMSG);
     break;
   default:
-    printf("INVALID INPUT");
+    printStdout("INVALID INPUT");
   }
 }
 
