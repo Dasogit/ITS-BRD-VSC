@@ -1,5 +1,6 @@
 CompileFlags:
-  CompilationDatabase: s:\GS\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug
+  CompilationDatabase: >-
+    c:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug
   Add:
     - '-D_ILP32=1'
     - '-D_USE_STATIC_INLINE=1'
@@ -412,21 +413,26 @@ CompileFlags:
     - '-D__thumb__=1'
     - '-D__ARMCOMPILER_LIBCXX=1'
     - >-
-      -IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Drivers/CMSIS/Device/ST/STM32F4xx/Include
     - >-
-      -IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Drivers/CMSIS/Include
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Drivers/CMSIS/Include
     - >-
-      -IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Inc
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Inc
     - >-
-      -IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Drivers/BSP/STM32F4xx_Nucleo_144
-    - '-IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Utilities/Fonts'
-    - '-IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/../../DisplayWaveshare/Inc'
-    - '-IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/../../ITS_BRD_LIB/Utilities/AddFonts'
-    - '-IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard'
-    - '-IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/RTE/_Debug_ITSboard'
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Drivers/BSP/STM32F4xx_Nucleo_144
     - >-
-      -IC:/Users/amirn/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/../../stm32cubef4/Utilities/Fonts
     - >-
-      -IC:/Users/amirn/AppData/Local/arm/packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
-    - '-IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/Inc'
-    - '-IS:/GS/ITS-BRD-VSC/Programs/Aufgabe/../../ITS_BRD_LIB/Inc'
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/../../DisplayWaveshare/Inc
+    - >-
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/../../ITS_BRD_LIB/Utilities/AddFonts
+    - >-
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard
+    - '-IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/RTE/_Debug_ITSboard'
+    - >-
+      -IC:/Users/smdan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+    - >-
+      -IC:/Users/smdan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+    - '-IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/Inc'
+    - >-
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/../../ITS_BRD_LIB/Inc

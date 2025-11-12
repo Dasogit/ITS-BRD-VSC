@@ -2,5 +2,6 @@
     "debug.hideSlowPreLaunchWarning": true,
     "clangd.arguments": [
         "--compile-commands-dir=c:\\TI_Labor\\gitProjekte\\ITS-BRD-VSC\\Programs\\Aufgabe\\out\\Aufgabe\\ITSboard\\Debug"
-    ]
+    ],
+    "debug.showInStatusBar": "never"
 }
