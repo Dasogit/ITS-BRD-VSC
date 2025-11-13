@@ -8,7 +8,7 @@
 #ifndef stack_h
 #define stack_h
 
-#define STACKSIZE 10
+#define STACKSIZE 20
 
 /*
  ****************************************************************************************

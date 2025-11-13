@@ -34,6 +34,6 @@ int tokenHandler(T_token givenToken) {
         case NUMBER:  return push(givenToken.val); // display doesnt allow to input bigger than INT_Max ?? why? 
         case OVERFLOW: return userOverRange;
         case UNEXPECTED: return userUnknownError;
-        default:      return SUCCESS;
+        default:      return SUCCESS; //Disskusion : gebe Error auf Blick zukunftige HW
     }
 }

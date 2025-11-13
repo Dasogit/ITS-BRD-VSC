@@ -21,7 +21,7 @@ int last = -1;
  ****************************************************************************************/
 int push(int theNumber) {
     if(last + 1 >= STACKSIZE){
-        return userStackUnderFlow;
+        return userStackOverFlow;
     }
     stack[++last] = theNumber;
     return SUCCESS;

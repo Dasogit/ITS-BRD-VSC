@@ -7,6 +7,7 @@
 
 #ifndef outputHandler_h
 #define outputHandler_h
+#define newLine "\n"
 
 /*
  ****************************************************************************************

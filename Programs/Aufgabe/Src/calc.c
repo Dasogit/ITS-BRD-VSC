@@ -15,7 +15,7 @@
  ****************************************************************************************
  *  @brief      adds the left and right number
  *  @param
- *  @return    int
+ *  @return    int  result 
  ****************************************************************************************/
 int add() {
   int right = 0;
@@ -32,7 +32,7 @@ int add() {
  ****************************************************************************************
  *  @brief      subtracts the right number from the left
  *  @param
- *  @return    int
+ *  @return    int  result 
  ****************************************************************************************/
 int sub() {
   int right = 0;
@@ -49,7 +49,7 @@ int sub() {
  ****************************************************************************************
  *  @brief      multiplication of the left and right number
  *  @param
- *  @return     int
+ *  @return     int result
  ****************************************************************************************/
 int mul() {
   int right = 0;
@@ -66,14 +66,14 @@ int mul() {
  ****************************************************************************************
  *  @brief      left number divided by the right number
  *  @param
- *  @return     int
+ *  @return     int  result
  ****************************************************************************************/
 int divi() {
   int right = 0;
   E((pop(&right)));
   int left = 0;
   E((pop(&left)));
-  E((arithmeticError(left, right, DIV)));
+     ((arithmeticError(left, right, DIV)));
   push(left / right);
   return SUCCESS;
 }

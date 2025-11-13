@@ -76,12 +76,10 @@ int arithmeticError(int left, int right, char operation);
 */
 
 #define E(X) \
-  do \
   { \
     int status = X; \
     if(status != SUCCESS) { return status; } \
-  } \
-  while(0)
+  } 
 #endif /* ERROR_HANDLER_H */
 
 // EOF   

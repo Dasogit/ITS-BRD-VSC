@@ -34,7 +34,7 @@ include CMakeFiles\rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp\
+cmake_ninja_workdir = S$:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp\
 
 #############################################
 # Utility command for database
@@ -45,13 +45,13 @@ build database: phony Aufgabe.Debug+ITSboard-database
 #############################################
 # Utility command for Aufgabe.Debug+ITSboard
 
-build Aufgabe.Debug+ITSboard: phony CMakeFiles\Aufgabe.Debug+ITSboard CMakeFiles\Aufgabe.Debug+ITSboard-complete Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-done Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build C$:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-database Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-executes Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-install Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-test Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard-database Aufgabe.Debug+ITSboard-executes
+build Aufgabe.Debug+ITSboard: phony CMakeFiles\Aufgabe.Debug+ITSboard CMakeFiles\Aufgabe.Debug+ITSboard-complete Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-done Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build S$:\GS\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-database Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-executes Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-install Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-test Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard-database Aufgabe.Debug+ITSboard-executes
 
 
 #############################################
 # Utility command for Aufgabe.Debug+ITSboard-build
 
-build Aufgabe.Debug+ITSboard-build: phony CMakeFiles\Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build C$:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir Aufgabe.Debug+ITSboard-configure
+build Aufgabe.Debug+ITSboard-build: phony CMakeFiles\Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build S$:\GS\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir Aufgabe.Debug+ITSboard-configure
 
 
 #############################################
@@ -63,7 +63,7 @@ build Aufgabe.Debug+ITSboard-configure: phony CMakeFiles\Aufgabe.Debug+ITSboard-
 #############################################
 # Utility command for Aufgabe.Debug+ITSboard-executes
 
-build Aufgabe.Debug+ITSboard-executes: phony CMakeFiles\Aufgabe.Debug+ITSboard-executes Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-executes Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build C$:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir Aufgabe.Debug+ITSboard-build
+build Aufgabe.Debug+ITSboard-executes: phony CMakeFiles\Aufgabe.Debug+ITSboard-executes Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-executes Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build S$:\GS\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir Aufgabe.Debug+ITSboard-build
 
 
 #############################################
@@ -76,7 +76,7 @@ build Aufgabe.Debug+ITSboard-database: phony CMakeFiles\Aufgabe.Debug+ITSboard-d
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake-gui.exe -SC:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp -BC:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake-gui.exe -SS:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp -BS:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -88,7 +88,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe --regenerate-during-build -SC:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp -BC:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe --regenerate-during-build -SS:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp -BS:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -106,7 +106,7 @@ build CMakeFiles\Aufgabe.Debug+ITSboard | ${cmake_ninja_workdir}CMakeFiles\Aufga
 # Custom command for CMakeFiles\Aufgabe.Debug+ITSboard-complete
 
 build CMakeFiles\Aufgabe.Debug+ITSboard-complete Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-done | ${cmake_ninja_workdir}CMakeFiles\Aufgabe.Debug+ITSboard-complete ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-done: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-install Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-install Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-test Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-executes Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-database || Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard-database Aufgabe.Debug+ITSboard-executes
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E make_directory C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-complete && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-done"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E make_directory S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-complete && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-done"
   DESC = Completed 'Aufgabe.Debug+ITSboard'
   restat = 1
 
@@ -114,8 +114,8 @@ build CMakeFiles\Aufgabe.Debug+ITSboard-complete Aufgabe.Debug+ITSboard\src\Aufg
 #############################################
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build
 
-build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build C$:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure || Aufgabe.Debug+ITSboard-configure
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp\1 && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo "Building CMake target 'Aufgabe.Debug+ITSboard'" && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe --build C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/1"
+build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build S$:\GS\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure || Aufgabe.Debug+ITSboard-configure
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp\1 && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo "Building CMake target 'Aufgabe.Debug+ITSboard'" && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe --build S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/1"
   DESC = Performing build step for 'Aufgabe.Debug+ITSboard'
   pool = console
   restat = 1
@@ -125,7 +125,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\tmp\Aufgabe.Debug+ITSboard-cfgcmd.txt Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp\1 && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -P C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-configure-.cmake && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-configure"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp\1 && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -P S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-configure-.cmake && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-configure"
   DESC = Performing configure step for 'Aufgabe.Debug+ITSboard'
   restat = 1
 
@@ -134,7 +134,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-database
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-database | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-database: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-configure || Aufgabe.Debug+ITSboard-configure
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -P C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database-.cmake"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -P S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database-.cmake"
   DESC = Performing database step for 'Aufgabe.Debug+ITSboard'
   pool = console
 
@@ -143,7 +143,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-source_dirinfo.txt Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-download"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-download"
   DESC = No download step for 'Aufgabe.Debug+ITSboard'
   restat = 1
 
@@ -152,7 +152,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-executes
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-executes | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-executes: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build || Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard-configure
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-executes"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-executes"
   DESC = No executes step for 'Aufgabe.Debug+ITSboard'
   restat = 1
 
@@ -161,7 +161,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-install
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-install | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-install: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-build || Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard-database Aufgabe.Debug+ITSboard-executes
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp\1 && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp\1 && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append"
   DESC = No install step for 'Aufgabe.Debug+ITSboard'
 
 
@@ -169,7 +169,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-mkdir: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -Dcfgdir= -P C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/tmp/Aufgabe.Debug+ITSboard-mkdirs.cmake && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-mkdir"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -Dcfgdir= -P S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/tmp/Aufgabe.Debug+ITSboard-mkdirs.cmake && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-mkdir"
   DESC = Creating directories for 'Aufgabe.Debug+ITSboard'
   restat = 1
 
@@ -178,7 +178,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-patch-info.txt Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-patch"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-patch"
   DESC = No patch step for 'Aufgabe.Debug+ITSboard'
   restat = 1
 
@@ -187,7 +187,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-test
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-test | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-test: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-install || Aufgabe.Debug+ITSboard-build Aufgabe.Debug+ITSboard-configure Aufgabe.Debug+ITSboard-database Aufgabe.Debug+ITSboard-executes
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp\1 && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-test"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp\1 && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-test"
   DESC = No test step for 'Aufgabe.Debug+ITSboard'
   restat = 1
 
@@ -196,7 +196,7 @@ build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSb
 # Custom command for Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update
 
 build Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update | ${cmake_ninja_workdir}Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update: CUSTOM_COMMAND Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-update-info.txt Aufgabe.Debug+ITSboard\src\Aufgabe.Debug+ITSboard-stamp\Aufgabe.Debug+ITSboard-download
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-update"
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D S:\GS\ITS-BRD-VSC\Programs\Aufgabe\tmp && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E echo_append && C:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\bin\cmake.exe -E touch S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-update"
   DESC = No update step for 'Aufgabe.Debug+ITSboard'
   restat = 1
 
@@ -233,7 +233,7 @@ build CMakeFiles\Aufgabe.Debug+ITSboard-database | ${cmake_ninja_workdir}CMakeFi
 # =============================================================================
 
 #############################################
-# Folder: C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe/tmp
+# Folder: S:/GS/ITS-BRD-VSC/Programs/Aufgabe/tmp
 
 build all: phony Aufgabe.Debug+ITSboard
 
@@ -244,14 +244,14 @@ build all: phony Aufgabe.Debug+ITSboard
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | Aufgabe.Debug+ITSboard\tmp\Aufgabe.Debug+ITSboard-mkdirs.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.28.4\CMakeSystem.cmake CMakeLists.txt roots.cmake
+build build.ninja: RERUN_CMAKE | Aufgabe.Debug+ITSboard\tmp\Aufgabe.Debug+ITSboard-mkdirs.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.28.4\CMakeSystem.cmake CMakeLists.txt roots.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build Aufgabe.Debug+ITSboard\tmp\Aufgabe.Debug+ITSboard-mkdirs.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Users\smdan\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.28.4\CMakeSystem.cmake CMakeLists.txt roots.cmake: phony
+build Aufgabe.Debug+ITSboard\tmp\Aufgabe.Debug+ITSboard-mkdirs.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Users\amirn\.vcpkg\artifacts\2139c4c6\tools.kitware.cmake\3.28.4\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.28.4\CMakeSystem.cmake CMakeLists.txt roots.cmake: phony
 
 
 #############################################

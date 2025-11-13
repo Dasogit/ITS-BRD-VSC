@@ -119,5 +119,6 @@
   "clangd.arguments": [
     "--compile-commands-dir=s:\\GS\\ITS-BRD-VSC\\Programs\\Aufgabe\\out\\Aufgabe\\ITSboard\\Debug"
   ],
-  "debug.hideSlowPreLaunchWarning": true
+  "debug.hideSlowPreLaunchWarning": true,
+  "debug.showInStatusBar": "never"
 }

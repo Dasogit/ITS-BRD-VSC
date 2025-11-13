@@ -18,11 +18,17 @@
  ****************************************************************************************
  *  @brief     integer to string
  *  @param     the number, pointer to character of 8 bit (kinda like a string)
- *  @return    int
+ *  @return    int Error
  ****************************************************************************************/
 int intToString(int number, char* pStrArray){ //destination array 
   int i = 0;
   int sign = number;
+  if(number == 0){
+    pStrArray[i++] = '0';
+  }
+ // if(number == INT32_MIN){
+ //   pStrArray[i++] = (INT32_MIN) ; //-2.147.483.648 
+ // }
   if(number < 0){
     number = -number;
   }
@@ -75,8 +81,8 @@ int printAll(){
   for( ;printAllandLast >= 0; printAllandLast--){     //for-loop for printing every value/entry of the stack
     getNumber(printAllandLast, &i);
     intToString(i, numbers);
-    //printStdout((char*) &numbers);
     printStdout(numbers);
+    printStdout((char*) newLine);
   }
   return SUCCESS;
 }
@@ -114,8 +120,8 @@ int doubleLast(){
  *  @param      
  *  @return    int
  ****************************************************************************************/
-int swapLast(){ // TODO: DOESNT WORK THE WAY INTENDED PLEASE FIX
- int slot1 = 0; //error ???? pushing nothing and error code 
+int swapLast(){ 
+ int slot1 = 0; 
  int slot2 = 0;
  E(pop(&slot2));
  E(pop(&slot1));

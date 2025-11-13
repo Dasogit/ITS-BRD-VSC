@@ -7,6 +7,7 @@
 
 #include "errorHandler.h"
 #include "display.h"
+#include "outputHandler.h"
 #include <stdio.h>
 #include <limits.h>
 
@@ -14,7 +15,6 @@
  ****************************************************************************************
  *  @brief     decodes the error and returns the matching error number with the msg
  *  @param     error number
- *  @return    returns error number
  ****************************************************************************************/
 void handleError(int errorNumber) {
   setErrMode();
@@ -87,7 +87,8 @@ int arithmeticError(int left, int right, char operation) {
         return  userArithmeticOverflow;
       }
     case '/':
-      if (left == 0) { // denominator is 0
+      if (right == 0) { // denominator is 0
+        printStdout(DOMMSG);
         return userDivideByZero;
       }
       if (left == INT_MIN && right == -1) { // a = minInt / -1 overflow
