@@ -9,7 +9,8 @@
 #include "display.h"
 #include "errorHandler.h"
 #include "stack.h"
-
+#include <stdint.h>
+#include <string.h>
 
 
 // TODO:  KEINE AHNUNG OB ICH ÜBERALL DIE ERRORS ÜBERPRÜFEN MUSS 
@@ -26,9 +27,10 @@ int intToString(int number, char* pStrArray){ //destination array
   if(number == 0){
     pStrArray[i++] = '0';
   }
- // if(number == INT32_MIN){
- //   pStrArray[i++] = (INT32_MIN) ; //-2.147.483.648 
- // }
+  if(number == INT32_MIN){
+    strcpy(pStrArray, "-2147483648");
+    return SUCCESS;
+  }
   if(number < 0){
     number = -number;
   }
@@ -76,7 +78,7 @@ int printLast (){
 int printAll(){
   clearStdout();
   int printAllandLast = getLast();                    //cach for the stackpointer     
-    char numbers[15];
+    char numbers[32];
     int i = 0;
   for( ;printAllandLast >= 0; printAllandLast--){     //for-loop for printing every value/entry of the stack
     getNumber(printAllandLast, &i);

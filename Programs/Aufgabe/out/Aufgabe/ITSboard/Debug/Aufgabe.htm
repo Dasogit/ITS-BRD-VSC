@@ -3,7 +3,7 @@
 <title>Static Call Graph - [S:\GS\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image S:\GS\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug\Aufgabe.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Thu Nov 13 10:21:40 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Thu Nov 13 16:02:32 2025
 <BR><P>
 <H3>Maximum Stack Usage =        696 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -147,7 +147,7 @@ Global Symbols
 <P><STRONG><a name="[66]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f429xx.o(.text)
 </UL>
-<P><STRONG><a name="[11a]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[11b]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[76]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -157,15 +157,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[11b]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[11c]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[11c]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[11d]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[11d]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[11e]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[11e]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[11f]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[11f]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[120]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f429xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f429xx.o(RESET)
@@ -461,9 +461,9 @@ Global Symbols
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[120]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[121]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[121]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[122]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[7c]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -472,29 +472,33 @@ Global Symbols
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Initialize
 </UL>
 
-<P><STRONG><a name="[122]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[123]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[123]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[124]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[7e]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 
-<P><STRONG><a name="[109]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
+<P><STRONG><a name="[10b]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintS
+</UL>
+
+<P><STRONG><a name="[10a]"></a>strcpy</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, strcpy.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intToString
 </UL>
 
 <P><STRONG><a name="[7a]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[124]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[125]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[79]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[125]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[126]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
 <P><STRONG><a name="[77]"></a>__scatterload</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, init.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
@@ -502,7 +506,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[126]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[127]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.BusFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f429xx.o(RESET)
@@ -570,7 +574,7 @@ Global Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_fillRectangleBW
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printButton
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printChar
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printChar
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_disStr
 </UL>
 
@@ -1084,7 +1088,7 @@ Global Symbols
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticError
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
 <P><STRONG><a name="[ef]"></a>arithmeticError</STRONG> (Thumb, 400 bytes, Stack size 32 bytes, errorHandler.o(.text.arithmeticError))
@@ -1093,12 +1097,12 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printStdout
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;divi
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sub
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sub
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;add
 </UL>
 
-<P><STRONG><a name="[10b]"></a>checkVersionFlashFonts</STRONG> (Thumb, 32 bytes, Stack size 4 bytes, fontsFLASH.o(.text.checkVersionFlashFonts))
+<P><STRONG><a name="[10d]"></a>checkVersionFlashFonts</STRONG> (Thumb, 32 bytes, Stack size 4 bytes, fontsFLASH.o(.text.checkVersionFlashFonts))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = checkVersionFlashFonts
 </UL>
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1109,7 +1113,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearTerm
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initDisplay
 </UL>
 
@@ -1118,7 +1122,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearStdout
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
 <P><STRONG><a name="[f5]"></a>clearStdout</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, display.o(.text.clearStdout))
@@ -1126,8 +1130,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearTerm
 </UL>
-<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearStack
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initDisplay
 </UL>
@@ -1140,7 +1144,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setErrMode
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearEchoTerm
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearStdout
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printChar
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printChar
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;genTerm
 </UL>
 
@@ -1151,7 +1155,7 @@ Global Symbols
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticError
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
 <P><STRONG><a name="[f7]"></a>doubleLast</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, outputHandler.o(.text.doubleLast))
@@ -1161,7 +1165,7 @@ Global Symbols
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getLast
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;push
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
 <P><STRONG><a name="[fa]"></a>genTerm</STRONG> (Thumb, 200 bytes, Stack size 24 bytes, terminal.o(.text.genTerm))
@@ -1182,21 +1186,21 @@ Global Symbols
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printButton
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_pressed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextChar
+<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextChar
 </UL>
 
 <P><STRONG><a name="[f8]"></a>getLast</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stack.o(.text.getLast))
 <BR><BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doubleLast
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
 </UL>
 
 <P><STRONG><a name="[f9]"></a>getNumber</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, stack.o(.text.getNumber))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = getNumber
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doubleLast
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
 </UL>
 
 <P><STRONG><a name="[102]"></a>handleError</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, errorHandler.o(.text.handleError))
@@ -1232,11 +1236,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[112]"></a>intToString</STRONG> (Thumb, 226 bytes, Stack size 28 bytes, outputHandler.o(.text.intToString))
-<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = intToString
+<P><STRONG><a name="[109]"></a>intToString</STRONG> (Thumb, 264 bytes, Stack size 40 bytes, outputHandler.o(.text.intToString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = intToString
 </UL>
-<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
+<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
 </UL>
 
 <P><STRONG><a name="[8e]"></a>itoa</STRONG> (Thumb, 180 bytes, Stack size 40 bytes, LCD_Tools.o(.text.itoa))
@@ -1250,8 +1256,8 @@ Global Symbols
 <P><STRONG><a name="[fb]"></a>lcdPrintS</STRONG> (Thumb, 466 bytes, Stack size 16 bytes, lcd.o(.text.lcdPrintS))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = lcdPrintS &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stringCopy
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stringCopy
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_disStr
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_drawRectangle
 </UL>
@@ -1262,14 +1268,14 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 696<LI>Call Chain = main &rArr; initDisplay &rArr; makeKeyPad &rArr; printButton &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;handleError
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initDisplay
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initITSboard
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_InitBasic
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_init
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkVersionFlashFonts
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkVersionFlashFonts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
@@ -1283,21 +1289,21 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initDisplay
 </UL>
 
-<P><STRONG><a name="[10e]"></a>mul</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, calc.o(.text.mul))
+<P><STRONG><a name="[110]"></a>mul</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, calc.o(.text.mul))
 <BR><BR>[Stack]<UL><LI>Max Depth = 640<LI>Call Chain = mul &rArr; arithmeticError &rArr; printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;push
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticError
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
-<P><STRONG><a name="[10c]"></a>nextToken</STRONG> (Thumb, 330 bytes, Stack size 24 bytes, scanner.o(.text.nextToken))
+<P><STRONG><a name="[10e]"></a>nextToken</STRONG> (Thumb, 330 bytes, Stack size 24 bytes, scanner.o(.text.nextToken))
 <BR><BR>[Stack]<UL><LI>Max Depth = 600<LI>Call Chain = nextToken &rArr; nextChar &rArr; getKeyPadInput &rArr; printButton &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextChar
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printToEchoLine
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextChar
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printToEchoLine
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearEchoTerm
 </UL>
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1306,33 +1312,33 @@ Global Symbols
 <P><STRONG><a name="[ee]"></a>pop</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, stack.o(.text.pop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swapLast
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swapLast
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;divi
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sub
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sub
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;add
 </UL>
 
-<P><STRONG><a name="[111]"></a>printAll</STRONG> (Thumb, 82 bytes, Stack size 40 bytes, outputHandler.o(.text.printAll))
-<BR><BR>[Stack]<UL><LI>Max Depth = 616<LI>Call Chain = printAll &rArr; printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
+<P><STRONG><a name="[113]"></a>printAll</STRONG> (Thumb, 80 bytes, Stack size 56 bytes, outputHandler.o(.text.printAll))
+<BR><BR>[Stack]<UL><LI>Max Depth = 632<LI>Call Chain = printAll &rArr; printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intToString
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intToString
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNumber
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getLast
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printStdout
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearStdout
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
-<P><STRONG><a name="[113]"></a>printChar</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, terminal.o(.text.printChar))
+<P><STRONG><a name="[114]"></a>printChar</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, terminal.o(.text.printChar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 528<LI>Call Chain = printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearTerm
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_disChar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printTerm
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printNewLine
+<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printTerm
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printNewLine
 </UL>
 
 <P><STRONG><a name="[8b]"></a>printDebugMsg</STRONG> (Thumb, 178 bytes, Stack size 40 bytes, LCD_Debug.o(.text.printDebugMsg))
@@ -1348,69 +1354,69 @@ Global Symbols
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_drawPoint
 </UL>
 
-<P><STRONG><a name="[114]"></a>printLast</STRONG> (Thumb, 46 bytes, Stack size 40 bytes, outputHandler.o(.text.printLast))
+<P><STRONG><a name="[115]"></a>printLast</STRONG> (Thumb, 46 bytes, Stack size 40 bytes, outputHandler.o(.text.printLast))
 <BR><BR>[Stack]<UL><LI>Max Depth = 616<LI>Call Chain = printLast &rArr; printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intToString
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intToString
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNumber
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getLast
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printStdout
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearStdout
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
 <P><STRONG><a name="[f1]"></a>printStdout</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, display.o(.text.printStdout))
 <BR><BR>[Stack]<UL><LI>Max Depth = 576<LI>Call Chain = printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printTerm
+<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printTerm
 </UL>
-<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticError
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;handleError
 </UL>
 
-<P><STRONG><a name="[116]"></a>printTerm</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, terminal.o(.text.printTerm))
+<P><STRONG><a name="[117]"></a>printTerm</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, terminal.o(.text.printTerm))
 <BR><BR>[Stack]<UL><LI>Max Depth = 560<LI>Call Chain = printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printChar
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printNewLine
+<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printChar
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printNewLine
 </UL>
-<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printToEchoLine
+<BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printToEchoLine
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printStdout
 </UL>
 
-<P><STRONG><a name="[110]"></a>printToEchoLine</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, display.o(.text.printToEchoLine))
+<P><STRONG><a name="[112]"></a>printToEchoLine</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, display.o(.text.printToEchoLine))
 <BR><BR>[Stack]<UL><LI>Max Depth = 576<LI>Call Chain = printToEchoLine &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printTerm
+<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printTerm
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
 </UL>
 
 <P><STRONG><a name="[f0]"></a>push</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, stack.o(.text.push))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = push
 </UL>
-<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swapLast
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swapLast
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doubleLast
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;divi
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sub
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sub
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;add
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
 <P><STRONG><a name="[103]"></a>setErrMode</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, display.o(.text.setErrMode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 520<LI>Call Chain = setErrMode &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setTextColorTerm
+<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setTextColorTerm
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearTerm
 </UL>
 <BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;handleError
 </UL>
 
-<P><STRONG><a name="[117]"></a>setTextColorTerm</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, terminal.o(.text.setTextColorTerm))
+<P><STRONG><a name="[118]"></a>setTextColorTerm</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, terminal.o(.text.setTextColorTerm))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = setTextColorTerm
 </UL>
 <BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setErrMode
@@ -1422,47 +1428,47 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initITSboard
 </UL>
 
-<P><STRONG><a name="[118]"></a>sub</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, calc.o(.text.sub))
+<P><STRONG><a name="[119]"></a>sub</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, calc.o(.text.sub))
 <BR><BR>[Stack]<UL><LI>Max Depth = 640<LI>Call Chain = sub &rArr; arithmeticError &rArr; printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;push
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticError
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
-<P><STRONG><a name="[119]"></a>swapLast</STRONG> (Thumb, 102 bytes, Stack size 40 bytes, outputHandler.o(.text.swapLast))
+<P><STRONG><a name="[11a]"></a>swapLast</STRONG> (Thumb, 102 bytes, Stack size 40 bytes, outputHandler.o(.text.swapLast))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = swapLast &rArr; push
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;push
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tokenHandler
 </UL>
 
-<P><STRONG><a name="[10d]"></a>tokenHandler</STRONG> (Thumb, 214 bytes, Stack size 24 bytes, evaluateToken.o(.text.tokenHandler))
+<P><STRONG><a name="[10f]"></a>tokenHandler</STRONG> (Thumb, 214 bytes, Stack size 24 bytes, evaluateToken.o(.text.tokenHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 664<LI>Call Chain = tokenHandler &rArr; divi &rArr; arithmeticError &rArr; printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swapLast
+<BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swapLast
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doubleLast
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printAll
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printLast
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearStack
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;divi
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sub
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mul
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sub
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;push
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;add
 </UL>
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[127]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[128]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[128]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[129]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[129]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[12a]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 <P>
 <H3>
 Local Symbols
@@ -1711,7 +1717,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
 </UL>
 
-<P><STRONG><a name="[10a]"></a>stringCopy</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, lcd.o(.text.stringCopy))
+<P><STRONG><a name="[10c]"></a>stringCopy</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, lcd.o(.text.stringCopy))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = stringCopy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintS
@@ -1736,12 +1742,12 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initITSboard
 </UL>
 
-<P><STRONG><a name="[115]"></a>printNewLine</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, terminal.o(.text.printNewLine))
+<P><STRONG><a name="[116]"></a>printNewLine</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, terminal.o(.text.printNewLine))
 <BR><BR>[Stack]<UL><LI>Max Depth = 544<LI>Call Chain = printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printChar
+<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printChar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printTerm
+<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printTerm
 </UL>
 
 <P><STRONG><a name="[fe]"></a>printButton</STRONG> (Thumb, 582 bytes, Stack size 48 bytes, keypad.o(.text.printButton))
@@ -2009,12 +2015,12 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_PowerControl
 </UL>
 
-<P><STRONG><a name="[10f]"></a>nextChar</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, scanner.o(.text.nextChar))
+<P><STRONG><a name="[111]"></a>nextChar</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, scanner.o(.text.nextChar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 576<LI>Call Chain = nextChar &rArr; getKeyPadInput &rArr; printButton &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getKeyPadInput
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
 </UL>
 <P>
 <H3>
