@@ -325,9 +325,25 @@ build:
       files:
         - file: ../../../../../../ITS_BRD_LIB/Inc/lcd.h
           category: header
+        - file: ../../../../Inc/calc.h
+          category: header
+        - file: ../../../../Inc/fsm.h
+          category: header
+        - file: ../../../../Inc/inputHandler.h
+          category: header
+        - file: ../../../../Inc/outputHandler.h
+          category: header
     - group: Program/User/Src
       files:
         - file: ../../../../Src/main.c
+          category: sourceC
+        - file: ../../../../Src/calc.c
+          category: sourceC
+        - file: ../../../../Src/fsm.c
+          category: sourceC
+        - file: ../../../../Src/inputHandler.c
+          category: sourceC
+        - file: ../../../../Src/outputHandler.c
           category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
