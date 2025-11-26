@@ -45,9 +45,19 @@ void state_init(void);
  */
 void state_decoder(int currentPhase);
 
-
+/**
+ * @brief Set the cur state test object
+ * 
+ * @return int 
+ */
 int set_cur_state_test();
 
+
+/**
+ * @brief 
+ * 
+ * @return int 
+ */
 int cur_state(void);
 
 /**

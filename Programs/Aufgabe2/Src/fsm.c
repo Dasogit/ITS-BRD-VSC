@@ -1,3 +1,15 @@
+/**
+ * @file fsm.c
+ * @author Danandeh, Naghashi
+ * @brief 
+ * @version 0.1
+ * @date 2025-11-26
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
+
 #include "fsm.h"
 #include "inputHandler.h"
 #include <stdbool.h>
@@ -65,19 +77,31 @@ void state_decoder(int currentPhase) {
   }
 }
 
+
+/**
+ * @brief Set the cur state test object
+ * 
+ * @return int set curstate to error mode 
+ */
 int set_cur_state_test(){
   return curState = STATE_ERROR;
 }
 
+
+/**
+ * @brief getter for cur_state 
+ * 
+ * @return int current state 
+ */
 int cur_state(void)
 {
   return curState;
 }
 
 /**
- * @brief
+ * @brief returns the last direction
  *
- * @return int
+ * @return int last direction
  */
 int last_direction() { return lastDir; }
 

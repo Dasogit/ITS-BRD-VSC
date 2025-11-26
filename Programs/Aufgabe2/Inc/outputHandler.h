@@ -1,5 +1,5 @@
 /**
- * @file calc.h
+ * @file outputHandler.h
  * @author M. Sohrab Danandeh, HAW Hamburg
  * @date Oct 2025
  * @brief Drehgeber
@@ -61,7 +61,10 @@ void current_angle_change(double angle);
  */
 void current_angle_speed_check(double speed);
 
-
+/**
+ * @brief 
+ * 
+ */
 void led_Error_Off(void);
 
 /**

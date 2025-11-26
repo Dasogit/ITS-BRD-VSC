@@ -11,7 +11,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "calc.h"
 #include "inputHandler.h"
-#include "stm32f4xx_hal.h"
 #include "init.h"
 #include "LCD_GUI.h"
 #include "LCD_Touch.h"
@@ -32,8 +31,10 @@ int main(void) {
 	initTimer();
 	printInit();
 	state_init();
-	double my_speed = 0.0, my_angle = 0.0;
 
+
+	double my_speed = 0.0, my_angle = 0.0;
+    //GPIOE->BSRR =  (0x01U << 5) ;
 	while(1) {
 		uint32_t now = getTimeStamp();
 		int phaseNow = input_readRaw(); // 0..3
