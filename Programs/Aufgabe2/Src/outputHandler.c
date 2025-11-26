@@ -1,10 +1,9 @@
-
 /**
  * @file    outputHandler.c
  * @author  Danandeh, Naghashi
  * @brief
- * @version 0.1
- * @date 2025-11-14
+ * @version 3
+ * @date 2025-11-26
  *
  * @copyright Copyright (c) 2025
  *
@@ -21,6 +20,7 @@
 
 #define OUTPUT_LEN 10
 
+//------------- OLD AND NEW ANGLE AND SPEED ---------------
 static char b_angle_old[OUTPUT_LEN];
 static char b_speed_old[OUTPUT_LEN];
 
@@ -29,6 +29,7 @@ static char b_speed[OUTPUT_LEN];
 
 static int i_speed = 0, i_angle = 0;
 
+//------------------ NO MAGIC NUMBERS LCD POSITION ----------------
 #define X_ANGLE 16
 #define Y_ANGLE 1
 
@@ -125,19 +126,28 @@ void led_handler_status(void)
   GPIOE->BSRR = on | (off << 16);
 }
 
+/**
+ * @brief 
+ * 
+ */
 void led_handler_movement(void)
 {
   GPIOD->BSRR = 0xFF << 16;
   GPIOD->BSRR = step_count() & 0xFF;
 }
 
+
+/**
+ * @brief 
+ * 
+ */
 void led_Error_Off(){
   if(getButton()){
     GPIOE->BSRR = BSRR_MASK_D21 << 16;
   }
 }
 
-// one_per_cha
+
 
 /**
  * @brief prints one char per loop

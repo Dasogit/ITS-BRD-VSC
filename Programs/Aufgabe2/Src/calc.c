@@ -1,3 +1,16 @@
+/**
+ * @file   calc.c
+ * @author Danandeh, Naghashi
+ * @brief 
+ * @version 3
+ * @date 2025-11-26
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
+
+
 
 #include "calc.h"
 #include "fsm.h"
@@ -8,7 +21,7 @@
 /**
  * @brief angle calculation 
  *
- * @return int
+ * @return int angle 
  */
 double angle_calc(){
     return (step_count()/1200.0 * 360.0); // i thought 300 because of the 300 slits but 1200 is basicaly the amount of slits because 300*4 = 12 hence 1200
