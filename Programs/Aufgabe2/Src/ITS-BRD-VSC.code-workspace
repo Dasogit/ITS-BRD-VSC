@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"clangd.arguments": [
+			"--compile-commands-dir=s:\\GS\\ITS-BRD-VSC\\Programs\\Aufgabe2\\out\\Aufgabe2\\ITSboard\\Debug"
+		],
+		"debug.hideSlowPreLaunchWarning": true,
+		"debug.showInStatusBar": "never"
+	}
+}
