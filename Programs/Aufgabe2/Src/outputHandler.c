@@ -115,10 +115,10 @@ void led_handler_status(void)
       on = BSRR_MASK_D22;
       off = BSRR_MASK_D21 | BSRR_MASK_D23;
       break;
-    case STATE_ERROR:
+     case STATE_ERROR:
       on = BSRR_MASK_D21;
       off = BSRR_MASK_D22 | BSRR_MASK_D23;
-      break;
+      break; 
     default:
       break;
   }

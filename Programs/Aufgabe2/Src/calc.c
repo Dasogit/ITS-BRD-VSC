@@ -34,22 +34,23 @@ double angle_calc(){
  */
 double speed_calc(uint32_t now, double angle)
 {
-	static double last_angle = 0.0;
-	static uint32_t last_time = 0;
-  static double cur_speed = 0.0;
+	static double   last_angle = 0.0;
+	static uint32_t last_time  = 0;
+  static double   cur_speed  = 0.0;
 
   double delta_time = (now - last_time) / 90000000.0; // time diff in sec
-  if((delta_time > 0.25 && cur_state() != STATE_NO_ROTATION) ||
-    delta_time > 0.5)
+
+  if((delta_time > 0.25 && cur_state() != STATE_NO_ROTATION) || delta_time > 0.5)
   {
     double delta_angle = angle - last_angle;
+
     if(delta_time != 0) // div 0 check
     {
       cur_speed = delta_angle / delta_time;
     }
 
-    last_angle = angle;
-    last_time = now;
+    last_angle  = angle;
+    last_time   = now;
   }
 
   return cur_speed;

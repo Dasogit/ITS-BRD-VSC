@@ -30,12 +30,14 @@ uint8_t input_readRaw() {
  * @return if it was pressed 
  */
 bool getButton() {
- int input = GPIO_BSRR_BS6  ;
+ /* int input       = GPIO_BSRR_BS6;
   uint8_t pinMask = (0x1u << input);
-  bool pressed = false;
+  bool pressed    = false;
+
   if (0 <= input && input <= 7) {
     pressed = (pinMask != (GPIOF->IDR & pinMask));
-  }
-  return pressed;
+  }*/
+
+  return GPIO_BSRR_BS6_Msk != (GPIOF->IDR & GPIO_BSRR_BS6_Msk);
   //return (GPIO_BSRR_BS6_Msk != (GPIOF->IDR & GPIO_BSRR_BS6_Msk));
 }

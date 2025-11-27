@@ -15,10 +15,10 @@
 #include <stdbool.h>
 
 //--------------- Phase transition ----------------
-#define DELTA_NONE 0
+#define DELTA_NONE    0
 #define DELTA_FORWARD 1
-#define DELTA_BACK -1
-#define DELTA_ERROR1 2
+#define DELTA_BACK   -1
+#define DELTA_ERROR1  2
 #define DELTA_ERROR2 -2
 
 
@@ -32,10 +32,10 @@ static int curState;
  *
  */
 void state_init() {
-  lastPhase = input_readRaw();
+  lastPhase   = input_readRaw();
   stepCounter = 0;
-  lastDir = 0;
-  curState = 0;
+  lastDir     = 0;
+  curState    = 0;
 }
 
 
@@ -55,24 +55,24 @@ void state_decoder(int currentPhase) {
 
   switch (delta) {
   case DELTA_NONE:
-    curState = STATE_NO_ROTATION;
+    curState  = STATE_NO_ROTATION;
     break;
   case DELTA_FORWARD:
     stepCounter++;
-    lastDir = +1;   //wollte ich +=1 oder 1 ??????
+    lastDir   = +1;   //wollte ich +=1 oder 1 ??????
     lastPhase = currentPhase;
-    curState = STATE_FORWARD;
+    curState  = STATE_FORWARD;
     break;
   case DELTA_BACK:
     stepCounter--;
-    lastDir = -1;
+    lastDir   = -1;
     lastPhase = currentPhase;
-    curState = STATE_BACKWARD;
+    curState  = STATE_BACKWARD;
     break;
   case DELTA_ERROR1: // raus nehmen?
   case DELTA_ERROR2:
   default:
-    curState = STATE_ERROR;
+    curState  = STATE_ERROR;
     break;
   }
 }
