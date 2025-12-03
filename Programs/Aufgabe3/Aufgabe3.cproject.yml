@@ -185,6 +185,8 @@ project:
         - file: Inc/headers.h
         - file: Inc/input.h
         - file: Inc/MS_basetypes.h
+        - file: Inc/decoder.h
+        - file: Inc/perfTimer.h
 
     # Benutzerdefinierte Programmdateien
     - group: Program/User/Src
@@ -194,6 +196,8 @@ project:
         - file: Src/headers.c
         - file: Src/input.c
         - file: Src/varlenarr.c
+        - file: Src/decoder.c
+        - file: Src/perfTimer.c
 
   components:
     - component: ARM::CMSIS:CORE

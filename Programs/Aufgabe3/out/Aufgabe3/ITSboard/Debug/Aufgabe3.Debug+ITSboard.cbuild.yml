@@ -335,6 +335,10 @@ build:
           category: header
         - file: ../../../../Inc/MS_basetypes.h
           category: header
+        - file: ../../../../Inc/decoder.h
+          category: header
+        - file: ../../../../Inc/perfTimer.h
+          category: header
     - group: Program/User/Src
       files:
         - file: ../../../../Src/main.c
@@ -346,6 +350,10 @@ build:
         - file: ../../../../Src/input.c
           category: sourceC
         - file: ../../../../Src/varlenarr.c
+          category: sourceC
+        - file: ../../../../Src/decoder.c
+          category: sourceC
+        - file: ../../../../Src/perfTimer.c
           category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
