@@ -1,13 +1,9 @@
 # ninja log v6
-17	84	7864649038284064	CMakeFiles/database	92db91cfd435dd32
-17	84	7864649038284064	S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	92db91cfd435dd32
-16	2072	7864649352280293	build.ninja	9e011c1335dc3aa2
-17	3722	7864649352280293	build.ninja	9e011c1335dc3aa2
-57	164	7864649353251777	CMakeFiles/database	92db91cfd435dd32
-57	164	7864649353251777	S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	92db91cfd435dd32
-13	137	7864649365083992	CMakeFiles/database	92db91cfd435dd32
-13	137	7864649365083992	S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	92db91cfd435dd32
-21	120	7864649910708291	CMakeFiles/database	92db91cfd435dd32
-21	120	7864649910708291	S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	92db91cfd435dd32
-17	93	7864650018068969	CMakeFiles/database	92db91cfd435dd32
-17	93	7864650018068969	S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	92db91cfd435dd32
+6	120	7864659711012835	CMakeFiles/database	668054308c6f3b26
+6	120	7864659711012835	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	668054308c6f3b26
+23	141	7864659849769948	CMakeFiles/database	668054308c6f3b26
+23	141	7864659849769948	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	668054308c6f3b26
+23	141	7864661391183776	CMakeFiles/database	668054308c6f3b26
+23	141	7864661391183776	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	668054308c6f3b26
+22	139	7864661483546121	CMakeFiles/database	668054308c6f3b26
+22	139	7864661483546121	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/1/CMakeFiles/database	668054308c6f3b26

@@ -1,11 +1,11 @@
 # Target labels
  Aufgabe3.Debug+ITSboard
 # Source files and their labels
-S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/CMakeFiles/Aufgabe3.Debug+ITSboard-build
-S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/CMakeFiles/Aufgabe3.Debug+ITSboard-build.rule
-S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-build.rule
-S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-configure.rule
-S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-patch.rule
-S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-update.rule
-S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-download.rule
-S:/GS/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-mkdir.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/CMakeFiles/Aufgabe3.Debug+ITSboard-build
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/CMakeFiles/Aufgabe3.Debug+ITSboard-build.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-build.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-update.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe3/tmp/Aufgabe3.Debug+ITSboard/src/Aufgabe3.Debug+ITSboard-stamp/Aufgabe3.Debug+ITSboard-mkdir.rule

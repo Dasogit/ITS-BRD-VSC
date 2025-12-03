@@ -1,12 +1,12 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "../../Aufgabe3"
 		}
 	],
 	"settings": {
 		"clangd.arguments": [
-			"--compile-commands-dir=c:\\TI_Labor\\gitProjekte\\ITS-BRD-VSC\\Programs\\Aufgabe2\\out\\Aufgabe2\\ITSboard\\Debug"
+			"--compile-commands-dir=c:\\TI_Labor\\gitProjekte\\ITS-BRD-VSC\\Programs\\Aufgabe3\\out\\Aufgabe3\\ITSboard\\Debug"
 		],
 		"debug.hideSlowPreLaunchWarning": true,
 		"debug.showInStatusBar": "never"
