@@ -19,10 +19,11 @@
  * 
  * @param fileHdr 
  * @param infoHdr 
- * @return int 
+ * @return int W
  */
 int decodeAndDisplayRLE(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER *infoHdr);
 
+//+++++++++++++++++++++++++++++++++++++++++++ BECAUSE STATIC WE DONT NEED THEM HERE CAUSE ITS LIKE A PRIVATE FUNC +++++++++++++++++++++++++++++++++++++++++++++++++
 
 /**
  * @brief core function to proccess the RLE blocks (8-bit RLE). takes data from nextChar() from input.c
@@ -32,7 +33,7 @@ int decodeAndDisplayRLE(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER 
  * @param infoHdr 
  * @return int 
  */
-static int decodeRLE8(const BITMAPINFOHEADER *infoHdr);
+//static int decodeRLE8(const BITMAPINFOHEADER *infoHdr);
 
 /**
  * @brief Draws one pixel and cuts everything that is outside of 480x320 and then calls GUI_drawPoint()
@@ -41,7 +42,7 @@ static int decodeRLE8(const BITMAPINFOHEADER *infoHdr);
  * @param y 
  * @param color 
  */
-static void putPixelClipped(int x, int y, uint16_t color);
+//static void putPixelClipped(int x, int y, uint16_t color);
 
 
 /**
@@ -49,8 +50,9 @@ static void putPixelClipped(int x, int y, uint16_t color);
  * @param index 
  * @return uint16_t 
  */
-static uint16_t getColorFromPalette(uint8_t index);
+//static uint16_t getColorFromPalette(uint8_t index);
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 /**
  * @brief looks up at the Color table directly after the header (BMP 256 colors -> 256 x 4 byte palette entry)
