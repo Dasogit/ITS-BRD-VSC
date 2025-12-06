@@ -58,6 +58,7 @@ Das ist „gute Modul-Architektur“.
 
 
 Kurz: Warum Static
+
 Grund                      |           Bedeutung
 -----------------------------------------------------------------------------------------------
 Encapsulation              | Funktionen gehören NUR zu decoder.c niemand sonst darf sie nutzen

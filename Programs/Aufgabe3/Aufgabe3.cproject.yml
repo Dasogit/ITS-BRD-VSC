@@ -185,6 +185,8 @@ project:
         - file: Inc/headers.h
         - file: Inc/input.h
         - file: Inc/MS_basetypes.h
+        - file: Inc/buttons.h
+        - file: Inc/decoder.h
 
     # Benutzerdefinierte Programmdateien
     - group: Program/User/Src
@@ -193,7 +195,8 @@ project:
         - file: Src/errorhandler.c
         - file: Src/headers.c
         - file: Src/input.c
-        - file: Src/varlenarr.c
+        - file: Src/buttons.c
+        - file: Src/decoder.c
 
   components:
     - component: ARM::CMSIS:CORE

@@ -335,6 +335,10 @@ build:
           category: header
         - file: ../../../../Inc/MS_basetypes.h
           category: header
+        - file: ../../../../Inc/buttons.h
+          category: header
+        - file: ../../../../Inc/decoder.h
+          category: header
     - group: Program/User/Src
       files:
         - file: ../../../../Src/main.c
@@ -345,7 +349,9 @@ build:
           category: sourceC
         - file: ../../../../Src/input.c
           category: sourceC
-        - file: ../../../../Src/varlenarr.c
+        - file: ../../../../Src/buttons.c
+          category: sourceC
+        - file: ../../../../Src/decoder.c
           category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h

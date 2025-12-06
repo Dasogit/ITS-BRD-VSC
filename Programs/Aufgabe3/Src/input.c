@@ -3,8 +3,6 @@
 #include "input.h"
 #include "errorhandler.h"
 #include "lcd.h"
-#include "perfTimer.h"  //anscheinend brauchen wir das nicht ??? Laut anton 
-#include "timer.h"
 
 #define USE_DMA 
 
@@ -167,6 +165,7 @@ static void startNextByteBurst(bool openNewFile){
    nextCharPos = 0;
 }
 
+
 int nextChar(void){
    if(0 == noElemsInBuf){
       return EOF;
@@ -196,6 +195,15 @@ void openNextFile(void){
    startNextByteBurst(true);
 }
 
+
+/**
+* @brief  This function reads count elements of data, each size bytes long, 
+*         from from the current file that will be transmitted by Python.
+* @param  buf   Storage buffer for data
+* @param  size  Size of each data element
+* @param  count Number of data elements
+* @retval Number of items read. If not enough data are available, EOF will be returned.
+*/
 int COMread(char* buf, unsigned int size, unsigned int count){
    for (unsigned int i = 0; i < size * count; i++){
       int c = nextChar();

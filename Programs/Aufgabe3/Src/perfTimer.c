@@ -1,3 +1,16 @@
+/**
+ * @file perfTimer.c
+ * @author Prof. Dr. Franz Korf
+ * @brief das habe ich auf einem alten Teamsraum gefunden weil ich ungeduldig war einen antwort zu bekommen und wollte das problem lösen
+ * @version
+ * @date 
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
+
+
 #include "perfTimer.h"
 #include "errorhandler.h"
 #include "timer.h"

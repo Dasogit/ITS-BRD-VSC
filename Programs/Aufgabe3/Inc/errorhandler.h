@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-#define NOK				-1
+#define NOK			    -1
 #define EOK				0
 
 // Do not call this function directly. Use the wrapper macro ERROR_HANDLER.
@@ -22,7 +22,7 @@ extern int printError(bool cnd, char *file, int line, char *msg, bool loopForEve
 	
 #define ERR_HANDLER(cnd,msg) printError((cnd),__FILE__,__LINE__,(msg), false)
 
-// Die beiden folgenden Markros sind fehleranf�lliger C Code 
+// Die beiden folgenden Markros sind fehleranfälliger C Code 
 #define RETURN_NOK_ON_ERR(cnd,msg) {if (NOK == ERR_HANDLER(cnd,msg)){return NOK;}}
 #define RAISE_NOK(fcall) {if (NOK == (fcall)){return NOK;}}
 

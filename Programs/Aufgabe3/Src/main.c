@@ -1,37 +1,44 @@
 /**
-  ******************************************************************************
-  * @file    main.c
-  * @author  Franz Korf
-  * @brief   Kleines Testprogramm fuer neu erstelle Fonts.
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    main.c
+ * @author  Franz Korf
+ * @brief   Kleines Testprogramm fuer neu erstelle Fonts.
+ ******************************************************************************
+ */
 /* Includes ------------------------------------------------------------------*/
 
-#include "input.h"
-#include "stm32f4xx_hal.h"
-#include "init.h"
+#include "BMP_types.h"
 #include "LCD_GUI.h"
 #include "LCD_Touch.h"
+#include "decoder.h"
+#include "headers.h"
+#include "init.h"
+#include "input.h"
+#include "buttons.h"
+#include <stdbool.h>
 
-#include "lcd.h"
-#include "fontsFLASH.h"
-#include "additionalFonts.h"
-#include "error.h"
-
-
-
+static BITMAPFILEHEADER fileHdr;
+static BITMAPINFOHEADER infoHdr;
 
 int main(void) {
-	initITSboard();    // Initialisierung des ITS Boards
-	
-	GUI_init(DEFAULT_BRIGHTNESS);   // Initialisierung des LCD Boards mit Touch
-	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
+  initITSboard(); // Initialisierung des ITS Boards
 
-	initInput();
-	// Test in Endlosschleife
-	while(1) {
-		HAL_Delay(10000);
-	}
+  GUI_init(DEFAULT_BRIGHTNESS); // Initialisierung des LCD Boards mit Touch
+  TP_Init(false);               // Initialisierung des LCD Boards mit Touch
+
+  initInput();
+
+  while (1) {
+    openNextFile();
+    readHeaders();
+    getFileHeader(&fileHdr);
+    getInfoHeader(&infoHdr);
+    decodeAndDisplayRLE(&fileHdr, &infoHdr);
+    while (buttonPress()) {
+    }
+    while (!buttonPress()){
+    }
+  }
 }
 
 // EOF
