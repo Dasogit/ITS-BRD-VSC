@@ -23,8 +23,6 @@ bool buttonPress(){
 	return GPIO_BSRR_BS6_Msk != (GPIOF->IDR & GPIO_BSRR_BS6_Msk);
 }
 
-
-
 void waitForNextImageButton(){
 	while (buttonPress()) {
     }

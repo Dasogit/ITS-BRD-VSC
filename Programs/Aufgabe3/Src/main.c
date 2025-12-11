@@ -5,18 +5,20 @@
  * @brief   Kleines Testprogramm fuer neu erstelle Fonts.
  ******************************************************************************
  */
+ 
 /* Includes ------------------------------------------------------------------*/
 
 #include "BMP_types.h"
 #include "LCD_GUI.h"
 #include "LCD_Touch.h"
 #include "LCD_general.h"
+#include "buttons.h"
 #include "decoder.h"
 #include "headers.h"
 #include "init.h"
 #include "input.h"
-#include "buttons.h"
 #include <stdbool.h>
+
 
 static BITMAPFILEHEADER fileHdr;
 static BITMAPINFOHEADER infoHdr;
@@ -36,13 +38,13 @@ int main(void) {
     getInfoHeader(&infoHdr);
     GUI_clear(BLACK);
     if (infoHdr.biWidth <= LCD_WIDTH && infoHdr.biHeight <= LCD_HEIGHT) {
-    decodeAndDisplayRLE(&fileHdr, &infoHdr);
+      decodeAndDisplayRLE(&fileHdr, &infoHdr);
     } else {
-        displayScaledRLE(&fileHdr, &infoHdr);
+      displayScaledRLE(&fileHdr, &infoHdr);
     }
-        decodeAndDisplayRLE(&fileHdr, &infoHdr);
-        waitForNextImageButton();
-      }
+    decodeAndDisplayRLE(&fileHdr, &infoHdr);
+    waitForNextImageButton();
+  }
 }
 
 // EOF

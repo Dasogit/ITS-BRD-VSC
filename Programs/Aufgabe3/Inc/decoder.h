@@ -1,9 +1,9 @@
 /**
  * @file decoder.h
- * @author your name (you@domain.com)
+ * @author Naghashi, Danandeh
  * @brief decodes the RLE 8 bit per pixel and uses the Color pallete 
- * @version 0.1
- * @date 2025-12-03
+ * @version 0.4
+ * @date 2025-12-11
  * 
  * @copyright Copyright (c) 2025
  * 
@@ -19,7 +19,7 @@
  * 
  * @param fileHdr 
  * @param infoHdr 
- * @return int W
+ * @return int EOK or NOK
  */
 int decodeAndDisplayRLE(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER *infoHdr);
 
@@ -28,7 +28,7 @@ int decodeAndDisplayRLE(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER 
  * 
  * @param fileHdr 
  * @param infoHdr 
- * @return int 
+ * @return int int EOK or NOK
  */
 int displayScaledRLE(const BITMAPFILEHEADER *fileHdr,const BITMAPINFOHEADER *infoHdr);
  #endif
