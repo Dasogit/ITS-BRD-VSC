@@ -21,8 +21,8 @@
 
 #define USE_GUI_WRITELINE   1 // 0 = Punktweise (Aufgabe a), 1 = WriteLine (Aufgabe b)
 #define MAX_SRC_WIDTH (LCD_WIDTH * 5)
-#define MAX_SCALE_FACTOR 5
-#define MAX_BOX_SIZE 5
+#define MAX_SCALE_FACTOR    5
+#define MAX_BOX_SIZE        5
 
 static RGBQUAD myPalett[MAX_COLOR_TABLE_SIZE];
 
@@ -32,16 +32,17 @@ static int imgWidthClipped;         // tatsächliche Breite für WriteLine(min(B
 #endif
 
 /** Variables and all the stuff for rescaling AUFGABE C  */
-static bool gScaleMode = false;
-static int gSrcWidth = 0;
-static int gSrcHeight = 0;
-static int gOutWidth = 0;
-static int gOutHeight = 0;
-static int gBoxWidth = 1;
-static int gBoxHeight = 1;
+static bool  gScaleMode  = false;
+static int   gSrcWidth    = 0;
+static int   gSrcHeight   = 0;
+static int   gOutWidth    = 0;
+static int   gOutHeight   = 0;
+static int   gBoxWidth    = 1;
+static int   gBoxHeight   = 1;
 static COLOR gSrcBuf[MAX_BOX_SIZE][MAX_SRC_WIDTH];
 static COLOR gOutLine[LCD_WIDTH];
-static int gRowCount = 0; // wie viele Zeilen bisher eingelesen
+static int   gRowCount    = 0; // wie viele Zeilen bisher eingelesen
+
 
 /**
  * @brief Draws one pixel and cuts everything that is outside of 480x320 and
@@ -66,14 +67,12 @@ static void putPixelClipped(int x, int y, uint16_t color) {
  */
 static COLOR getColorFromPalette(uint8_t index) {
   RGBQUAD color = myPalett[index];
-  return (COLOR)(((color.rgbRed >> 3) << 11) | ((color.rgbGreen >> 2) << 5) |
-                 color.rgbBlue >> 3);
+  return (COLOR)(((color.rgbRed >> 3) << 11) | ((color.rgbGreen >> 2) << 5) | color.rgbBlue >> 3);
 }
 
 /**
  * @brief Switches between PixelPoint and DrawLine and emits the Pixel on the
  * display without rescaling
- *
  * @param x cordinates on the x axis
  * @param y cordinates on the y axis
  * @param colorIndex color from the palette
@@ -126,12 +125,56 @@ static void scaledEmitPixel(int x, int y, uint8_t colorIndex) {
   gSrcBuf[row][x] = getColorFromPalette(colorIndex);
 }
 
+
+/**
+ * @brief Mittelwert über eine Box von Quellpixeln bilden
+ * 
+ * @param xStart coordinate for x axis Start
+ * @param xEnd   coordinate for x axis end 
+ * @param yStart coordinate for y axis start
+ * @param yEnd   coordinate for y axis end 
+ * @return COLOR of the point
+ */
+static COLOR averageBox(int xStart, int xEnd, int yStart, int yEnd) {
+    unsigned int sumR = 0;
+    unsigned int sumG = 0;
+    unsigned int sumB = 0;
+    unsigned int count = 0;
+
+    for (int y = yStart; y <= yEnd; y++) {
+        int row = y % gBoxHeight;      // Ringpuffer-Zeilenindex
+        for (int x = xStart; x <= xEnd; x++) {
+            COLOR c = gSrcBuf[row][x];
+
+            unsigned int r = (c >> 11) & 0x1F;
+            unsigned int g = (c >> 5)  & 0x3F;
+            unsigned int b =  c        & 0x1F;
+
+            sumR += r;
+            sumG += g;
+            sumB += b;
+            count++;
+        }
+    }
+
+    if (count == 0) {
+        return BLACK;  // Sicherheitsfallback
+    }
+
+    unsigned int rAvg = sumR / count;
+    unsigned int gAvg = sumG / count;
+    unsigned int bAvg = sumB / count;
+
+    return (COLOR)((rAvg << 11) | (gAvg << 5) | bAvg);
+}
+
+
 /**
  * @brief same function line endOfLine but for scaled pictures
  *
  * @param yBottomUp coordinatefrom bottom to the top for emiting
  */
-/* static void scaledEndOfLine(int yBottomUp) {
+static void scaledEndOfLine(int yBottomUp) {
   int srcY = gSrcHeight - 1 - yBottomUp; // 0..H-1 von oben gezählt
 
   if (((srcY % gBoxHeight) != gBoxHeight - 1) && (srcY != gSrcHeight - 1)) {
@@ -159,8 +202,8 @@ static void scaledEmitPixel(int x, int y, uint8_t colorIndex) {
   }
 
   Coordinate crd = {0, dstY};
-  GUI_WriteLine(crd, gOutWidth, outLine);
-} */
+  GUI_WriteLine(crd, gOutWidth, gOutLine);
+} 
 
 /**
  * @brief processs the pixel with either scaled variant or normal variant of the
@@ -185,7 +228,7 @@ static void processPixel(int x, int y, uint8_t colorIndex) {
  */
 static void processEndOfLine(int y) {
   if (gScaleMode) {
-    // scaledEndOfLine(y);
+    scaledEndOfLine(y);
   } else {
     endOfLineNormal(y);
   }
@@ -248,14 +291,7 @@ static int decodeRLE8(const BITMAPINFOHEADER *infoHdr) {
     uint8_t count = (uint8_t)c;
     uint8_t value = (uint8_t)v;
 
-    /**
-        * Bedeutung: „Wiederhole den Pixel mit Index value genau count-mal in
-       der aktuellen Zeile.“ Für i = 0..count-1:     Pixel ausgeben (x,y) mit
-       colorIndex = value x um 1 erhöhen Du musst darauf achten, dass x nicht
-       über width hinausläuft (falls das BMP fehlerhaft ist → Fehler behandeln).
-        */
     if (count > 0) { // encoded mode
-
       for (int i = 0; i < count; i++) {
         // pixel ausgeben mit (x,y) mit colorIndex = value danach x um 1 erhöhen
         // x nicht über width hinauslaufen
@@ -283,7 +319,8 @@ static int decodeRLE8(const BITMAPINFOHEADER *infoHdr) {
         y -= (uint8_t)dy; // bottom-up
         break;
       }
-      default: // absolute mode
+      default: 
+        // absolute mode
         // read value single byte
         // ausgeben für jedes pixel aus (x,y) und erhöhst x
         for (int i = 0; i < value; i++) {
@@ -316,10 +353,7 @@ static int decodeRLE8(const BITMAPINFOHEADER *infoHdr) {
  */
 static int loadColorPalette(const BITMAPINFOHEADER *infoHdr) {
   int paletteSize = (infoHdr->biClrUsed == 0) ? 256 : infoHdr->biClrUsed;
-  COMread((char *)myPalett, sizeof(RGBQUAD),
-          paletteSize); // because we know exactly how many bytes and how big
-                        // our structure is
-
+  COMread((char *)myPalett, sizeof(RGBQUAD),paletteSize); // because we know exactly how many bytes and how big our structure is
   return paletteSize;
 }
 
@@ -372,45 +406,15 @@ int displayScaledRLE(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER *in
     return NOK;
   }
 
-  initScaling(
-      infoHdr); // setzt gSrcWidth/Height, gBoxWidth/Height, gOutWidth/Height
+  initScaling(infoHdr); // setzt gSrcWidth/Height, gBoxWidth/Height, gOutWidth/Height
 
   gScaleMode = true; // jetzt Scaling-Backend benutzen
+
   int res = decodeRLE8(infoHdr);
   gScaleMode = false; // zur Sicherheit wieder zurück
+
   return res;
+
+
 }
 
-// int aufgabeC(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER
-// *infoHdr) {
-//   // array[][5]
-//   // array2[][]
-//   // if fileHdr && infoHdr > kirekhar
-//   //     for loop posX{0 ; 5}
-//   //         mittelwert(inputa)
-//   //         save in array2
-//   // return array2
-
-//   if (infoHdr->biWidth <= LCD_WIDTH && infoHdr->biHeight <= LCD_HEIGHT) {
-//     // kein Scaling nötig → normale RLE-Darstellung
-//   } else {
-//     // Scaling-Variante
-//   }
-// }
-
-// int decodeAndDisplayRLE(const BITMAPFILEHEADER *fileHdr,const
-// BITMAPINFOHEADER *infoHdr) {
-//     if (infoHdr->biCompression == BI_RLE8) {
-//         int paletteSize = loadColorPalette(infoHdr);
-//         /*int padding = fileHdr->bfOffBits - sizeof(BITMAPFILEHEADER) -
-//         sizeof(BITMAPINFOHEADER) - paletteSize * sizeof(RGBQUAD); for(int i =
-//         0; i < padding; i++)
-//         {
-//             nextChar();
-//         }*/
-
-//         return decodeRLE8(infoHdr);
-//     }
-
-//     return EOK;
-// }
