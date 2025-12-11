@@ -14,5 +14,5 @@
 #include <stdbool.h>
 
 bool buttonPress();
-
+void waitForNextImageButton();
 #endif

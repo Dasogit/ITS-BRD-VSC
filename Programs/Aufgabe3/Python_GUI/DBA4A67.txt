@@ -1,0 +1,366 @@
+-----------löschen der Tabellen ----- 
+-- Reihenfolge wegen FK-Abhängigkeiten wichtig
+DROP TABLE Mietvertrag       CASCADE CONSTRAINTS PURGE;
+DROP TABLE Kunde             CASCADE CONSTRAINTS PURGE;
+DROP TABLE Fahrzeug          CASCADE CONSTRAINTS PURGE;
+DROP TABLE Fahrzeug_Kategorie CASCADE CONSTRAINTS PURGE;
+DROP TABLE Anbieter          CASCADE CONSTRAINTS PURGE;
+
+-- Anbieter
+CREATE TABLE Anbieter (
+    AnbieterID   NUMBER(10)     GENERATED ALWAYS AS IDENTITY,
+    Name         VARCHAR2(100)  NOT NULL,
+    Standort     VARCHAR2(100)  NOT NULL,
+    TelefonNr    VARCHAR2(30),
+    CONSTRAINT pk_anbieter PRIMARY KEY (AnbieterID)
+);
+
+-- Fahrzeug_Kategorie
+CREATE TABLE Fahrzeug_Kategorie (
+    kategorieID    NUMBER(10)    GENERATED ALWAYS AS IDENTITY,
+    mindest_alter  NUMBER(3)     NOT NULL,
+    AnbieterID     NUMBER(10)    NOT NULL,
+    CONSTRAINT pk_fahrzeug_kategorie PRIMARY KEY (kategorieID),
+    CONSTRAINT fk_fahrzeuganbieter_kategorie FOREIGN KEY (AnbieterID)
+        REFERENCES Anbieter(AnbieterID),
+    CONSTRAINT ck_fahrzeug_kategorie_mindestalter
+        CHECK (mindest_alter >= 0)
+);
+
+-- Fahrzeug
+CREATE TABLE Fahrzeug (
+    FahrzeugID     NUMBER(10)     GENERATED ALWAYS AS IDENTITY,
+    Kennzeichen    VARCHAR2(20)   NOT NULL,
+    Farbe          VARCHAR2(20)   NOT NULL,
+    Preis          NUMBER(10,2)   NOT NULL,
+    kategorieID    NUMBER(10)     NOT NULL,
+    AnbieterID     NUMBER(10)     NOT NULL,
+    CONSTRAINT pk_fahrzeug PRIMARY KEY (FahrzeugID),
+    CONSTRAINT fk_anbieter_fahrzeug FOREIGN KEY (AnbieterID)
+        REFERENCES Anbieter (AnbieterID),
+    CONSTRAINT fk_kategorie FOREIGN KEY (kategorieID)
+        REFERENCES Fahrzeug_Kategorie (kategorieID),
+    CONSTRAINT uq_fahrzeug_kennzeichen UNIQUE (Kennzeichen)
+);
+
+-- Kunde
+CREATE TABLE Kunde (
+    KundenID     NUMBER(10)      GENERATED ALWAYS AS IDENTITY,
+    name         VARCHAR2(100)   NOT NULL,
+    Geschlecht   VARCHAR2(10)    NOT NULL,
+    AlterJahre   NUMBER(3)       NOT NULL,  
+    Adresse      VARCHAR2(200),
+    FahrzeugID   NUMBER(10), -- favorisieren 
+    CONSTRAINT pk_kunde PRIMARY KEY (KundenID),
+    CONSTRAINT fk_kunde_FahrzeugID FOREIGN KEY (FahrzeugID) 
+        REFERENCES Fahrzeug(FahrzeugID),
+    CONSTRAINT ck_kunde_geschlecht 
+        CHECK (Geschlecht IN ('m', 'w', 'd'))
+);
+
+-- Mietvertrag
+CREATE TABLE Mietvertrag (
+    VertragID     NUMBER(10)     GENERATED ALWAYS AS IDENTITY,
+    KundenID      NUMBER(10)     NOT NULL,
+    FahrzeugID    NUMBER(10)     NOT NULL,
+    Fahrleistung  NUMBER(10,1),
+    GesamtKosten  NUMBER(10,2),
+    StartDatum    DATE           NOT NULL,
+    EndDatum      DATE,
+    CONSTRAINT pk_mietvertrag PRIMARY KEY (VertragID),
+    CONSTRAINT fk_mietvertrag_kunde
+        FOREIGN KEY (KundenID)
+        REFERENCES Kunde (KundenID),
+    CONSTRAINT fk_mietvertrag_fahrzeug
+        FOREIGN KEY (FahrzeugID)
+        REFERENCES Fahrzeug (FahrzeugID),
+    CONSTRAINT ck_mietvertrag_datum
+        CHECK (EndDatum IS NULL OR EndDatum >= StartDatum),
+    CONSTRAINT ck_mietvertrag_fahrleistung
+        CHECK (Fahrleistung IS NULL OR Fahrleistung >= 0),
+    CONSTRAINT ck_mietvertrag_gesamtkosten
+        CHECK (GesamtKosten IS NULL OR GesamtKosten >= 0)
+);
+
+
+
+-- Anbieter
+INSERT INTO Anbieter (Name, Standort, TelefonNr)
+VALUES ('yourCar', 'meineStraße, HH 22345, DE', '123456789');
+
+
+INSERT INTO Fahrzeug_Kategorie (mindest_alter, AnbieterID)
+VALUES (
+    18,
+    (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar')
+);
+
+
+-- Fahrzeuge
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH5544', 'ROT',     1.50,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1234', 'Blau',    2.50,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1235', 'Schwarz', 4.00,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1236', 'Weiß',    5.00,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1237', 'Silber',  4.75,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1238', 'Rot',     1.99,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1239', 'Grün',    3.00,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1240', 'Gelb',    2.50,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1241', 'Grau',    3.00,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+INSERT INTO Fahrzeug (Kennzeichen, Farbe, Preis, kategorieID, AnbieterID)
+VALUES ('HH1242', 'Orange',  2.00,
+        (SELECT kategorieID FROM Fahrzeug_Kategorie WHERE AnbieterID = (SELECT AnbieterID FROM Anbieter WHERE Name = 'yourCar'),
+        (SELECT AnbieterID   FROM Anbieter WHERE Name = 'yourCar'));
+
+
+
+-- Kunden
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Anna Müller',
+    'w',
+    28,
+    'Hauptstraße 5, Berlin 10115, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH5544')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Peter Schmidt',
+    'm',
+    35,
+    'Berliner Allee 12, Hamburg 20095, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1234')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Laura Fischer',
+    'w',
+    22,
+    'Ringstraße 3, München 80331, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1235')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Thomas Weber',
+    'm',
+    45,
+    'Marktplatz 8, Köln 50667, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1236')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Sabine Becker',
+    'w',
+    31,
+    'Schulweg 15, Frankfurt 60311, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1237')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Michael Hoffmann',
+    'm',
+    29,
+    'Gartenstraße 7, Stuttgart 70173, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1238')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Julia Schneider',
+    'w',
+    27,
+    'Lindenweg 4, Düsseldorf 40213, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1239')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Andreas Wolf',
+    'm',
+    52,
+    'Bahnhofstraße 20, Leipzig 04109, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1240')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Stefanie Neumann',
+    'w',
+    40,
+    'Hainweg 11, Bremen 28195, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1241')
+);
+
+INSERT INTO Kunde (name, Geschlecht, AlterJahre, Adresse, FahrzeugID)
+VALUES (
+    'Johannes Schäfer',
+    'm',
+    33,
+    'Parkallee 9, Dortmund 44135, DE',
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1242')
+);
+
+-- Mietverträge
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Anna Müller'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH5544'),
+    120.5,
+    60.00,
+    DATE '2025-05-01',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Anna Müller'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1234'),
+    75.0,
+    37.50,
+    DATE '2025-05-03',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Laura Fischer'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1235'),
+    200.2,
+    100.00,
+    DATE '2025-05-05',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Laura Fischer'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1236'),
+    45.0,
+    22.50,
+    DATE '2025-05-07',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Sabine Becker'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1237'),
+    150.0,
+    75.00,
+    DATE '2025-05-09',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Sabine Becker'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1238'),
+    90.7,
+    45.00,
+    DATE '2025-05-11',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Julia Schneider'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1239'),
+    110.0,
+    55.00,
+    DATE '2025-05-13',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Julia Schneider'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1240'),
+    60.3,
+    30.00,
+    DATE '2025-05-15',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Stefanie Neumann'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1241'),
+    180.0,
+    90.00,
+    DATE '2025-05-17',
+    NULL
+);
+
+INSERT INTO Mietvertrag (KundenID, FahrzeugID, Fahrleistung, GesamtKosten, StartDatum, EndDatum)
+VALUES (
+    (SELECT KundenID FROM Kunde WHERE name = 'Stefanie Neumann'),
+    (SELECT FahrzeugID FROM Fahrzeug WHERE Kennzeichen = 'HH1242'),
+    25.5,
+    12.75,
+    DATE '2025-05-19',
+    NULL
+);
+
+
+
+--Aktivitäten
+----nachname ändern
+UPDATE Kunde
+SET name = 'Andreas Wolf' WHERE name = 'Andreas Wolf';  -- oder z.B. WHERE name = 'Sabine Becker';
+
+
+----PREIS_EUR erhöhren
+UPDATE Fahrzeug SET Preis = Preis + 1 WHERE Kennzeichen = 'HH1240';   -- z.B. Corsa
+
+
+---- Eur -> Dollar
+SELECT Preis * 1.16 AS Preis_USD FROM Fahrzeug;
+-- SELECT PREIS_EUR, ROUND(PREIS_EUR * 1.16, 2) AS PREIS_USD FROM FAHRZEUG;
+
+---- keine Mieter löschen 
+DELETE FROM Kunde WHERE KundenID IN (SELECT KundenID FROM Kunde MINUS  SELECT KundenID FROM Mietvertrag);
+
+DELETE FROM Mietvertrag;
+DELETE FROM Kunde;
+-- skript von Kunden Hinzufügen ausführen ?
+-- skript von Mieten Hinzufügen ausführen ?

@@ -23,4 +23,12 @@
  */
 int decodeAndDisplayRLE(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER *infoHdr);
 
+/**
+ * @brief rescales and then hands over the picture to the decoder
+ * 
+ * @param fileHdr 
+ * @param infoHdr 
+ * @return int 
+ */
+int displayScaledRLE(const BITMAPFILEHEADER *fileHdr,const BITMAPINFOHEADER *infoHdr);
  #endif

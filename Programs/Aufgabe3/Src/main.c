@@ -10,6 +10,7 @@
 #include "BMP_types.h"
 #include "LCD_GUI.h"
 #include "LCD_Touch.h"
+#include "LCD_general.h"
 #include "decoder.h"
 #include "headers.h"
 #include "init.h"
@@ -33,12 +34,15 @@ int main(void) {
     readHeaders();
     getFileHeader(&fileHdr);
     getInfoHeader(&infoHdr);
+    GUI_clear(BLACK);
+    if (infoHdr.biWidth <= LCD_WIDTH && infoHdr.biHeight <= LCD_HEIGHT) {
     decodeAndDisplayRLE(&fileHdr, &infoHdr);
-    while (buttonPress()) {
+    } else {
+        displayScaledRLE(&fileHdr, &infoHdr);
     }
-    while (!buttonPress()){
-    }
-  }
+        decodeAndDisplayRLE(&fileHdr, &infoHdr);
+        waitForNextImageButton();
+      }
 }
 
 // EOF
