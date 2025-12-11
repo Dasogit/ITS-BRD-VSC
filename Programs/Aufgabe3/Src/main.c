@@ -5,7 +5,7 @@
  * @brief   Kleines Testprogramm fuer neu erstelle Fonts.
  ******************************************************************************
  */
- 
+
 /* Includes ------------------------------------------------------------------*/
 
 #include "BMP_types.h"
@@ -42,9 +42,11 @@ int main(void) {
     } else {
       displayScaledRLE(&fileHdr, &infoHdr);
     }
-    decodeAndDisplayRLE(&fileHdr, &infoHdr);
     waitForNextImageButton();
   }
 }
+
+//TODO: Bild umdrehen
+//EXTRA TODO: Scaling zu display max anpassen
 
 // EOF

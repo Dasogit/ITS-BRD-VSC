@@ -3,7 +3,7 @@
 <title>Static Call Graph - [C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe3\out\Aufgabe3\ITSboard\Debug\Aufgabe3.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe3\out\Aufgabe3\ITSboard\Debug\Aufgabe3.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Thu Dec 11 10:20:47 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Thu Dec 11 16:12:46 2025
 <BR><P>
 <H3>Maximum Stack Usage =        592 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1258,7 +1258,7 @@ Global Symbols
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initInput
 </UL>
 
-<P><STRONG><a name="[64]"></a>main</STRONG> (Thumb, 170 bytes, Stack size 16 bytes, main.o(.text.main))
+<P><STRONG><a name="[64]"></a>main</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 592<LI>Call Chain = main &rArr; displayScaledRLE &rArr; decodeRLE8 &rArr; nextChar &rArr; startNextByteBurst &rArr; printError &rArr; lcdPrintS &rArr; GUI_disStr &rArr; GUI_disChar &rArr; LCD_fillRectangleBW &rArr; LCD_setWindow &rArr; LCD_WriteParam &rArr; LCD_WriteParameters &rArr; SPI4W_Write_Byte &rArr; check_SPI_SR &rArr; LCDErrHandler &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;waitForNextImageButton
@@ -2102,7 +2102,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processPixel
 </UL>
 
-<P><STRONG><a name="[116]"></a>scaledEndOfLine</STRONG> (Thumb, 346 bytes, Stack size 48 bytes, decoder.o(.text.scaledEndOfLine))
+<P><STRONG><a name="[116]"></a>scaledEndOfLine</STRONG> (Thumb, 332 bytes, Stack size 48 bytes, decoder.o(.text.scaledEndOfLine))
 <BR><BR>[Stack]<UL><LI>Max Depth = 336<LI>Call Chain = scaledEndOfLine &rArr; GUI_WriteLine &rArr; LCD_WriteLine &rArr; LCD_setWindow &rArr; LCD_WriteParam &rArr; LCD_WriteParameters &rArr; SPI4W_Write_Byte &rArr; check_SPI_SR &rArr; LCDErrHandler &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;averageBox

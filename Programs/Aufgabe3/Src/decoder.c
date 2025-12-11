@@ -175,7 +175,7 @@ static COLOR averageBox(int xStart, int xEnd, int yStart, int yEnd) {
  * @param yBottomUp coordinatefrom bottom to the top for emiting
  */
 static void scaledEndOfLine(int yBottomUp) {
-  int srcY = gSrcHeight - 1 - yBottomUp; // 0..H-1 von oben gezählt
+  int srcY = yBottomUp; // 0..H-1 von oben gezählt
 
   if (((srcY % gBoxHeight) != gBoxHeight - 1) && (srcY != gSrcHeight - 1)) {
     return; // noch nicht genug Zeilen für eine Box
@@ -396,8 +396,7 @@ int displayScaledRLE(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER *in
     return ERR_HANDLER(true, "displayScaledRLE: Unsupported BMP format.");
   }
 
-  if (infoHdr->biWidth > MAX_SRC_WIDTH ||
-      infoHdr->biHeight > LCD_HEIGHT * MAX_SCALE_FACTOR) {
+  if (infoHdr->biWidth > MAX_SRC_WIDTH || infoHdr->biHeight > LCD_HEIGHT * MAX_SCALE_FACTOR) {
     return ERR_HANDLER(true, "displayScaledRLE: image too large.");
   }
 
