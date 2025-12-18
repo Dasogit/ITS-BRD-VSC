@@ -1,0 +1,11 @@
+# Target labels
+ Aufgabe_04.Debug+ITSboard
+# Source files and their labels
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard-database
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard-database.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-database.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-update.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-mkdir.rule

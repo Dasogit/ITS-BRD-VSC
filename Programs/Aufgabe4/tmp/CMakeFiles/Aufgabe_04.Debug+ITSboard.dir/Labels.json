@@ -1,0 +1,52 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard-complete.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-database.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-install.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-mkdir.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-test.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Aufgabe_04.Debug+ITSboard"
+		],
+		"name" : "Aufgabe_04.Debug+ITSboard"
+	}
+}

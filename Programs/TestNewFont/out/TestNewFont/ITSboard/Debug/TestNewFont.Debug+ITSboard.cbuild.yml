@@ -1,5 +1,5 @@
 build:
-  generated-by: csolution version 2.11.0
+  generated-by: csolution version 2.12.0
   solution: ../../../../TestNewFont.csolution.yml
   project: ../../../../TestNewFont.cproject.yml
   context: TestNewFont.Debug+ITSboard

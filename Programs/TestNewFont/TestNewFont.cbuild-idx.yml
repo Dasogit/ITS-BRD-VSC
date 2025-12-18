@@ -1,8 +1,7 @@
 build-idx:
-  generated-by: csolution version 2.11.0
+  generated-by: csolution version 2.12.0
   cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
   csolution: TestNewFont.csolution.yml
-  cbuild-run: out/TestNewFont+ITSboard.cbuild-run.yml
   tmpdir: tmp
   cprojects:
     - cproject: TestNewFont.cproject.yml
@@ -11,10 +10,15 @@ build-idx:
       project: TestNewFont
       configuration: .Debug+ITSboard
       messages:
+        errors:
+          - TestNewFont.cproject.yml:189:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe 1/display.c' was not found
+          - TestNewFont.cproject.yml:190:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe 1/display.h' was not found
+          - TestNewFont.cproject.yml:191:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe 1/scanner.c' was not found
+          - TestNewFont.cproject.yml:192:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe 1/scanner.h' was not found
+          - TestNewFont.cproject.yml:193:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe 1/token.h' was not found
         info:
           - TestNewFont.cbuild-pack.yml - file is already up-to-date
-          - TestNewFont+ITSboard.cbuild-run.yml - file is already up-to-date
-          - TestNewFont.Debug+ITSboard.cbuild.yml - file is already up-to-date
+          - TestNewFont.Debug+ITSboard.cbuild.yml - file generated successfully
       packs-unused:
         - pack: ARM::CMSIS-DSP@1.16.2
         - pack: ARM::CMSIS-NN@6.0.0

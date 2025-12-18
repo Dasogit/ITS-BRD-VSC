@@ -1,0 +1,15 @@
+# ninja log v6
+29	109	7871777607319985	Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-mkdir	4264e6744c50ade3
+175	238	7871777608633339	Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-update	d23abfc184702241
+109	174	7871777607991856	Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-download	75b4d6b373ac1938
+238	307	7871777609322981	Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-patch	6e7324bb3f6d6338
+29	109	7871777607319985	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-mkdir	4264e6744c50ade3
+109	174	7871777607991856	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-download	75b4d6b373ac1938
+175	238	7871777608633339	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-update	d23abfc184702241
+238	307	7871777609322981	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-patch	6e7324bb3f6d6338
+307	6893	7871777675188202	Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-configure	9b025658767ec4f0
+307	6893	7871777675188202	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-configure	9b025658767ec4f0
+26	2429	7871777806266726	Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-database	f1ed79ce4b25c79b
+26	2429	7871777806266726	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-database	f1ed79ce4b25c79b
+52	349	7876749688993379	Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-database	f1ed79ce4b25c79b
+52	349	7876749688993379	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-database	f1ed79ce4b25c79b

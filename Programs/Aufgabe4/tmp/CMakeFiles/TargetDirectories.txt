@@ -1,0 +1,8 @@
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/database.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard-build.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard-configure.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard-executes.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/Aufgabe_04.Debug+ITSboard-database.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/edit_cache.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/CMakeFiles/rebuild_cache.dir
