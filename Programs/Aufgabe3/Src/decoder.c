@@ -19,8 +19,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#define USE_GUI_WRITELINE                                                      \
-  1 // 0 = Punktweise (Aufgabe a), 1 = WriteLine (Aufgabe b)
+#define USE_GUI_WRITELINE 1 // 0 = Punktweise (Aufgabe a), 1 = WriteLine (Aufgabe b)
 #define MAX_SRC_WIDTH (LCD_WIDTH * 5)
 #define MAX_SCALE_FACTOR 5
 #define MAX_BOX_SIZE 5

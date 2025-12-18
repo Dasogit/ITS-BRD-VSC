@@ -10,8 +10,8 @@
  */
 #include <stdint.h>
 
-#ifndef ONEWIRE_H
-#define ONEWIRE_H
+#ifndef _ONEWIRE_H_
+#define _ONEWIRE_H_
 // input output	mask
 #define MODER_MASK_PD0	(0x03U << (2 * 0))
 #define OUTPUT_MASK_PD0	(0x01U << (2 * 0))
@@ -23,6 +23,14 @@
 // input lesen
 #define IDR_MASK_PD0		(0x01U )
 #define IDR_MASK_PD1		(0x01U << 1)
+
+
+
+
+void ow_driveLow(void);
+
+void ow_release(void) ;
+
 
 /**
  * @brief Reset + presence detect 

@@ -15,11 +15,11 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-static void ow_driveLow(void) {
+void ow_driveLow(void) {
   GPIOD->BSRR = BSRR_MASK_PD0 << 16; // PD0 = 0
 }
 
-static void ow_release(void) {
+void ow_release(void) {
   GPIOD->BSRR = BSRR_MASK_PD0; // PD0 = 1 (open-drain released)
 }
 
@@ -31,7 +31,7 @@ static uint8_t ow_readPin(void) { return (GPIOD->IDR & IDR_MASK_PD0) != 0; }
  * @return
  */
 void oW_writeByte(uint8_t byte) {
-  for (uint8_t i = 0; i < 8; i++) {
+  for (int i = 0; i < 8; i++) {
     ow_writeBit(byte & 0x01);
     byte >>= 1;
   }
@@ -86,9 +86,9 @@ uint8_t oW_readBit() {
  */
 uint8_t oW_readByte() {
   uint8_t byte = 0;
-  for (uint8_t i = 0; i < 8; i++) { // für 8 Bits iterieren
-    uint8_t bit = ow_readBit(); // bit an der richtigen stelle verschieben 
-    byte |= (bit << i);   // LSB first und mit dem bisher gelesenen verodern
+  for (int i = 0; i < 8; i++) { // für 8 Bits iterieren
+    uint8_t bit = ow_readBit();     // bit an der richtigen stelle verschieben
+    byte |= (bit << i); // LSB first und mit dem bisher gelesenen verodern
   }
   return byte;
 }
@@ -98,4 +98,16 @@ uint8_t oW_readByte() {
  *
  * @return int
  */
-uint8_t oW_reset();
+uint8_t oW_reset() {
+  uint8_t presence;
+
+  ow_driveLow();
+  delay_us(480);
+  ow_release();
+
+  delay_us(70);
+  presence = (uint8_t)!ow_readPin(); // presence pulse pulls low
+
+  delay_us(410);
+  return presence;
+}

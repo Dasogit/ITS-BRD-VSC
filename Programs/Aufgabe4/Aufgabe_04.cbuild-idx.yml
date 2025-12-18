@@ -2,7 +2,6 @@ build-idx:
   generated-by: csolution version 2.12.0
   cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
   csolution: Aufgabe_04.csolution.yml
-  cbuild-run: out/Aufgabe_04+ITSboard.cbuild-run.yml
   tmpdir: tmp
   cprojects:
     - cproject: Aufgabe_04.cproject.yml
@@ -11,11 +10,15 @@ build-idx:
       project: Aufgabe_04
       configuration: .Debug+ITSboard
       messages:
+        errors:
+          - Aufgabe_04.cproject.yml:185:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/Inc/inputHandler.h' was not found
+          - Aufgabe_04.cproject.yml:188:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/Inc/signalProccessor.h' was not found
+          - Aufgabe_04.cproject.yml:195:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/Src/inputHandler.c' was not found
+          - Aufgabe_04.cproject.yml:197:11 - file 'C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/Src/signalProccessor.c' was not found
         warnings:
           - "'Inc/Aufgabe_04_ITSboard.sct' this linker script is ignored; multiple linker scripts defined"
         info:
           - Aufgabe_04.cbuild-pack.yml - file is already up-to-date
-          - Aufgabe_04+ITSboard.cbuild-run.yml - file is already up-to-date
           - Aufgabe_04.Debug+ITSboard.cbuild.yml - file is already up-to-date
       packs-unused:
         - pack: ARM::CMSIS-DSP@1.16.2

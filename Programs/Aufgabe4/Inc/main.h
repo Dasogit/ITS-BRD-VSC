@@ -11,8 +11,12 @@
 #ifndef _main_h
 #define _main_h
 #include <stdint.h>
+
+
+
+
+
+
+
 #endif 
 
-#define MAX_SENSORS 8
-uint8_t roms[MAX_SENSORS][8];
-uint8_t sensor_count = 0;
