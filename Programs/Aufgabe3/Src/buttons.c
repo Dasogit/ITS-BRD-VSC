@@ -1,6 +1,6 @@
 /**
  * @file buttons.c
- * @author your name (you@domain.com)
+ * @author Danandeh, Naghashi
  * @brief
  * @version 0.1
  * @date 2025-12-04
@@ -14,15 +14,20 @@
 #include <stdbool.h>
 
 
-/*
-* Buttons lesen
-* @param n ist der/die Pins/ Buttons die gelesen werden sollen
-* @retval pressed, ob der jeweilige oder die jeweiligen Buttons gedruckt sind
-*/
+/**
+ * @brief Buttons read
+ * 
+ * @return true 
+ * @return false 
+ */
 bool buttonPress(){
 	return GPIO_BSRR_BS6_Msk != (GPIOF->IDR & GPIO_BSRR_BS6_Msk);
 }
 
+/**
+ * @brief waiting for button being pressed 
+ * 
+ */
 void waitForNextImageButton(){
 	while (buttonPress()) {
     }

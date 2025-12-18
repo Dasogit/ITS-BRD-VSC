@@ -33,15 +33,22 @@ static int imgWidthClipped;         // tatsächliche Breite für WriteLine(min(B
 
 /** Variables and all the stuff for rescaling AUFGABE C  */
 static bool  gScaleMode  = false;
+
 static int   gSrcWidth    = 0;
 static int   gSrcHeight   = 0;
+static COLOR gSrcBuf[MAX_BOX_SIZE][MAX_SRC_WIDTH];
+
 static int   gOutWidth    = 0;
 static int   gOutHeight   = 0;
+static COLOR gOutLine[LCD_WIDTH];
+
 static int   gBoxWidth    = 1;
 static int   gBoxHeight   = 1;
-static COLOR gSrcBuf[MAX_BOX_SIZE][MAX_SRC_WIDTH];
-static COLOR gOutLine[LCD_WIDTH];
 static int   gRowCount    = 0; // wie viele Zeilen bisher eingelesen
+static int gDecodedRow = 0; // 0 = first decoded scanline (bottom line of BMP)
+
+
+
 
 
 /**
@@ -113,16 +120,12 @@ static void endOfLineNormal(int y) {
  * @param y cordinates for y axis
  * @param colorIndex color index of the palette
  */
-static void scaledEmitPixel(int x, int y, uint8_t colorIndex) {
-  if (x < 0 || x >= MAX_SRC_WIDTH)
-    return;
+static void scaledEmitPixel(int x, int yIgnored, uint8_t colorIndex) {
+  (void)yIgnored;
+  if (x < 0 || x >= gSrcWidth) return;
 
-  int srcYTop = gSrcHeight - 1 - y; // 0..H-1 von oben gezählt
-  if (srcYTop < 0 || srcYTop >= gSrcHeight)
-    return;
-
-  int row = srcYTop % gBoxHeight; // Ringbufferindex
-  gSrcBuf[row][x] = getColorFromPalette(colorIndex);
+  int rowInRing = gDecodedRow % gBoxHeight;
+  gSrcBuf[rowInRing][x] = getColorFromPalette(colorIndex);
 }
 
 
@@ -136,9 +139,10 @@ static void scaledEmitPixel(int x, int y, uint8_t colorIndex) {
  * @return COLOR of the point
  */
 static COLOR averageBox(int xStart, int xEnd, int yStart, int yEnd) {
-    unsigned int sumR = 0;
-    unsigned int sumG = 0;
-    unsigned int sumB = 0;
+    unsigned int sumR  = 0;
+    unsigned int sumG  = 0;
+    unsigned int sumB  = 0;
+
     unsigned int count = 0;
 
     for (int y = yStart; y <= yEnd; y++) {
@@ -149,7 +153,6 @@ static COLOR averageBox(int xStart, int xEnd, int yStart, int yEnd) {
             unsigned int r = (c >> 11) & 0x1F;
             unsigned int g = (c >> 5)  & 0x3F;
             unsigned int b =  c        & 0x1F;
-
             sumR += r;
             sumG += g;
             sumB += b;
@@ -174,36 +177,38 @@ static COLOR averageBox(int xStart, int xEnd, int yStart, int yEnd) {
  *
  * @param yBottomUp coordinatefrom bottom to the top for emiting
  */
-static void scaledEndOfLine(int yBottomUp) {
-  int srcY = yBottomUp; // 0..H-1 von oben gezählt
+static void scaledEndOfLine(int yIgnored) {
+  (void)yIgnored;
 
-  if (((srcY % gBoxHeight) != gBoxHeight - 1) && (srcY != gSrcHeight - 1)) {
-    return; // noch nicht genug Zeilen für eine Box
-  }
+  bool boxComplete = ((gDecodedRow % gBoxHeight) == (gBoxHeight - 1));
+  bool lastRow     = (gDecodedRow == (gSrcHeight - 1));
+  if (!boxComplete && !lastRow) return;
 
-  int dstY = srcY / gBoxHeight;
-  if (dstY >= gOutHeight)
-    return;
+  int boxIndexFromBottom = gDecodedRow / gBoxHeight;
+
+  // Map to display Y so the bottom of the BMP lands at the bottom of the output
+  int dstY = (gOutHeight - 1) - boxIndexFromBottom;
+  if (dstY < 0 || dstY >= gOutHeight) return;
+
+  int srcYEndFromBottom = gDecodedRow;
+  int srcYStartFromBottom = srcYEndFromBottom - gBoxHeight + 1;
+  if (srcYStartFromBottom < 0) srcYStartFromBottom = 0;
 
   for (int dstX = 0; dstX < gOutWidth; dstX++) {
     int xStart = dstX * gBoxWidth;
-    int xEnd = xStart + gBoxWidth - 1;
-    if (xEnd >= gSrcWidth)
-      xEnd = gSrcWidth - 1;
+    int xEnd   = xStart + gBoxWidth - 1;
+    if (xStart >= gSrcWidth) { gOutLine[dstX] = BLACK; continue; }
+    if (xEnd >= gSrcWidth) xEnd = gSrcWidth - 1;
 
-    int yStart = srcY - gBoxHeight + 1;
-    if (yStart < 0)
-      yStart = 0;
-    int yEnd = srcY;
-    if (yEnd >= gSrcHeight)
-      yEnd = gSrcHeight - 1;
-
-    gOutLine[dstX] = averageBox(xStart, xEnd, yStart, yEnd);
+    // IMPORTANT: y indices here must match what you stored into ring buffer.
+    // We stored by decodedRow%gBoxHeight, so use decoded-row indices too.
+    gOutLine[dstX] = averageBox(xStart, xEnd, srcYStartFromBottom, srcYEndFromBottom);
   }
 
   Coordinate crd = {0, dstY};
   GUI_WriteLine(crd, gOutWidth, gOutLine);
-} 
+}
+
 
 /**
  * @brief processs the pixel with either scaled variant or normal variant of the
@@ -240,25 +245,24 @@ static void processEndOfLine(int y) {
  * @param info the file infos on its type
  */
 static void initScaling(const BITMAPINFOHEADER *info) {
-  gSrcWidth = info->biWidth;
+  gSrcWidth  = info->biWidth;
   gSrcHeight = info->biHeight;
 
-  // Skalierungsfaktor bestimmen
-  double sx = (double)LCD_WIDTH / gSrcWidth;
+  double sx = (double)LCD_WIDTH  / gSrcWidth;
   double sy = (double)LCD_HEIGHT / gSrcHeight;
-  double s = (sx < sy) ? sx : sy;
+  double s  = (sx < sy) ? sx : sy;
 
-  // Grenzen 1 .. 1/5
-  if (s > 1.0)
-    s = 1.0;
-  if (s < 1.0 / MAX_SCALE_FACTOR)
-    s = 1.0 / MAX_SCALE_FACTOR;
+  if (s > 1.0) s = 1.0;
+  if (s < 1.0 / MAX_SCALE_FACTOR) s = 1.0 / MAX_SCALE_FACTOR;
 
-  gBoxWidth = (int)ceil(1.0 / s);
+  gBoxWidth  = (int)ceil(1.0 / s);
   gBoxHeight = (int)ceil(1.0 / s);
 
-  gOutWidth = LCD_WIDTH;
-  gOutHeight = LCD_HEIGHT;
+  gOutWidth  = (gSrcWidth  + gBoxWidth  - 1) / gBoxWidth;
+  gOutHeight = (gSrcHeight + gBoxHeight - 1) / gBoxHeight;
+
+  if (gOutWidth  > LCD_WIDTH)  gOutWidth  = LCD_WIDTH;
+  if (gOutHeight > LCD_HEIGHT) gOutHeight = LCD_HEIGHT;
 
   gRowCount = 0;
 }
@@ -291,19 +295,22 @@ static int decodeRLE8(const BITMAPINFOHEADER *infoHdr) {
     uint8_t count = (uint8_t)c;
     uint8_t value = (uint8_t)v;
 
-    if (count > 0) { // encoded mode
+    if (count > 0) {
+       // encoded mode
       for (int i = 0; i < count; i++) {
         // pixel ausgeben mit (x,y) mit colorIndex = value danach x um 1 erhöhen
         // x nicht über width hinauslaufen
         processPixel(x, y, value);
         x++;
       }
-    } else { // Escape mode/ control mode aka non Encoded mode
+    } else {
+       // Escape mode/ control mode aka non Encoded mode
       switch (value) {
       case 0: // End of Line (EOL)
         processEndOfLine(y);
         x = 0;
         y--;
+        if (gScaleMode) gDecodedRow++; 
         break;
       case 1: // End of Bitmap (EOB)
         // pic is finished
@@ -372,6 +379,7 @@ int decodeAndDisplayRLE(const BITMAPFILEHEADER *fileHdr,const BITMAPINFOHEADER *
   if (paletteSize <= 0) {
     return NOK;
   }
+  
 
   gScaleMode = false; // wichtig für aufgabe c
 
@@ -413,7 +421,6 @@ int displayScaledRLE(const BITMAPFILEHEADER *fileHdr, const BITMAPINFOHEADER *in
   gScaleMode = false; // zur Sicherheit wieder zurück
 
   return res;
-
 
 }
 

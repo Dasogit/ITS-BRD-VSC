@@ -1,3 +1,5 @@
+/**
+ */
 #include <errorhandler.h>
 
 #include "lcd.h"
