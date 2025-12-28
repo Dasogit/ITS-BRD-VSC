@@ -1,5 +1,5 @@
 build:
-  generated-by: csolution version 2.12.0
+  generated-by: csolution version 2.12.0+p41-gfeadfc5e
   solution: ../../../../Aufgabe_04.csolution.yml
   project: ../../../../Aufgabe_04.cproject.yml
   context: Aufgabe_04.Debug+ITSboard
@@ -329,13 +329,17 @@ build:
           category: linkerScript
         - file: ../../../../Inc/crc.h
           category: header
-        - file: ../../../../Inc/inputHandler.h
-          category: header
         - file: ../../../../Inc/main.h
           category: header
         - file: ../../../../Inc/outputHandler.h
           category: header
-        - file: ../../../../Inc/signalProccessor.h
+        - file: ../../../../Inc/oneWire.h
+          category: header
+        - file: ../../../../Inc/oneWireROM.h
+          category: header
+        - file: ../../../../Inc/sensorDriver.h
+          category: header
+        - file: ../../../../Inc/timeDelay.h
           category: header
     - group: Program/User/Src
       files:
@@ -343,11 +347,15 @@ build:
           category: sourceC
         - file: ../../../../Src/crc.c
           category: sourceC
-        - file: ../../../../Src/inputHandler.c
-          category: sourceC
         - file: ../../../../Src/outputHandler.c
           category: sourceC
-        - file: ../../../../Src/signalProccessor.c
+        - file: ../../../../Src/oneWire.c
+          category: sourceC
+        - file: ../../../../Src/oneWireROM.c
+          category: sourceC
+        - file: ../../../../Src/sensorDriver.c
+          category: sourceC
+        - file: ../../../../Src/timeDelay.c
           category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h

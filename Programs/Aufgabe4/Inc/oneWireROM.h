@@ -79,4 +79,5 @@ uint8_t ow_skipROM(void);
  */
 int ow_searchNextROM(uint8_t rom[MAX_SENSORS][8]);
 
-#endif /* ONEWIRE_ROM_H */
+#endif // _ONEWIRE_ROM_H 
+// EOF

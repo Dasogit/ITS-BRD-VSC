@@ -39,4 +39,5 @@ void output_printAllTemps(void);
  */
 void output_automate(void);
 
-#endif /* OUTPUT_HANDLER_H */
+#endif // OUTPUT_HANDLER_H
+// EOF

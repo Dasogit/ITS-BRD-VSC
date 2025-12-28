@@ -18,5 +18,6 @@
 
 
 
-#endif 
+#endif // _main_h
+// EOF
 

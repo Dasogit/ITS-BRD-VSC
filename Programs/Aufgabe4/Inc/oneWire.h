@@ -26,9 +26,17 @@
 
 
 
-
+/**
+ * @brief Drive the 1-Wire bus low (pull it to ground)
+ * 
+ */
 void ow_driveLow(void);
 
+
+/**
+ * @brief Release the 1-Wire bus (pull it high)
+ * 
+ */
 void ow_release(void) ;
 
 
@@ -40,33 +48,37 @@ void ow_release(void) ;
 uint8_t ow_reset(void);
 
 /* Bit IO */
+
 /**
- * @brief Bit output
- * 
- * @param bit 
+ * @brief Read a byte from the 1-Wire bus
+ *
+ * @param bit the bit to write to the bus to
+ * @return uint8_t the byte read from the bus
  */
 void ow_writeBit(uint8_t bit);
 
+
 /**
- * @brief bit input 
- * 
- * @return uint8_t 
+ * @brief Read a bit from the 1-Wire bus
+ *
+ * @return uint8_t the bit read from the bus
  */
 uint8_t ow_readBit(void);
 
 /* Byte IO */
 /**
- * @brief byte output
- * 
- * @param byte 
+ * @brief Write a byte to the 1-Wire bus
+ *
+ * @param byte the byte to write to the bus to
  */
 void ow_writeByte(uint8_t byte);
 
 /**
- * @brief bytte input 
- * 
- * @return uint8_t 
+ * @brief Read a byte from the 1-Wire bus
+ *
+ * @return uint8_t the byte read from the bus
  */
 uint8_t ow_readByte(void);
 
-#endif /* ONEWIRE_H */
+#endif // ONEWIRE_H
+// EOF

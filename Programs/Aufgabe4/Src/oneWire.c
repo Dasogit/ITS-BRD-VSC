@@ -15,22 +15,37 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+// ChatGPT says ow_driveLow and ow_release should be static
+
+/**
+ * @brief Drive the 1-Wire bus low (pull it to ground)
+ * 
+ */
 void ow_driveLow(void) {
   GPIOD->BSRR = BSRR_MASK_PD0 << 16; // PD0 = 0
 }
 
+/**
+ * @brief Release the 1-Wire bus (pull it high)
+ * 
+ */
 void ow_release(void) {
   GPIOD->BSRR = BSRR_MASK_PD0; // PD0 = 1 (open-drain released)
 }
 
+/**
+ * @brief Read the state of the 1-Wire bus pin
+ *
+ * @return uint8_t 0 = low, 1 = high
+ */
 static uint8_t ow_readPin(void) { return (GPIOD->IDR & IDR_MASK_PD0) != 0; }
 
 /**
- * @brief
+ * @brief Write a byte to the 1-Wire bus
  *
- * @return
+ * @param byte the byte to write to the bus to
  */
-void oW_writeByte(uint8_t byte) {
+void ow_writeByte(uint8_t byte) {
   for (int i = 0; i < 8; i++) {
     ow_writeBit(byte & 0x01);
     byte >>= 1;
@@ -38,9 +53,10 @@ void oW_writeByte(uint8_t byte) {
 }
 
 /**
- * @brief
+ * @brief Read a byte from the 1-Wire bus
  *
- * @param bit
+ * @param bit the bit to write to the bus to
+ * @return uint8_t the byte read from the bus
  */
 void ow_writeBit(uint8_t bit) {
   if (bit) {
@@ -56,12 +72,14 @@ void ow_writeBit(uint8_t bit) {
   }
 }
 
+
+
 /**
- * @brief
+ * @brief Read a bit from the 1-Wire bus
  *
- * @return int
+ * @return uint8_t the bit read from the bus
  */
-uint8_t oW_readBit() {
+uint8_t ow_readBit() {
   uint8_t bit;
 
   /* Initiate read slot */
@@ -80,11 +98,11 @@ uint8_t oW_readBit() {
 }
 
 /**
- * @brief
+ * @brief Read a byte from the 1-Wire bus
  *
- * @return int
+ * @return uint8_t the byte read from the bus
  */
-uint8_t oW_readByte() {
+uint8_t ow_readByte() {
   uint8_t byte = 0;
   for (int i = 0; i < 8; i++) { // für 8 Bits iterieren
     uint8_t bit = ow_readBit();     // bit an der richtigen stelle verschieben
@@ -94,11 +112,11 @@ uint8_t oW_readByte() {
 }
 
 /**
- * @brief
+ * @brief Reset + presence detect
  *
- * @return int
+ * @return uint8_t 1 = presence, 0 = no presence
  */
-uint8_t oW_reset() {
+uint8_t ow_reset() {
   uint8_t presence;
 
   ow_driveLow();
@@ -111,3 +129,5 @@ uint8_t oW_reset() {
   delay_us(410);
   return presence;
 }
+
+//EOF

@@ -40,8 +40,4 @@ int main(void) {
 	}
 }
 
-
-//TODO read scratchpad und write Scratchpad Family code 0x10 s11
-
-
 // EOF

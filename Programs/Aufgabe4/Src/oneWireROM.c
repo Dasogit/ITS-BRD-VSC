@@ -12,10 +12,8 @@
 #include "oneWireROM.h"
 #include "lcd.h"
 #include "oneWire.h"
-#include "sensorDriver.h"
-#include "timeDelay.h"
 
-#define multiSensor 1 // 1 nein 0 ja
+#define multiSensor 1 // 1 erfolg 0 fehler
 
 /**
  * @brief Read ROM (0x33) - only valid if exactly ONE device on the bus
@@ -82,6 +80,7 @@ uint8_t ow_matchROM(const uint8_t rom[8]) {
  * command followed  by  a  Read  Scratchpad  command  will  cause  a  data
  * collision  on  the  bus  if  there  is  more  than  one  slave since multiple
  * devices will attempt to transmit data  simultaneously.
+ *
  * @return uint8_t 1 = ok, 0 = error
  */
 uint8_t ow_skipROM(void) { // quasi Broadcast
@@ -105,8 +104,11 @@ uint8_t ow_skipROM(void) { // quasi Broadcast
  * by  data  exchange),  the  bus  master must return to Step 1 (Initialization)
  * in the transac-tion sequence. See the Operation—Alarm Signaling sec-tion for
  * an explanation of alarm flag operation.
- * @param rom
+ * @param rom 
  * @return uint8_t 1 = found next device and filled rom[8], 0 = no more / error
+ *
+ * this is basically the search all 
+ *
  */
 int ow_searchNextROM(uint8_t roms[MAX_SENSORS][8]) {
   // binäre baum wo überall ein 0 ist, ist gehen wir rein bis ende und da ist
@@ -170,3 +172,5 @@ int ow_searchNextROM(uint8_t roms[MAX_SENSORS][8]) {
 
   return count;
 }
+
+// EOF
