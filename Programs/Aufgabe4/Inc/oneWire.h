@@ -25,6 +25,9 @@
 #define IDR_MASK_PD1		(0x01U << 1)
 
 
+uint8_t ow_busIdleHigh(void);
+
+
 
 /**
  * @brief Drive the 1-Wire bus low (pull it to ground)

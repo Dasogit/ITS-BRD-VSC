@@ -17,6 +17,16 @@
 
 // ChatGPT says ow_driveLow and ow_release should be static
 
+
+uint8_t ow_busIdleHigh(void) {
+    ow_release();
+    delay_us(5);
+    return (GPIOD->IDR & IDR_MASK_PD0) != 0;
+}
+
+
+
+
 /**
  * @brief Drive the 1-Wire bus low (pull it to ground)
  * 

@@ -10,7 +10,6 @@
  */
 
 #include "oneWireROM.h"
-#include "lcd.h"
 #include "oneWire.h"
 
 #define multiSensor 1 // 1 erfolg 0 fehler
@@ -38,6 +37,7 @@ uint8_t ow_readROM(uint8_t rom[8]) {
   }
   return 1;
 }
+
 // maybe 0 or 1 should be swapped in the upper function
 
 /**
@@ -111,67 +111,167 @@ uint8_t ow_skipROM(void) { // quasi Broadcast
  * this is basically the search all 
  *
  */
-int ow_searchNextROM(uint8_t roms[MAX_SENSORS][8]) {
   // binäre baum wo überall ein 0 ist, ist gehen wir rein bis ende und da ist
   // quasi unser
-  // TODO: das durch 64 iterieren dann ow_readByte
+ int ow_searchNextROM(uint8_t roms[MAX_SENSORS][8]) {
+    int remaining = 1;
+    int count = 0;
+    int lengths[MAX_SENSORS];
+    uint64_t paths[MAX_SENSORS];
 
-  int remaining = 1;
-  int count = 0;
-  int lengths[MAX_SENSORS];
-  uint64_t paths[MAX_SENSORS];
+    lengths[0] = 0;
+    paths[0] = 0;
 
-  lengths[0] = 0;
-  paths[0] = 0;
+    while (remaining > 0) {
 
-  while (remaining > 0) {
-
-    remaining--;
-    int len = lengths[remaining];
-    uint64_t path = paths[remaining];
-
-    if (!ow_reset())
-      return 0;
-    ow_writeByte(SEARCH_ROM_CMD);
-
-    for (int i = 0; i < 64; i++) {
-      int bit = ow_readBit();
-      int compBit = ow_readBit();
-      switch ((bit << 1) | compBit) {
-      case 0b00:
-        // abzweigung
-        if (i < len) {
-            ow_writeBit((path >> i) & 1);
+        // stop if we already collected enough sensors
+        if (count >= MAX_SENSORS) {
+            return count;
         }
-        else {
-            ow_writeBit(0);
-            paths[remaining] = path | (1ULL << i);
-            lengths[remaining] = i + 1;
-            remaining++;
-        }
-        break;
 
-      case 0b01:
-        ow_writeBit(0);
-        break;
-      case 0b10:
-        ow_writeBit(1);
-        path |= (1ULL << i);
-        break;
-      case 0b11:
-        return -1;
-      }
+        remaining--;
+        int len = lengths[remaining];
+        uint64_t path = paths[remaining];
+
+        if (!ow_reset()) {
+            return count; // no presence -> stop search
+        }
+
+        ow_writeByte(SEARCH_ROM_CMD);
+
+        for (int i = 0; i < 64; i++) {
+            int bit = ow_readBit();
+            int compBit = ow_readBit();
+            int pair = (bit << 1) | compBit;
+
+            switch (pair) {
+                case 0b00:
+                    // discrepancy (both 0 and 1 exist)
+                    if (i < len) {
+                        ow_writeBit((uint8_t)((path >> i) & 1ULL));
+                    } else {
+                        // choose 0 for this path
+                        ow_writeBit(0);
+
+                        // push alternative branch (1) only if space
+                        if (remaining < MAX_SENSORS) {
+                            paths[remaining] = path | (1ULL << i);
+                            lengths[remaining] = i + 1;
+                            remaining++;
+                        }
+                    }
+                    break;
+
+                case 0b01:
+                    // actual bit = 0
+                    ow_writeBit(0);
+                    break;
+
+                case 0b10:
+                    // actual bit = 1
+                    ow_writeBit(1);
+                    path |= (1ULL << i);
+                    break;
+
+                case 0b11:
+                    // no device responded / error
+                    return count;
+            }
+        }
+
+        // store ROM (LSB first)
+        for (int i = 0; i < 8; i++) {
+            roms[count][i] = (uint8_t)((path >> (8 * i)) & 0xFF);
+        }
+
+        count++;
     }
 
-    for(int i = 0; i < 8; i++)
-    {
-        roms[count][i] = path >> (8 * i);
-    }
-
-    count++;
-  }
-
-  return count;
+    return count;
 }
+
+
+
+
+// int ow_searchNextROM(uint8_t roms[MAX_SENSORS][8]) {
+//     int remaining = 1;
+//     int count = 0;
+//     int lengths[MAX_SENSORS];
+//     uint64_t paths[MAX_SENSORS];
+
+//     lengths[0] = 0;
+//     paths[0] = 0;
+
+//     while (remaining > 0) {
+//         remaining--;
+
+//         int len = lengths[remaining];
+//         uint64_t path = paths[remaining];
+
+//         // reset + presence
+//         if (!ow_reset()) {
+//             return count; // no bus presence or reset failed
+//         }
+
+//         ow_writeByte(SEARCH_ROM_CMD);
+
+//         for (int bitIndex = 0; bitIndex < 64; bitIndex++) {
+//             int bit = ow_readBit();
+//             int compBit = ow_readBit();
+//             int pair = (bit << 1) | compBit;
+
+//             switch (pair) {
+//                 case 0b00:
+//                     // discrepancy: both 0 and 1 exist
+//                     if (bitIndex < len) {
+//                         ow_writeBit((path >> bitIndex) & 1);
+//                     } else {
+//                         // choose 0 for current path
+//                         ow_writeBit(0);
+
+//                         // push the alternative branch (1) if we have space
+//                         if (remaining < MAX_SENSORS) {
+//                             paths[remaining] = path | (1ULL << bitIndex);
+//                             lengths[remaining] = bitIndex + 1;
+//                             remaining++;
+//                         } else {
+//                             // no space for more branches
+//                             // continue search but we cannot store all devices
+//                         }
+//                     }
+//                     break;
+
+//                 case 0b01:
+//                     // bit=0, comp=1 => actual bit is 0
+//                     ow_writeBit(0);
+//                     break;
+
+//                 case 0b10:
+//                     // bit=1, comp=0 => actual bit is 1
+//                     ow_writeBit(1);
+//                     path |= (1ULL << bitIndex);
+//                     break;
+
+//                 case 0b11:
+//                     // no device responded (or bus error)
+//                     return count;
+//             }
+//         }
+
+//         // store found ROM if we still have capacity
+//         if (count >= MAX_SENSORS) {
+//             return count;
+//         }
+
+//         for (int i = 0; i < 8; i++) {
+//             roms[count][i] = (uint8_t)(path >> (8 * i));
+//         }
+
+//         count++;
+//     }
+
+//     return count;
+// }
+
 
 // EOF

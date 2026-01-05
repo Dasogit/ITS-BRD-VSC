@@ -207,9 +207,11 @@ target_link_libraries(Group_Program_User_Inc_ABSTRACTIONS INTERFACE
 add_library(Group_Program_User_Src OBJECT
   "${SOLUTION_ROOT}/Src/main.c"
   "${SOLUTION_ROOT}/Src/crc.c"
-  "${SOLUTION_ROOT}/Src/inputHandler.c"
   "${SOLUTION_ROOT}/Src/outputHandler.c"
-  "${SOLUTION_ROOT}/Src/signalProccessor.c"
+  "${SOLUTION_ROOT}/Src/oneWire.c"
+  "${SOLUTION_ROOT}/Src/oneWireROM.c"
+  "${SOLUTION_ROOT}/Src/sensorDriver.c"
+  "${SOLUTION_ROOT}/Src/timeDelay.c"
 )
 target_include_directories(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>

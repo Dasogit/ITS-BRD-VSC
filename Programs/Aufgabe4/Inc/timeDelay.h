@@ -30,4 +30,7 @@ void delay_us(uint32_t us);
  */
 void delay_ms(uint32_t ms);
 
+
+void myDelay(uint32_t us);
+
 #endif // _timeDelay_h

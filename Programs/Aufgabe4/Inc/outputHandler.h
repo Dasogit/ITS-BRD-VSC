@@ -27,17 +27,7 @@ void output_printROM(const uint8_t rom[8]);
  */
 void output_printTemp_mC(int32_t temp_mC);
 
-/**
- * @brief 
- * 
- */
-void output_printAllTemps(void);
 
-/**
- * @brief 
- * 
- */
-void output_automate(void);
 
 #endif // OUTPUT_HANDLER_H
 // EOF

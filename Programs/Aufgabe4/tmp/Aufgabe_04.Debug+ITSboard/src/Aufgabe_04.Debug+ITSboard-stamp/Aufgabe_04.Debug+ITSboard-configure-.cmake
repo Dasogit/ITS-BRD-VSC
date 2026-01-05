@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "C:/Users/smdan/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;-G;Ninja;-S;C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard;-B;C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/1;-DSOLUTION_ROOT=C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4;-DCMSIS_PACK_ROOT=C:/Users/smdan/AppData/Local/Arm/Packs;-DCMSIS_COMPILER_ROOT=C:/Users/smdan/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.12.0/etc")
+set(command "C:/Users/smdan/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;-G;Ninja;-S;C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard;-B;C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/1;-DSOLUTION_ROOT=C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4;-DCMSIS_PACK_ROOT=C:/Users/smdan/AppData/Local/Arm/Packs;-DCMSIS_COMPILER_ROOT=C:/Users/smdan/.vscode/extensions/arm.cmsis-csolution-1.64.1-win32-x64/tools/cmsis-toolbox/etc")
 set(log_merged "")
 set(log_output_on_failure "ON")
 set(stdout_log "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe4/tmp/Aufgabe_04.Debug+ITSboard/src/Aufgabe_04.Debug+ITSboard-stamp/Aufgabe_04.Debug+ITSboard-configure-out.log")

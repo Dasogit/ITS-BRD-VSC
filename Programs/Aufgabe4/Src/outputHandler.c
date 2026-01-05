@@ -11,7 +11,6 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include <stdlib.h>
 #include "outputHandler.h"
 #include "lcd.h"
 
@@ -24,8 +23,15 @@
  * @param rom array of 8 bytes representing the ROM code 
  */
 
-void output_printROM(const uint8_t rom[8]){
-    
+void output_printROM(const uint8_t rom[8]) {
+    static const char hex[] = "0123456789ABCDEF";
+
+    for (int i = 0; i < 8; i++) {
+        uint8_t b = rom[i];
+        lcdPrintC(hex[(b >> 4) & 0x0F]);  // high nibble
+        lcdPrintC(hex[b & 0x0F]);         // low nibble
+    }
+    lcdPrintlnS("");
 }
 
 /**
@@ -33,36 +39,24 @@ void output_printROM(const uint8_t rom[8]){
  * 
  * @param temp_mC temperature in milli degrees Celsius
  */
-void output_printTemp_mC(int32_t temp_mC){
-    bool isNegative = false;
-    if(temp_mC < 0){
-        isNegative = true;
+void output_printTemp_mC(int32_t temp_mC) {
+    if (temp_mC < 0) {
         lcdPrintC('-');
+        temp_mC = -temp_mC;
     }
-    int abs_mc = abs(temp_mC);
-    int abs_mc_int = abs_mc/1000;
-    int abs_mc_f = abs_mc % 1000;
-    lcdPrintInt(abs_mc_int);
+
+    int32_t intPart = temp_mC / 1000;
+    int32_t fracPart = temp_mC % 1000;
+
+    lcdPrintInt(intPart);
     lcdPrintC('.');
-    lcdPrintInt(abs_mc_f);
-    lcdPrintlnS(""); 
+
+    if (fracPart < 100) lcdPrintC('0');
+    if (fracPart < 10)  lcdPrintC('0');
+    lcdPrintInt(fracPart);
+
+    lcdPrintlnS(" C");
 }
 
-/**
- * @brief prints all temperatures on the display
- * 
- */
-void output_printAllTemps(void){
-    lcdPrintlnS("All Temps:");
-    // TODO: Implement printing all temperatures
-}
-
-/**
- * @brief automate output handling and display updates 
- * 
- */
-void output_automate(void){
-    // TODO: Implement output automation logic
-}
 
 //EOF

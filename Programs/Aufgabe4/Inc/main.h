@@ -10,9 +10,6 @@
  */
 #ifndef _main_h
 #define _main_h
-#include <stdint.h>
-
-
 
 
 #endif // _main_h
