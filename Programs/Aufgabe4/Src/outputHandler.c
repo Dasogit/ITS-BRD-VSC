@@ -11,7 +11,6 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include "outputHandler.h"
 #include "lcd.h"
@@ -26,7 +25,7 @@
  */
 
 void output_printROM(const uint8_t rom[8]){
-    lcdPrintlnS((char * )rom);
+    
 }
 
 /**
@@ -41,7 +40,11 @@ void output_printTemp_mC(int32_t temp_mC){
         lcdPrintC('-');
     }
     int abs_mc = abs(temp_mC);
-    lcdPrintInt(abs_mc);
+    int abs_mc_int = abs_mc/1000;
+    int abs_mc_f = abs_mc % 1000;
+    lcdPrintInt(abs_mc_int);
+    lcdPrintC('.');
+    lcdPrintInt(abs_mc_f);
     lcdPrintlnS(""); 
 }
 

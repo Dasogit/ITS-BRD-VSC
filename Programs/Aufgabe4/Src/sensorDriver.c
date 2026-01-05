@@ -10,7 +10,6 @@
  */
 #include "sensorDriver.h"
 #include "crc.h"
-#include "lcd.h"
 #include "oneWire.h"
 #include "oneWireROM.h"
 #include "timeDelay.h"
@@ -39,8 +38,9 @@
  */
 uint8_t ds_startConversion(void) {
   ow_writeByte(CONVERT_T_CMD);
-  delay_us(750);
-  ow_driveLow();
+  delay_ms(750);
+  //ow_driveLow(); // should be strong pull up aka open drain idle high
+  ow_release();
   return 1;
 }
 
@@ -59,7 +59,7 @@ uint8_t ds_readScratchpad(const uint8_t rom[8], uint8_t sp[9]) {
   uint8_t presence = ow_reset();
   if (presence == 0) {
     // Return NOK ERROR
-    lcdPrintS("NOK Presence on ow_matchROM from oneWireROM.c");
+    //lcdPrintS("NOK Presence on ow_matchROM from oneWireROM.c");
     return 0;
   }
   if (ow_matchROM(rom) == 0) {

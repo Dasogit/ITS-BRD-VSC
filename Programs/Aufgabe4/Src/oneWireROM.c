@@ -29,15 +29,16 @@ uint8_t ow_readROM(uint8_t rom[8]) {
   uint8_t presence = ow_reset();
   if (presence == 0) {
     // Return NOK ERROR
-    lcdPrintS("NOK Presence on ow_readROM from oneWireROM.c");
-    return 1;
+    // lcdPrintS("NOK Presence on ow_readROM from oneWireROM.c");
+    return 0;
   }
   ow_writeByte(READ_ROM_CMD);
   for (int i = 0; i < 8; i++) {
     rom[i] = ow_readByte();
   }
-  return 0;
+  return 1;
 }
+// maybe 0 or 1 should be swapped in the upper function
 
 /**
  * @brief Match ROM (0x55) - selects a specific device
@@ -55,7 +56,7 @@ uint8_t ow_matchROM(const uint8_t rom[8]) {
   uint8_t presence = ow_reset();
   if (presence == 0) {
     // Return NOK ERROR
-    lcdPrintS("NOK Presence on ow_matchROM from oneWireROM.c");
+    //lcdPrintS("NOK Presence on ow_matchROM from oneWireROM.c");
     return 0;
   }
   ow_writeByte(MATCH_ROM_CMD);
@@ -87,7 +88,7 @@ uint8_t ow_skipROM(void) { // quasi Broadcast
   uint8_t presence = ow_reset();
   if (presence == 0) {
     // Return NOK ERROR
-    lcdPrintS("NOK Presence on ow_matchROM from oneWireROM.c");
+    //lcdPrintS("NOK Presence on ow_matchROM from oneWireROM.c");
     return 0;
   }
   ow_writeByte(SKIP_ROM_CMD);
