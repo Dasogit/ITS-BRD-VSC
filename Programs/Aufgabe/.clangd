@@ -1,5 +1,6 @@
 CompileFlags:
-  CompilationDatabase: s:\GS\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug
+  CompilationDatabase: >-
+    c:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe\out\Aufgabe\ITSboard\Debug
   Add:
     - '-D_ILP32=1'
     - '-D_USE_STATIC_INLINE=1'

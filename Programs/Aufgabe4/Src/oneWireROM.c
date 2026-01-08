@@ -1,7 +1,7 @@
 /**
  * @file oneWireROM.c
- * @author your name (you@domain.com)
- * @brief
+ * @author Danandeh, Naghashi
+ * @brief One Wire bus ROM functions 
  * @version 0.1
  * @date 2025-12-18
  *

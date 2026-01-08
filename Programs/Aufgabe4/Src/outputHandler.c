@@ -1,8 +1,8 @@
 /**
  * @file outputHandler.c
  * @author your name (you@domain.com)
- * @brief 
- * @version 0.1
+ * @brief Print ROMs on the display 
+ * @version Last 
  * @date 2025-12-11
  * 
  * @copyright Copyright (c) 2025

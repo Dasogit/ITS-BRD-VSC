@@ -1,7 +1,7 @@
 /**
  * @file timeDelay.c
- * @author your name (you@domain.com)
- * @brief 
+ * @author Naghashi, Danandeh
+ * @brief Time delay modul with mili and micro seconds 
  * @version 0.1
  * @date 2025-12-17
  * 

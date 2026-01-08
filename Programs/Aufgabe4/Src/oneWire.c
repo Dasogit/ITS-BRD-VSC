@@ -1,11 +1,11 @@
 /**
  * @file oneWire.c
- * @author your name (you@domain.com)
- * @brief
- * @version 0.1
+ * @author Danandeh, Naghashi
+ * @brief One wire bus IO functions 
+ * @version Last version 
  * @date 2025-12-17
  *
- * @copyright Copyright (c) 2025
+ * @copyright Copyright (c) 2026
  *
  */
 
@@ -15,7 +15,6 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-// ChatGPT says ow_driveLow and ow_release should be static
 
 
 uint8_t ow_busIdleHigh(void) {
@@ -23,8 +22,6 @@ uint8_t ow_busIdleHigh(void) {
     delay_us(5);
     return (GPIOD->IDR & IDR_MASK_PD0) != 0;
 }
-
-
 
 
 /**

@@ -1,8 +1,8 @@
 /**
  * @file sensorDriver.c
- * @author your name (you@domain.com)
- * @brief
- * @version 0.1
+ * @author Danandeh, Naghashi
+ * @brief DS18B20 and DS18S20 functions for conversion and scratchpad 
+ * @version 
  * @date 2025-12-17
  *
  * @copyright Copyright (c) 2025

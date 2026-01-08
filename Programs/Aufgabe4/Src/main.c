@@ -1,26 +1,24 @@
 /**
- ******************************************************************************
- * @file    main.c
- * @author  Franz Korf
- * @brief   Kleines Testprogramm fuer neu erstelle Fonts.
- ******************************************************************************
+ * @file main.c
+ * @author Danandeh, Naghashi
+ * @brief 
+ * @version last hopefully
+ * @date 2026-01-08
+ * 
+ * @copyright Copyright (c) 2026
+ * 
  */
-/* Includes ------------------------------------------------------------------*/
 
-#include "main.h"
+
+
+
 #include "LCD_GUI.h"
 #include "LCD_Touch.h"
-#include "additionalFonts.h"
-#include "crc.h"
-#include "error.h"
-#include "fontsFLASH.h"
 #include "init.h"
-#include "lcd.h"
 #include "oneWire.h"
 #include "oneWireROM.h"
 #include "outputHandler.h"
 #include "sensorDriver.h"
-#include "timeDelay.h"
 #include "timer.h"
 #include <stdint.h>
 #include <stdlib.h>
