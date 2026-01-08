@@ -180,7 +180,6 @@ project:
     - group: Program/User/Inc
       files:
         - file: ../../ITS_BRD_LIB/Inc/lcd.h
-        - file: Inc/Aufgabe_04_ITSboard.sct
         - file: Inc/crc.h
         - file: Inc/main.h
         - file: Inc/outputHandler.h

@@ -35,6 +35,7 @@ int main(void) {
   uint8_t roms[4][8]; // exactly 4 sensors
   uint8_t sp[9];
   int32_t temp_mC;
+  
   int printed = 0;
   int32_t last_temp_mC = 0;
   uint8_t has_last = 0;

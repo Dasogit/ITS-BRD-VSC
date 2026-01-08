@@ -325,8 +325,6 @@ build:
       files:
         - file: ../../../../../../ITS_BRD_LIB/Inc/lcd.h
           category: header
-        - file: ../../../../Inc/Aufgabe_04_ITSboard.sct
-          category: linkerScript
         - file: ../../../../Inc/crc.h
           category: header
         - file: ../../../../Inc/main.h
