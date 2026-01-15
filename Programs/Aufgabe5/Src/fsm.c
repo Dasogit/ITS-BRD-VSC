@@ -24,9 +24,8 @@
 
 
 static int lastPhase;   // last phase 0..3
-static int stepCounter; // signed step count
-static int lastDir;     // +1 forward, -1 backward, 0 none
-static int curState;
+volatile int stepCounter; // signed step count
+volatile int curState;
 
 /**
  * @brief init state
@@ -35,7 +34,6 @@ static int curState;
 void state_init() {
   lastPhase   = input_readRaw();
   stepCounter = 0;
-  lastDir     = 0;
   curState    = 0;
 }
 
@@ -60,13 +58,11 @@ void state_decoder(int currentPhase) {
     break;
   case DELTA_FORWARD:
     stepCounter++;
-    lastDir   = +1;   //wollte ich +=1 oder 1 ??????
     lastPhase = currentPhase;
     curState  = STATE_FORWARD;
     break;
   case DELTA_BACK:
     stepCounter--;
-    lastDir   = -1;
     lastPhase = currentPhase;
     curState  = STATE_BACKWARD;
     break;
@@ -78,17 +74,6 @@ void state_decoder(int currentPhase) {
   }
 }
 
-
-/**
- * @brief Set the cur state test object
- * 
- * @return int set curstate to error mode 
- */
-int set_cur_state_test(){
-  return curState = STATE_ERROR;
-}
-
-
 /**
  * @brief getter for cur_state 
  * 
@@ -99,12 +84,6 @@ int cur_state(void)
   return curState;
 }
 
-/**
- * @brief returns the last direction
- *
- * @return int last direction
- */
-int last_direction() { return lastDir; }
 
 /**
  * @brief counts the steps

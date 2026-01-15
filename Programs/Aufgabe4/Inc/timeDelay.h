@@ -1,7 +1,7 @@
 /**
  * @file timeDelay.h
- * @author your name (you@domain.com)
- * @brief
+ * @author Danandeh
+ * @brief time delay 
  * @version 0.1
  * @date 2025-12-17
  *
@@ -31,6 +31,11 @@ void delay_us(uint32_t us);
 void delay_ms(uint32_t ms);
 
 
+/**
+ * @brief another delay 
+ * 
+ * @param us 
+ */
 void myDelay(uint32_t us);
 
 #endif // _timeDelay_h

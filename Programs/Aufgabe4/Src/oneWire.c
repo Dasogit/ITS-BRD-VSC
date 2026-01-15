@@ -16,7 +16,11 @@
 #include <stdint.h>
 
 
-
+/**
+ * @brief Drive 1 1-wire bus idle high 
+ * 
+ * @return uint8_t 
+ */
 uint8_t ow_busIdleHigh(void) {
     ow_release();
     delay_us(5);
@@ -41,7 +45,8 @@ void ow_release(void) {
 }
 
 /**
- * @brief Read the state of the 1-Wire bus pin
+ * @brief Read the state of the 1-Wire bus pin 
+ * internal help function
  *
  * @return uint8_t 0 = low, 1 = high
  */

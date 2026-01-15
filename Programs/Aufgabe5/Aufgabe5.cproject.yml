@@ -186,16 +186,18 @@ project:
         - file: Inc/fsm.h
         - file: Inc/inputHandler.h
         - file: Inc/main.h
-        - file: Inc/outputHandler.h
+        - file: Inc/isr.h
+        - file: Inc/myoutputHandler.h
 
     # Benutzerdefinierte Programmdateien
     - group: Program/User/Src
       files:
         - file: Src/main.c
-        - file: Src/calc.h
         - file: Src/fsm.c
         - file: Src/inputHandler.c
-        - file: Src/outputHandler.c
+        - file: Src/calc.c
+        - file: Src/isr.c
+        - file: Src/myoutputHandler.c
 
   components:
     - component: ARM::CMSIS:CORE

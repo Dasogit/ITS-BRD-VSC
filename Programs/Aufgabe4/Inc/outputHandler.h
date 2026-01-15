@@ -14,14 +14,14 @@
 #include <stdint.h>
 
 /**
- * @brief 
+ * @brief prints ROM address
  * 
  * @param rom 
  */
 void output_printROM(const uint8_t rom[8]);
 
 /**
- * @brief 
+ * @brief Prints the temperature for the Sensors s
  * 
  * @param temp_mC 
  */

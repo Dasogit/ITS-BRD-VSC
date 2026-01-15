@@ -208,11 +208,12 @@ add_library(Group_Program_User_Src OBJECT
   "${SOLUTION_ROOT}/Src/main.c"
   "${SOLUTION_ROOT}/Src/fsm.c"
   "${SOLUTION_ROOT}/Src/inputHandler.c"
-  "${SOLUTION_ROOT}/Src/outputHandler.c"
+  "${SOLUTION_ROOT}/Src/calc.c"
+  "${SOLUTION_ROOT}/Src/isr.c"
+  "${SOLUTION_ROOT}/Src/myoutputHandler.c"
 )
 target_include_directories(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>
-  "${SOLUTION_ROOT}/Src"
 )
 target_compile_definitions(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_COMPILE_DEFINITIONS>

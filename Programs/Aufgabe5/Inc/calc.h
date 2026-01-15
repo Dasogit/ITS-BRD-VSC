@@ -16,7 +16,7 @@
  *
  * @return int
  */
-double angle_calc();
+double angle_calc(int counter);
 
 /**
  * @brief speed calculation

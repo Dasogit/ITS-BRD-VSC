@@ -9,7 +9,6 @@
  *
  */
 
-#include "outputHandler.h"
 #include <main.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -17,7 +16,7 @@
 #include "inputHandler.h"
 #include "lcd.h"
 #include "stm32f429xx.h"
-
+#include "myoutputHandler.h"
 #define OUTPUT_LEN 10
 
 //------------- OLD AND NEW ANGLE AND SPEED ---------------

@@ -116,8 +116,8 @@ uint8_t ow_skipROM(void) { // quasi Broadcast
  int ow_searchNextROM(uint8_t roms[MAX_SENSORS][8]) {
     int remaining = 1;
     int count = 0;
-    int lengths[MAX_SENSORS];
-    uint64_t paths[MAX_SENSORS];
+    static int lengths[MAX_SENSORS];
+    static uint64_t paths[MAX_SENSORS];
 
     lengths[0] = 0;
     paths[0] = 0;

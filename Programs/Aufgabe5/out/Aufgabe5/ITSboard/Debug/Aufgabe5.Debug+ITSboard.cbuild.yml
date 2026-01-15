@@ -337,19 +337,23 @@ build:
           category: header
         - file: ../../../../Inc/main.h
           category: header
-        - file: ../../../../Inc/outputHandler.h
+        - file: ../../../../Inc/isr.h
+          category: header
+        - file: ../../../../Inc/myoutputHandler.h
           category: header
     - group: Program/User/Src
       files:
         - file: ../../../../Src/main.c
           category: sourceC
-        - file: ../../../../Src/calc.h
-          category: header
         - file: ../../../../Src/fsm.c
           category: sourceC
         - file: ../../../../Src/inputHandler.c
           category: sourceC
-        - file: ../../../../Src/outputHandler.c
+        - file: ../../../../Src/calc.c
+          category: sourceC
+        - file: ../../../../Src/isr.c
+          category: sourceC
+        - file: ../../../../Src/myoutputHandler.c
           category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
