@@ -1,0 +1,16 @@
+# Target labels
+ Aufgabe5.Release+ITSboard
+# Source files and their labels
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/CMakeFiles/Aufgabe5.Release+ITSboard
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/CMakeFiles/Aufgabe5.Release+ITSboard.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/CMakeFiles/Aufgabe5.Release+ITSboard-complete.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-build.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-database.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-executes.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-install.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-mkdir.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-test.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-update.rule

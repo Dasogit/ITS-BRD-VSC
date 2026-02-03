@@ -10,7 +10,7 @@
  */
 
 #include "outputHandler.h"
-#include <main.h>
+
 #include <stdbool.h>
 #include <stdio.h>
 #include "fsm.h"

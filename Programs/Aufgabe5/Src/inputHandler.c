@@ -9,21 +9,7 @@
 
 #include "inputHandler.h"
 #include <stdbool.h>
-#include <stdint.h>
 #include <stm32f429xx.h>
-
-int phase_lut[4] = { 0, 1, 3, 2 }; // look up table
-
-
-/**
- * @brief read the two first bits of the raw input data 
- * @return phases of the channels
- */
-uint8_t input_readRaw() {
-  uint32_t port_val = GPIOF->IDR;     // atomic read GPIOF* IDR
-  return phase_lut[port_val & 0x03]; //casting to uint8 so i only read the 8 pins 
-}
-
 
 /**
  * @brief Buttons lesen

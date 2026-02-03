@@ -1,0 +1,8 @@
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/database.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard-build.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard-configure.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard-executes.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard-database.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/edit_cache.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/rebuild_cache.dir

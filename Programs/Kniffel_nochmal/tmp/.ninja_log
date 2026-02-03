@@ -1,0 +1,15 @@
+# ninja log v6
+33	103	7918233803099389	Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-mkdir	c5ba2bd8d261cdfa
+33	103	7918233803099389	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-mkdir	c5ba2bd8d261cdfa
+104	159	7918233803653181	Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-download	3c871ae62230b20f
+104	159	7918233803653181	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-download	3c871ae62230b20f
+159	215	7918233804198189	Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-update	d142ad0b18aaeff1
+159	215	7918233804198189	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-update	d142ad0b18aaeff1
+215	275	7918233804800556	Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-patch	28b4c9b46a28f25f
+215	275	7918233804800556	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-patch	28b4c9b46a28f25f
+275	6099	7918233863042861	Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-configure	bcfe4688c1177922
+275	6099	7918233863042861	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-configure	bcfe4688c1177922
+26	2709	7918234046975186	Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-database	4555bca070e97dda
+26	2709	7918234046975186	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-database	4555bca070e97dda
+29	2760	7918234122037231	Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-database	4555bca070e97dda
+29	2760	7918234122037231	C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-database	4555bca070e97dda

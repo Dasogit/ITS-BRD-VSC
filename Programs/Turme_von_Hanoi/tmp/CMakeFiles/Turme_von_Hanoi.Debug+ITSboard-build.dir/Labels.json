@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Turme_von_Hanoi/tmp/CMakeFiles/Turme_von_Hanoi.Debug+ITSboard-build"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Turme_von_Hanoi/tmp/CMakeFiles/Turme_von_Hanoi.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Turme_von_Hanoi/tmp/Turme_von_Hanoi.Debug+ITSboard/src/Turme_von_Hanoi.Debug+ITSboard-stamp/Turme_von_Hanoi.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Turme_von_Hanoi/tmp/Turme_von_Hanoi.Debug+ITSboard/src/Turme_von_Hanoi.Debug+ITSboard-stamp/Turme_von_Hanoi.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Turme_von_Hanoi/tmp/Turme_von_Hanoi.Debug+ITSboard/src/Turme_von_Hanoi.Debug+ITSboard-stamp/Turme_von_Hanoi.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Turme_von_Hanoi/tmp/Turme_von_Hanoi.Debug+ITSboard/src/Turme_von_Hanoi.Debug+ITSboard-stamp/Turme_von_Hanoi.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Turme_von_Hanoi/tmp/Turme_von_Hanoi.Debug+ITSboard/src/Turme_von_Hanoi.Debug+ITSboard-stamp/Turme_von_Hanoi.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Turme_von_Hanoi/tmp/Turme_von_Hanoi.Debug+ITSboard/src/Turme_von_Hanoi.Debug+ITSboard-stamp/Turme_von_Hanoi.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Turme_von_Hanoi.Debug+ITSboard"
+		],
+		"name" : "Turme_von_Hanoi.Debug+ITSboard-build"
+	}
+}

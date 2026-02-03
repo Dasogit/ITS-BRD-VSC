@@ -1,0 +1,11 @@
+# Target labels
+ Mastermind.Debug+ITSboard
+# Source files and their labels
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/CMakeFiles/Mastermind.Debug+ITSboard-build
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/CMakeFiles/Mastermind.Debug+ITSboard-build.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-build.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-update.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-mkdir.rule

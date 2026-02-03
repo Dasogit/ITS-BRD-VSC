@@ -17,6 +17,7 @@
 #include <stdint.h>
 #include <timer.h>
 #include "isr.h"
+//610.000 
 
 int main(void) {
   initITSboard(); // Initialisierung des ITS Boards
@@ -38,7 +39,6 @@ int main(void) {
     uint32_t timestamp = 0;
     uint32_t ts = getTimeStamp();
     getCounterAndTimestamp(&counter, &timestamp);
-
     while (cur_state() == STATE_ERROR) {
       led_handler_status();
       if (getButton()) {

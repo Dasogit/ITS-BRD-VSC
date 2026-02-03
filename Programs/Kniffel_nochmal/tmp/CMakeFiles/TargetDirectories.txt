@@ -1,0 +1,8 @@
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/database.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard-build.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard-configure.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard-executes.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard-database.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/edit_cache.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/rebuild_cache.dir

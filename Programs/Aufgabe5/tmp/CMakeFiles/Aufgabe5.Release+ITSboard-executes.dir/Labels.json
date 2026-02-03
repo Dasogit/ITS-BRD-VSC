@@ -1,0 +1,40 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/CMakeFiles/Aufgabe5.Release+ITSboard-executes"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/CMakeFiles/Aufgabe5.Release+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-update.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard/src/Aufgabe5.Release+ITSboard-stamp/Aufgabe5.Release+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Aufgabe5.Release+ITSboard"
+		],
+		"name" : "Aufgabe5.Release+ITSboard-executes"
+	}
+}

@@ -1,5 +1,5 @@
 build:
-  generated-by: csolution version 2.12.0+p41-gfeadfc5e
+  generated-by: csolution version 2.12.0+p48-gd3223e31
   solution: ../../../../Aufgabe5.csolution.yml
   project: ../../../../Aufgabe5.cproject.yml
   context: Aufgabe5.Debug+ITSboard
@@ -327,8 +327,6 @@ build:
       files:
         - file: ../../../../../../ITS_BRD_LIB/Inc/lcd.h
           category: header
-        - file: ../../../../Inc/Aufgabe5_ITSboard.sct
-          category: linkerScript
         - file: ../../../../Inc/calc.h
           category: header
         - file: ../../../../Inc/fsm.h

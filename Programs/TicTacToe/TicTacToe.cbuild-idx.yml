@@ -1,0 +1,20 @@
+build-idx:
+  generated-by: csolution version 2.12.0+p48-gd3223e31
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: TicTacToe.csolution.yml
+  cbuild-run: out/TicTacToe+ITSboard.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: TicTacToe.cproject.yml
+  cbuilds:
+    - cbuild: out/TicTacToe/ITSboard/Debug/TicTacToe.Debug+ITSboard.cbuild.yml
+      project: TicTacToe
+      configuration: .Debug+ITSboard
+      messages:
+        info:
+          - TicTacToe.cbuild-pack.yml - file is already up-to-date
+          - TicTacToe+ITSboard.cbuild-run.yml - file is already up-to-date
+          - TicTacToe.Debug+ITSboard.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@7.0.0

@@ -1,0 +1,20 @@
+build-idx:
+  generated-by: csolution version 2.12.0+p48-gd3223e31
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: KlausurVorbreitungStuffTesten.csolution.yml
+  cbuild-run: out/KlausurVorbreitungStuffTesten+ITSboard.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: KlausurVorbreitungStuffTesten.cproject.yml
+  cbuilds:
+    - cbuild: out/KlausurVorbreitungStuffTesten/ITSboard/Debug/KlausurVorbreitungStuffTesten.Debug+ITSboard.cbuild.yml
+      project: KlausurVorbreitungStuffTesten
+      configuration: .Debug+ITSboard
+      messages:
+        info:
+          - KlausurVorbreitungStuffTesten.cbuild-pack.yml - file is already up-to-date
+          - KlausurVorbreitungStuffTesten+ITSboard.cbuild-run.yml - file is already up-to-date
+          - KlausurVorbreitungStuffTesten.Debug+ITSboard.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@7.0.0

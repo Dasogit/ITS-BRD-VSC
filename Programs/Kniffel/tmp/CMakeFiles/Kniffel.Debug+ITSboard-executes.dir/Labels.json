@@ -1,0 +1,40 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/CMakeFiles/Kniffel.Debug+ITSboard-executes"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/CMakeFiles/Kniffel.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Kniffel.Debug+ITSboard"
+		],
+		"name" : "Kniffel.Debug+ITSboard-executes"
+	}
+}

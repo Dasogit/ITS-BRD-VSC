@@ -1,0 +1,40 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard-executes"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"TicTacToe.Debug+ITSboard"
+		],
+		"name" : "TicTacToe.Debug+ITSboard-executes"
+	}
+}

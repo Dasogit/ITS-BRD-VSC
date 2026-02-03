@@ -1,5 +1,5 @@
 build:
-  generated-by: csolution version 2.12.0+p41-gfeadfc5e
+  generated-by: csolution version 2.12.0+p48-gd3223e31
   solution: ../../../../Aufgabe.csolution.yml
   project: ../../../../Aufgabe.cproject.yml
   context: Aufgabe.Debug+ITSboard

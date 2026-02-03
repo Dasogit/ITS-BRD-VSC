@@ -1,6 +1,6 @@
 CompileFlags:
   CompilationDatabase: >-
-    c:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe5\out\Aufgabe5\ITSboard\Debug
+    c:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe5\out\Aufgabe5\ITSboard\Release
   Add:
     - '-D_ILP32=1'
     - '-D_USE_STATIC_INLINE=1'
@@ -136,7 +136,6 @@ CompileFlags:
     - '-D__GCC_ATOMIC_WCHAR_T_LOCK_FREE=2'
     - '-D__GCC_CONSTRUCTIVE_SIZE=64'
     - '-D__GCC_DESTRUCTIVE_SIZE=64'
-    - '-D__GCC_HAVE_DWARF2_CFI_ASM=1'
     - '-D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1=1'
     - '-D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2=1'
     - '-D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4=1'
@@ -246,13 +245,13 @@ CompileFlags:
     - '-D__MEMORY_SCOPE_SYSTEM=0'
     - '-D__MEMORY_SCOPE_WRKGRP=2'
     - '-D__MEMORY_SCOPE_WVFRNT=3'
-    - '-D__NO_INLINE__=1'
     - '-D__OBJC_BOOL_IS_BOOL=0'
     - '-D__OPENCL_MEMORY_SCOPE_ALL_SVM_DEVICES=3'
     - '-D__OPENCL_MEMORY_SCOPE_DEVICE=2'
     - '-D__OPENCL_MEMORY_SCOPE_SUB_GROUP=4'
     - '-D__OPENCL_MEMORY_SCOPE_WORK_GROUP=1'
     - '-D__OPENCL_MEMORY_SCOPE_WORK_ITEM=0'
+    - '-D__OPTIMIZE__=1'
     - '-D__ORDER_BIG_ENDIAN__=4321'
     - '-D__ORDER_LITTLE_ENDIAN__=1234'
     - '-D__ORDER_PDP_ENDIAN__=3412'
@@ -427,9 +426,9 @@ CompileFlags:
     - >-
       -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/../../ITS_BRD_LIB/Utilities/AddFonts
     - >-
-      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Debug+ITSboard
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/tmp/Aufgabe5.Release+ITSboard
     - >-
-      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/RTE/_Debug_ITSboard
+      -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/RTE/_Release_ITSboard
     - >-
       -IC:/Users/smdan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
     - >-
@@ -437,4 +436,3 @@ CompileFlags:
     - >-
       -IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/../../ITS_BRD_LIB/Inc
     - '-IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/Inc'
-    - '-IC:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Aufgabe5/Src'

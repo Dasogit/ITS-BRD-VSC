@@ -1,0 +1,40 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard-executes"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Kniffel_nochmal.Debug+ITSboard"
+		],
+		"name" : "Kniffel_nochmal.Debug+ITSboard-executes"
+	}
+}

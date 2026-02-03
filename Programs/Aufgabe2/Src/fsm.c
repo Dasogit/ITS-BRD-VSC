@@ -10,8 +10,8 @@
  */
 
 
-#include "fsm.h"
-#include "inputHandler.h"
+#include "C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe2\Inc\fsm.h"
+#include "C:\TI_Labor\gitProjekte\ITS-BRD-VSC\Programs\Aufgabe2\Inc\inputHandler.h"
 #include <stdbool.h>
 
 //--------------- Phase transition ----------------

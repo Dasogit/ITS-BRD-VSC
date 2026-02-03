@@ -1,0 +1,52 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/CMakeFiles/Kniffel.Debug+ITSboard"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/CMakeFiles/Kniffel.Debug+ITSboard.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/CMakeFiles/Kniffel.Debug+ITSboard-complete.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-database.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-install.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-mkdir.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-test.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel/tmp/Kniffel.Debug+ITSboard/src/Kniffel.Debug+ITSboard-stamp/Kniffel.Debug+ITSboard-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Kniffel.Debug+ITSboard"
+		],
+		"name" : "Kniffel.Debug+ITSboard"
+	}
+}

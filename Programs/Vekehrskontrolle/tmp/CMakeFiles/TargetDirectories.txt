@@ -1,0 +1,8 @@
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/database.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard-build.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard-configure.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard-executes.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard-database.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/edit_cache.dir
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/rebuild_cache.dir

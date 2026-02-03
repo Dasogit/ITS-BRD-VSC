@@ -1,0 +1,16 @@
+# Target labels
+ KlausurVorbreitungStuffTesten.Debug+ITSboard
+# Source files and their labels
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/CMakeFiles/KlausurVorbreitungStuffTesten.Debug+ITSboard
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/CMakeFiles/KlausurVorbreitungStuffTesten.Debug+ITSboard.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/CMakeFiles/KlausurVorbreitungStuffTesten.Debug+ITSboard-complete.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-build.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-database.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-executes.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-install.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-mkdir.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-test.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/KlausurVorbreitungStuffTesten/tmp/KlausurVorbreitungStuffTesten.Debug+ITSboard/src/KlausurVorbreitungStuffTesten.Debug+ITSboard-stamp/KlausurVorbreitungStuffTesten.Debug+ITSboard-update.rule

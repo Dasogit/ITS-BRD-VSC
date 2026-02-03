@@ -16,16 +16,18 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-
+#include <stm32f429xx.h>
 
 /**
- * @brief reads the channel A and B 
- * 
- * @return int 
+ * @brief read the two first bits of the raw input data 
+ * @return phases of the channels
  */
-uint8_t input_readRaw();
+static inline uint8_t  input_readRaw() {
+  const static int phase_lut[4] = { 0, 1, 3, 2 }; // look up table
 
-
+  uint32_t port_val = GPIOF->IDR;     // atomic read GPIOF* IDR
+  return phase_lut[port_val & 0x03]; //casting to uint8 so i only read the 8 pins 
+}
 
 /**
  * @brief Get the Button object

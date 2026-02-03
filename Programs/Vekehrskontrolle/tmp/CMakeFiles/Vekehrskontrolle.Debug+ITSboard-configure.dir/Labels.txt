@@ -1,0 +1,10 @@
+# Target labels
+ Vekehrskontrolle.Debug+ITSboard
+# Source files and their labels
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard-configure
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-update.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-mkdir.rule

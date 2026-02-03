@@ -181,7 +181,6 @@ project:
     - group: Program/User/Inc
       files:
         - file: ../../ITS_BRD_LIB/Inc/lcd.h
-        - file: Inc/Aufgabe5_ITSboard.sct
         - file: Inc/calc.h
         - file: Inc/fsm.h
         - file: Inc/inputHandler.h

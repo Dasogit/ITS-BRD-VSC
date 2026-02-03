@@ -1,0 +1,11 @@
+# Target labels
+ TicTacToe.Debug+ITSboard
+# Source files and their labels
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard-database
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/CMakeFiles/TicTacToe.Debug+ITSboard-database.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-database.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-update.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/TicTacToe/tmp/TicTacToe.Debug+ITSboard/src/TicTacToe.Debug+ITSboard-stamp/TicTacToe.Debug+ITSboard-mkdir.rule

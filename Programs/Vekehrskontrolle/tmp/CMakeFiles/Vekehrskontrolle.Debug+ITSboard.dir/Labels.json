@@ -1,0 +1,52 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/CMakeFiles/Vekehrskontrolle.Debug+ITSboard-complete.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-database.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-install.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-mkdir.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-test.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Vekehrskontrolle/tmp/Vekehrskontrolle.Debug+ITSboard/src/Vekehrskontrolle.Debug+ITSboard-stamp/Vekehrskontrolle.Debug+ITSboard-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Vekehrskontrolle.Debug+ITSboard"
+		],
+		"name" : "Vekehrskontrolle.Debug+ITSboard"
+	}
+}

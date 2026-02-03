@@ -1,5 +1,5 @@
 build-idx:
-  generated-by: csolution version 2.12.0+p41-gfeadfc5e
+  generated-by: csolution version 2.12.0+p48-gd3223e31
   cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
   csolution: Aufgabe.csolution.yml
   cbuild-run: out/Aufgabe+ITSboard.cbuild-run.yml

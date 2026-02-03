@@ -1,0 +1,22 @@
+build-idx:
+  generated-by: csolution version 2.12.0+p48-gd3223e31
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: Kniffel_nochmal.csolution.yml
+  cbuild-run: out/Kniffel_nochmal+ITSboard.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: Kniffel_nochmal.cproject.yml
+  cbuilds:
+    - cbuild: out/Kniffel_nochmal/ITSboard/Debug/Kniffel_nochmal.Debug+ITSboard.cbuild.yml
+      project: Kniffel_nochmal
+      configuration: .Debug+ITSboard
+      messages:
+        warnings:
+          - "'Inc/Kniffel_nochmal_ITSboard.sct' this linker script is ignored; multiple linker scripts defined"
+        info:
+          - Kniffel_nochmal.cbuild-pack.yml - file is already up-to-date
+          - Kniffel_nochmal+ITSboard.cbuild-run.yml - file is already up-to-date
+          - Kniffel_nochmal.Debug+ITSboard.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@7.0.0

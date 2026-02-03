@@ -1,0 +1,20 @@
+build-idx:
+  generated-by: csolution version 2.12.0+p48-gd3223e31
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: Kniffel.csolution.yml
+  cbuild-run: out/Kniffel+ITSboard.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: Kniffel.cproject.yml
+  cbuilds:
+    - cbuild: out/Kniffel/ITSboard/Debug/Kniffel.Debug+ITSboard.cbuild.yml
+      project: Kniffel
+      configuration: .Debug+ITSboard
+      messages:
+        info:
+          - Kniffel.cbuild-pack.yml - file is already up-to-date
+          - Kniffel+ITSboard.cbuild-run.yml - file is already up-to-date
+          - Kniffel.Debug+ITSboard.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@7.0.0

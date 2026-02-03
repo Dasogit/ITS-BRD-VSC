@@ -1,6 +1,6 @@
 /**
  * @file isr.h
- * @author Naghashi, Danandeh
+ * @author  Danandeh
  * @brief Intrupt service routine 
  * @version 0.1
  * @date 2026-01-08
@@ -44,9 +44,31 @@ Hier: Flanken getriggert Auswahl: Positive Flanke Negative Flanke beide Flanke
  */
 void initISR(void);
 
+
+/**
+ * @brief ISR Requesst handlerfor for port a 
+ * 
+ */
 void EXIT0_IRQHandler(void);
+
+/**
+ * @brief ISR Requesst handler for port b 
+ * 
+ */
 void EXIT1_IRQHandler(void);
+
+/**
+ * @brief 
+ * 
+ */
 static inline void isr(void);
+
+/**
+ * @brief Get the Counter And Timestamp object
+ * 
+ * @param counter 
+ * @param timestamp 
+ */
 void getCounterAndTimestamp(int *counter, uint32_t *timestamp);
 
 #endif 

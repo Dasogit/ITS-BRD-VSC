@@ -14,6 +14,7 @@
 #include "isr.h"
 #include "fsm.h"
 #include "inputHandler.h"
+#include "myoutputHandler.h"
 #include "stm32f429xx.h"
 #include "timer.h"
 #include <stdint.h>
@@ -52,20 +53,23 @@ void initISR(void){
 }
 
 void EXTI0_IRQHandler(){
-	EXTI->PR = (1<< 0);
+	EXTI->PR = (1 << 0);
 	isr();
-
 }
 
 void EXTI1_IRQHandler(){
-	EXTI->PR = (1<< 1);
+	EXTI->PR = (1 << 1);
 	isr();
 }
 
 static inline void isr(){
+	GPIOE->BSRR = (1 << 0);
+
 	lastTimeStamp = getTimeStamp();
     int phaseNow = input_readRaw(); // 0..3
     state_decoder(phaseNow);
+
+	GPIOE->BSRR = (1 << 16);
 }
 
 void getCounterAndTimestamp(int *counter, uint32_t *timestamp)

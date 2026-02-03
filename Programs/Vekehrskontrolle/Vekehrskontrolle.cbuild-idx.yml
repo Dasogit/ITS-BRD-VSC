@@ -1,0 +1,22 @@
+build-idx:
+  generated-by: csolution version 2.12.0+p48-gd3223e31
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: Vekehrskontrolle.csolution.yml
+  cbuild-run: out/Vekehrskontrolle+ITSboard.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: Vekehrskontrolle.cproject.yml
+  cbuilds:
+    - cbuild: out/Vekehrskontrolle/ITSboard/Debug/Vekehrskontrolle.Debug+ITSboard.cbuild.yml
+      project: Vekehrskontrolle
+      configuration: .Debug+ITSboard
+      messages:
+        warnings:
+          - "'Inc/Vekehrskontrolle_ITSboard.sct' this linker script is ignored; multiple linker scripts defined"
+        info:
+          - Vekehrskontrolle.cbuild-pack.yml - file is already up-to-date
+          - Vekehrskontrolle+ITSboard.cbuild-run.yml - file is already up-to-date
+          - Vekehrskontrolle.Debug+ITSboard.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@7.0.0

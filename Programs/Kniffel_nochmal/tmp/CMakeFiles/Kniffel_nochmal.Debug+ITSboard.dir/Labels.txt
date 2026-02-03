@@ -1,0 +1,16 @@
+# Target labels
+ Kniffel_nochmal.Debug+ITSboard
+# Source files and their labels
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/CMakeFiles/Kniffel_nochmal.Debug+ITSboard-complete.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-build.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-configure.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-database.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-download.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-executes.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-install.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-mkdir.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-patch.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-test.rule
+C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Kniffel_nochmal/tmp/Kniffel_nochmal.Debug+ITSboard/src/Kniffel_nochmal.Debug+ITSboard-stamp/Kniffel_nochmal.Debug+ITSboard-update.rule

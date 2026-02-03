@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/CMakeFiles/Mastermind.Debug+ITSboard-build"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/CMakeFiles/Mastermind.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "C:/TI_Labor/gitProjekte/ITS-BRD-VSC/Programs/Mastermind/tmp/Mastermind.Debug+ITSboard/src/Mastermind.Debug+ITSboard-stamp/Mastermind.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Mastermind.Debug+ITSboard"
+		],
+		"name" : "Mastermind.Debug+ITSboard-build"
+	}
+}

@@ -1,0 +1,20 @@
+build-idx:
+  generated-by: csolution version 2.12.0+p48-gd3223e31
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: Turme_von_Hanoi.csolution.yml
+  cbuild-run: out/Turme_von_Hanoi+ITSboard.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: Turme_von_Hanoi.cproject.yml
+  cbuilds:
+    - cbuild: out/Turme_von_Hanoi/ITSboard/Debug/Turme_von_Hanoi.Debug+ITSboard.cbuild.yml
+      project: Turme_von_Hanoi
+      configuration: .Debug+ITSboard
+      messages:
+        info:
+          - Turme_von_Hanoi.cbuild-pack.yml - file is already up-to-date
+          - Turme_von_Hanoi+ITSboard.cbuild-run.yml - file is already up-to-date
+          - Turme_von_Hanoi.Debug+ITSboard.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@7.0.0
