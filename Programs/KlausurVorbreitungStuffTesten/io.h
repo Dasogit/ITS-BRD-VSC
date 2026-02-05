@@ -12,29 +12,24 @@
 #ifndef _IO_H
 #define _IO_H
 
+
+#include "LCD_general.h"
+#include <stdbool.h>
 #include <stdint.h>
 
-void io_init(void);
 
-// Buttons: Bit i == 1 => Button Si gedrückt
-uint8_t io_buttonsRaw(void);
+#define LESEVERSUCHE 8
 
-// einfache Entprellung als Gruppe (ohne ISR)
-// Rückgabe: stabiler Button-Zustand (bitmask), aber nur wenn stabil (sonst alter Wert)
-uint8_t io_buttonsDebounced(uint8_t lastStable);
+uint8_t getButtons(void);
+//uint8_t getButton();
+void setOn(uint16_t leds);
+void setOff(uint16_t leds);
+uint8_t buttons_pressed_events(void);
+//bool buttonEntprellen(uint8_t button);
 
-// LEDs: 0..14
-void io_ledSet(uint8_t ledIndex, uint8_t on);
-
-// 15 LEDs als Maske schreiben:
-// bit0..bit7  -> D8..D15
-// bit8..bit14 -> D17..D23
-void io_ledWriteMask(uint16_t mask15);
-
-// Hilfsfunktionen für Tests
-void io_ledAllOff(void);
-void io_ledAllOn(void);
-
+void button_update_1ms();
+//void button_update_1ms(int arr[], int size);
+uint32_t zeitDiff(uint32_t z1, uint32_t z2);
 #endif
 
 

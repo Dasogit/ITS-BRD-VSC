@@ -208,6 +208,9 @@ add_library(Group_Program_User_Src OBJECT
   "${SOLUTION_ROOT}/Src/main.c"
   "${SOLUTION_ROOT}/io.c"
   "${SOLUTION_ROOT}/test.c"
+  "${SOLUTION_ROOT}/display.c"
+  "${SOLUTION_ROOT}/model.c"
+  "${SOLUTION_ROOT}/controller.c"
 )
 target_include_directories(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>

@@ -15,7 +15,8 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
-#include "test.h"
+#include "io.h"
+#include "display.h"
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
@@ -25,14 +26,9 @@ int main(void) {
 
 
 	
-	// Test in Endlosschleife
+	
 	while(1) {
-	// Wähle genau 1 Test:
-    //test_leds_chase();
-    // test_buttons_raw_mirror();
-    // test_buttons_debounced_mirror();
-    // test_buttons_to_bar();
-    // test_pressed_toggles_leds();
+	
 	}
 }
 

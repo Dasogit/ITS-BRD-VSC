@@ -182,6 +182,9 @@ project:
         - file: ../../ITS_BRD_LIB/Inc/lcd.h
         - file: io.h
         - file: test.h
+        - file: display.h
+        - file: model.h
+        - file: controller.h
 
     # Benutzerdefinierte Programmdateien
     - group: Program/User/Src
@@ -189,6 +192,9 @@ project:
         - file: Src/main.c
         - file: io.c
         - file: test.c
+        - file: display.c
+        - file: model.c
+        - file: controller.c
 
   components:
     - component: ARM::CMSIS:CORE

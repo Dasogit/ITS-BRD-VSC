@@ -5,8 +5,8 @@
             "name": "STLink@pyOCD (launch)",
             "type": "gdbtarget",
             "request": "launch",
-            "cwd": "${workspaceFolder}/Programs/Vekehrskontrolle",
-            "program": "out/Vekehrskontrolle/ITSboard/Debug/Vekehrskontrolle.axf",
+            "cwd": "${workspaceFolder}/Programs/KlausurVorbreitungStuffTesten",
+            "program": "out/KlausurVorbreitungStuffTesten/ITSboard/Debug/KlausurVorbreitungStuffTesten.axf",
             "gdb": "arm-none-eabi-gdb",
             "preLaunchTask": "CMSIS Load",
             "initCommands": [
@@ -46,8 +46,8 @@
             "name": "STLink@pyOCD (attach)",
             "type": "gdbtarget",
             "request": "attach",
-            "cwd": "${workspaceFolder}/Programs/Vekehrskontrolle",
-            "program": "out/Vekehrskontrolle/ITSboard/Debug/Vekehrskontrolle.axf",
+            "cwd": "${workspaceFolder}/Programs/KlausurVorbreitungStuffTesten",
+            "program": "out/KlausurVorbreitungStuffTesten/ITSboard/Debug/KlausurVorbreitungStuffTesten.axf",
             "gdb": "arm-none-eabi-gdb",
             "initCommands": [
                 ""

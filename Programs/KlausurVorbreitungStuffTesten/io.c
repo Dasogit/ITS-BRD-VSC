@@ -10,87 +10,51 @@
  */
 
 #include "io.h"
+#include "LCD_GUI.h"
 #include "delay.h"
 #include "stm32f429xx.h"
-
-#include <stdbool.h>
+#include "timer.h"
 #include <stdint.h>
-#include "time.h"
 
-// Mapping (wie oben im Disclaimer beschrieben)
-static inline void ledD_setBit(uint8_t bit /*0..7*/, uint8_t on) {
-    // PD8..PD15 -> bit 0..7 mapped to pin (8+bit)
-    uint32_t pin = 8u + bit;
-    if (on) GPIOD->BSRR = (1u << pin);
-    else    GPIOD->BSRR = (1u << (pin + 16u));
+
+uint8_t getButtons(void){
+//uint8_t getButton(){
+    return ~(GPIOF->IDR);
 }
 
-static inline void ledE_setBit(uint8_t bit /*0..6*/, uint8_t on) {
-    // PE8..PE14 -> bit 0..6 mapped to pin (8+bit)
-    uint32_t pin = 8u + bit;
-    if (on) GPIOE->BSRR = (1u << pin);
-    else    GPIOE->BSRR = (1u << (pin + 16u));
+void setOn(uint16_t leds){
+    GPIOD->BSRR = leds & 0xff;
+    GPIOE->BSRR = (leds >> 8) & 0xff;
 }
 
-void io_init(void){
-    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOFEN;
-    RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;	
+void setOff(uint16_t leds){
+    GPIOD->BSRR = (leds & 0xff) << 16;
+    GPIOE->BSRR = ((leds >> 8) & 0xff) << 16;
 }
 
-// Buttons: Bit i == 1 => Button Si gedrückt
-uint8_t io_buttonsRaw(void){
-    /* for(int i = 0 ; i < 8; i++){
-        uint8_t mask = GPIOF->IDR &(1 << i);
-        if(mask== 0){
-            arr[i] = true;
+uint8_t buttons_pressed_events(void){
+//bool buttonEntprellen(uint8_t button){
+    
+    /* if(button < 0 || button > 8){
+        return false;
+    }
+    int mask = (1u << button);
+    for(int i = 0; i <LESEVERSUCHE; ++i ){
+        bool taste = getButton();
+        delay(500);
+        if(taste == getButton()){
+            return true;
         }
-    } */
-
-    uint8_t raw = GPIOF->IDR & 0xFFu;
-    return ~raw;
+    }
+    return false; */
     
 }
-
-// einfache Entprellung als Gruppe (ohne ISR)
-// Rückgabe: stabiler Button-Zustand (bitmask), aber nur wenn stabil (sonst
-// alter Wert)
-uint8_t io_buttonsDebounced(uint8_t lastStable){
-    uint8_t raw1 = io_buttonsRaw();
-    delay(3);
-    uint8_t raw2 = io_buttonsRaw();
-    if(raw1 == raw2){
-        return raw1;
-    }
-    return lastStable;
+uint32_t zeitDiff(uint32_t z1, uint32_t z2){
+    uint32_t diff = (z2 > z1) ? z2 - z1 : INT32_MAX - z1 + z2;
+    return diff/90000000; 
 }
 
-// LEDs: 0..14
-void io_ledSet(uint8_t ledIndex, uint8_t on){
-    if(ledIndex < 8){
-        ledD_setBit(ledIndex, on);
-    }else if(ledIndex < 15){
-        ledE_setBit(ledIndex, on);
-    }
+//void button_update_1ms(int arr[], int size ){
+void button_update_1ms(){
 }
 
-// 15 LEDs als Maske schreiben:
-// bit0..bit7  -> D8..D15
-// bit8..bit14 -> D17..D23
-void io_ledWriteMask(uint16_t mask15){
-    uint8_t mask1 = 1&(8 << mask15);
-    uint8_t mask2 = 1&(8 >> mask15);
-    GPIOD->BSRR = 1u << mask1;
-    GPIOE->BSRR = 1u << mask2;
-}
-
-// Hilfsfunktionen für Tests
-void io_ledAllOff(void){
-    GPIOD->BSRR = 0xff << (16u + 8u);
-    GPIOE->BSRR = 0xff << (16u + 8u);
-}
-void io_ledAllOn(void){
-    GPIOD->BSRR = 0xff << (8u);
-    GPIOE->BSRR = 0xff << (8u);
-}
-
-//EOP

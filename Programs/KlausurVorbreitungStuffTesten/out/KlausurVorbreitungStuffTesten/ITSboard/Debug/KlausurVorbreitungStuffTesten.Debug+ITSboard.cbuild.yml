@@ -329,6 +329,12 @@ build:
           category: header
         - file: ../../../../test.h
           category: header
+        - file: ../../../../display.h
+          category: header
+        - file: ../../../../model.h
+          category: header
+        - file: ../../../../controller.h
+          category: header
     - group: Program/User/Src
       files:
         - file: ../../../../Src/main.c
@@ -336,6 +342,12 @@ build:
         - file: ../../../../io.c
           category: sourceC
         - file: ../../../../test.c
+          category: sourceC
+        - file: ../../../../display.c
+          category: sourceC
+        - file: ../../../../model.c
+          category: sourceC
+        - file: ../../../../controller.c
           category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
